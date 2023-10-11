@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Jiecheng's UI/UX portfolio site" />
+	    <meta name="author" content="Jiecheng Chen" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jiecheng's UI/UX portfolio</title>
+        <link href="styles/baeometer.css" rel="stylesheet"  type="text/css"/>
+        <!-- <link href="images/favicon.ico" rel="icon"> -->
+    </head>
+    <body>
+        <input type="checkbox" name="" id="check">
+        <div id="hamMenu">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        <aside>
+            <h2><a href="./index.html">Jiecheng <br>
+                UI/UX Portfolio</a>
+            </h2>
+            <nav>
+                <ul>
+                    <li class="options" ><a href="./index.html">Home</a></li>
+                    <li class="projectOptions">
+                        <noscript >
+                            <a class="options selected" href="./project1Baeometer.html">
+                                Project 1 <span class="projectNames">| Beaometer</span>    
+                            </a> 
+                        </noscript>
+                        <button class="options" id="selectedOption">
+                            <span>
+                                Project 1 <span class="projectNames">| Beaometer</span>    
+                            </span>                        
+                            <svg class="arrowIcon" xmlns="http://www.w3.org/2000/svg" width="8" height="18" viewBox="0 0 10 18" fill="none">
+                            <path d="M2 2L8 8.85106L2 16" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="dropDown" id="currentMenu">
+                            <a class="options active" href="#" data-item="overview">Overview</a>
+                            <a class="options" href="#discover" data-item="discover">Discover</a>
+                            <a class="options" href="#define" data-item="define">Define</a>
+                            <a class="options" href="#develop" data-item="develop">Develop</a>
+                            <a class="options" href="#deliver" data-item="deliver">Deliver</a>
+                        </div>
+                    </li>
+                    <li class="projectOptions">
+                        <noscript>
+                            <a class="options" href="./project2ArtPlace.html">
+                                Project 2 <span class="projectNames">| Art Place</span>  
+                            </a> 
+                        </noscript>
+                        <button class="options">
+                            <span>
+                                Project 2 <span class="projectNames">| Art Place</span>
+                            </span>                        
+                            <svg class="arrowIcon" xmlns="http://www.w3.org/2000/svg" width="8" height="18" viewBox="0 0 10 18" fill="none">
+                                <path d="M2 2L8 8.85106L2 16" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="dropDown">
+                            <a class="options" href="./project2ArtPlace.html">Overview</a>
+                            <a class="options" href="project2ArtPlace.html#discover" >Discover</a>
+                            <a class="options" href="project2ArtPlace.html#define" >Define</a>
+                            <a class="options" href="project2ArtPlace.html#develop" >Develope</a>
+                            <a class="options" href="project2ArtPlace.html#deliver" >Deliver</a>
+                        </div>
+                    </li>
+                    <li class="options"><a href="./otherProjects.html">Other Projects</a></li>
+                    <li class="options"><a href="./about.html">About</a></li>
+                    <li class="options"><a href="./index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <footer>
+                <p id="copyright">&copy; Jiecheng Chen UI/UX Portfolio 2023<br>
+                    <span>Designed and Coded by Jiecheng</span>
+                </p>
+            </footer>
+        </aside>
+
+
+        <main>
+            <section id="mainContent">
+                <!-- Overview -->
+                <section id="overview" class="majorSections">
+                    <h3 id="descriptionHeading">UI/UX Design & Dev.</h3>
+                    <div id="mainTitle">
+                        <h1>Baeometer</h1> 
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="25" cy="25" r="22.25" stroke="url(#paint0_linear_1717_81)" stroke-width="5.5"/>
+                            <path d="M30.5405 26.875V11.875C30.5405 10.3832 29.9479 8.95242 28.893 7.89752C27.8381 6.84263 26.4074 6.25 24.9155 6.25C23.4237 6.25 21.9929 6.84263 20.9381 7.89752C19.8832 8.95242 19.2905 10.3832 19.2905 11.875V26.875C17.7164 28.0556 16.5537 29.7015 15.967 31.5797C15.3803 33.4578 15.3994 35.473 16.0216 37.3396C16.6438 39.2063 17.8376 40.8299 19.4339 41.9804C21.0301 43.1309 22.9479 43.75 24.9155 43.75C26.8832 43.75 28.8009 43.1309 30.3972 41.9804C31.9934 40.8299 33.1872 39.2063 33.8094 37.3396C34.4317 35.473 34.4508 33.4578 33.8641 31.5797C33.2774 29.7015 32.1146 28.0556 30.5405 26.875ZM24.9155 10C25.4128 10 25.8897 10.1975 26.2414 10.5492C26.593 10.9008 26.7905 11.3777 26.7905 11.875V17.5H23.0405V11.875C23.0405 11.3777 23.2381 10.9008 23.5897 10.5492C23.9413 10.1975 24.4182 10 24.9155 10Z" fill="url(#paint1_linear_1717_81)"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_1717_81" x1="24.8954" y1="-7.67442" x2="25.0247" y2="49.9999" gradientUnits="userSpaceOnUse">
+                            <stop offset="0.130208" stop-color="#F7AEB4"/>
+                            <stop offset="0.813453" stop-color="#DF84FE"/>
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_1717_81" x1="24.8763" y1="0.494186" x2="25.0702" y2="43.7493" gradientUnits="userSpaceOnUse">
+                            <stop offset="0.130208" stop-color="#F7AEB4"/>
+                            <stop offset="0.813453" stop-color="#DF84FE"/>
+                            </linearGradient>
+                            </defs>
+                            </svg>                                                         
+                    </div>
+                    
+                    <div id="titleHeader">
+                        <img id="UIalienBae" src="./media/baeometerMedia/UIalienBae.webp" alt="UI alien Baeometer pic">
+                        <img id="titleImg" src="./media/baeometerMedia/BaeometerMockupH.webp" alt="Baeometer Mockup Image">    
+                    </div>
+                    
+                    <h2>Overview</h2>
+                    <p>The Bae-O-Meter™ is a <strong>fortune-telling web-app</strong> that predicts the strength of a relationship between any two entities. After entering some basic information about each party, the Bae-O-Meter™ will factor each piece of data into its algorithm, and determine how long their <strong>hypothetical relationship would last</strong>, and how it will end through an <strong>AI-generated love story</strong>.
+                    </p>
+
+                    <div class="visitLinks">
+                        <a class="linkBtn fill" target="_blank" href="https://jasonarong.github.io/baeometer/" >Visit Website</a>
+                        <a class="linkBtn" target="_blank" href="https://www.figma.com/file/n8ZghzToOscxGbh3v92xGj/Baeometer-(high-fidelity)?type=design&node-id=103%3A27&mode=design&t=GZOOcMvqIVDTx3rr-1">
+                            Try Prototype 
+                        </a>
+                    </div>
+
+                    <h3>My Efforts & The Team</h3>                    
+                    <div id="effortTeam">
+                        <div>
+                            <strong>My Role</strong> <br/>
+                            UX/UI Designer, Developer<br/>
+                            <strong>Tools Used</strong> <br/>
+                            Figma, Miro, VScode, Github<br/>
+                            <strong>Scope</strong> <br/>
+                            7 weeks agile development sprint<br/>
+                            <strong>What I Did</strong> <br/>
+                            UX Design, Mobile & Desktop UI Design, Development
+                            
+                        </div>
+                        <div>
+                            Cody Rupp, Leader <br/>
+                            Jackie Piepkorn, Leader <br/>
+                            <strong>(Jason) Jiecheng Chen, Designer & Developer</strong> <br/>
+                            (Terry) Ka Wing Yan, Developer <br/>
+                            Ishan Banerjee, Developer <br/>
+                            Steve Padmanaban, Developer <br/>
+                            Jenny Lam, Developer <br/>
+                            Brandon Reponte, Developer <br/>
+                            Alvaro Ramos-Sanchez, Developer <br/>
+                        </div>
+                    </div>
+                    <a id="visitTeamBtn" class="linkBtn" target="_blank" href="https://github.com/cse110-sp23-group28/cse110-sp23-group28" >Team GitHub</a>
+
+                    <h3>Design Process</h3>
+                    <div id="designProcess" >
+                        <img src="./media/DesginProcess.png" alt="design process img" />
+                    </div>
+                   
+                </section>
+
+                <!-- Discover -->
+                <section id="discover" class="majorSections">
+                    <div class="secHead">
+                        <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.966437 49.6916L3.30841 52.0336C4.59699 53.3221 6.70378 53.3221 7.99236 52.0336L20.166 39.8599C23.452 41.8905 27.3244 43.0632 31.4684 43.0632C43.3605 43.0632 53 33.4236 53 21.5316C53 9.63953 43.3605 0 31.4684 0C19.5764 0 9.93683 9.63953 9.93683 21.5316C9.93683 25.6756 11.1095 29.548 13.1401 32.834L0.966437 45.0076C-0.322146 46.2962 -0.322146 48.403 0.966437 49.6916ZM31.4684 36.4381C27.4867 36.4381 23.7435 34.8878 20.9279 32.0721C18.1122 29.2565 16.5619 25.5133 16.5619 21.5316C16.5619 17.5499 18.1122 13.8067 20.9279 10.991C23.7435 8.17538 27.4867 6.6251 31.4684 6.6251C35.4501 6.6251 39.1933 8.17538 42.009 10.991C44.8246 13.8067 46.3749 17.5499 46.3749 21.5316C46.3749 25.5133 44.8246 29.2565 42.009 32.0721C39.1933 34.8878 35.4501 36.4381 31.4684 36.4381Z" fill="#487BFF"/>
+                        </svg> 
+                        <h2>Discover</h2>
+                    </div>
+                    
+                    <h3>Interview</h3>
+                    <p id="interview"><strong>What would make you want to use a relation prediction fortune-telling app?</strong>
+                        <br>
+                        By analyzing the interview data to understand users' actions, thoughts, and emotions, I was able to extract some key insights:
+                    </p>
+                    <ul>
+                        <li>People want the app <strong>to be enjoyable</strong> to play with because having fun is the main motivator for using apps like this.</li>
+                        <li>The UX needs to make users feel the results are somewhat <strong>believable</strong>, even if this is just fortune-telling app for fun.</li>
+                        <li>Users want the app to provide a <strong>personalized experience</strong> that resonates with their relationship dynamics.</li>
+                        <li>Users want to <strong>get the result quickly</strong>, they don't want to waste too much time on it. They might lose patience halfway through.</li>                        
+                    </ul>
+
+                    <h3>Competitive Analysis</h3>
+                    <div id="competitiveAnalysis">
+                        <div class="competitors">
+                            <div class="competitorsInfo">
+                                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <radialGradient id="a" cx="25" cy="22" fx="8" fy="7" gradientTransform="matrix(1 0 0 -1 0 48)" gradientUnits="userSpaceOnUse" r="47">
+                                <stop offset=".43" stop-color="#eb0968"/>
+                                <stop offset=".6" stop-color="#960f75"/>
+                                <stop offset=".75" stop-color="#52137f"/>
+                                <stop offset=".85" stop-color="#281686"/>
+                                <stop offset=".9" stop-color="#181788"/>
+                                </radialGradient>
+                                <path d="m0 0h48v48h-48z" fill="url(#a)"/>
+                                <path d="m24.9 4.1h-11.2v11.6l12-11.6c-.3 0-.6 0-.8 0" fill="#aa0c54"/>
+                                <path d="m34.6 6.8c-1.8-1.5-4.3-2.4-7.4-2.7l-13.5 13.6v27.1l7.9-.1v-17.3h2.7c4.4 0 7.7-1 10.1-3.1s3.5-5.1 3.5-9c0-3.7-1.1-6.6-3.3-8.5m-6 11.8c-1 .7-2.6 1-4.7 1h-2.3v-7.7h3.1c1.9 0 3.2.3 4.1.9s1.3 1.6 1.3 2.8c0 1.4-.5 2.3-1.5 3" fill="#aa0c54"/>
+                                <path d="m24.6 3.8h-11.3v11.6l12-11.6c-.2 0-.5 0-.7 0" fill="#ffc107"/>
+                                <path d="m34.3 6.6c-1.8-1.5-4.3-2.4-7.4-2.7l-13.6 13.6v26.7l7.9-.1v-16.9h2.8c4.4 0 7.7-1 10.1-3.1s3.5-5.1 3.5-9c0-3.7-1.1-6.6-3.3-8.5m-6 11.8c-1 .7-2.6 1-4.7 1h-2.3v-7.7h3.1c1.9 0 3.2.3 4.1.9s1.3 1.6 1.3 2.8c0 1.4-.5 2.3-1.5 3" fill="#fff"/>
+                                </svg>    
+                                <div>
+                                    <h4>Love Calculator</h4>
+                                    <h5>By <a target="_blank" href="https://www.prokerala.com/entertainment/love-meter/">Prokerala</a></h5>    
+                                </div>                                
+                            </div>                                                      
+                            <p><strong>Strength:</strong></p>
+                            <ul>
+                                <li>Simple user interface, intuitive to use.</li>
+                                <li>Quick and simple to get a result, not time-consuming at all.</li>
+                                <li>Provides multiple versions of compatibility prediction test.</li>
+                            </ul>
+                            <p><strong>Weakness:</strong></p>
+                            <ul>
+                                <li>Not believable, it requires too little input from the users. </li>
+                                <li>Not inclusive, it only has male and female options in the gender selection menu.</li>                                
+                            </ul>
+                        </div>
+
+
+                        <div class="competitors">
+                            <div class="competitorsInfo">
+                                <svg height="78" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="91" height="91" fill="white"/>
+                                    <path d="M10.7926 67V23.3636H28.0085C31.3182 23.3636 34.1378 23.9957 36.4673 25.2599C38.7969 26.5099 40.5724 28.25 41.794 30.4801C43.0298 32.696 43.6477 35.2528 43.6477 38.1506C43.6477 41.0483 43.0227 43.6051 41.7727 45.821C40.5227 48.0369 38.7116 49.7628 36.3395 50.9986C33.9815 52.2344 31.1264 52.8523 27.7741 52.8523H16.8011V45.4588H26.2827C28.0582 45.4588 29.5213 45.1534 30.6719 44.5426C31.8366 43.9176 32.7031 43.0582 33.2713 41.9645C33.8537 40.8565 34.1449 39.5852 34.1449 38.1506C34.1449 36.7017 33.8537 35.4375 33.2713 34.358C32.7031 33.2642 31.8366 32.419 30.6719 31.8224C29.5071 31.2116 28.0298 30.9062 26.2401 30.9062H20.0185V67H10.7926Z" fill="#092082"/>
+                                    <path d="M49.6403 67V23.3636H66.8562C70.1658 23.3636 72.9854 23.9957 75.315 25.2599C77.6445 26.5099 79.4201 28.25 80.6417 30.4801C81.8775 32.696 82.4954 35.2528 82.4954 38.1506C82.4954 41.0483 81.8704 43.6051 80.6204 45.821C79.3704 48.0369 77.5593 49.7628 75.1871 50.9986C72.8292 52.2344 69.9741 52.8523 66.6218 52.8523H55.6488V45.4588H65.1303C66.9059 45.4588 68.369 45.1534 69.5195 44.5426C70.6843 43.9176 71.5508 43.0582 72.119 41.9645C72.7013 40.8565 72.9925 39.5852 72.9925 38.1506C72.9925 36.7017 72.7013 35.4375 72.119 34.358C71.5508 33.2642 70.6843 32.419 69.5195 31.8224C68.3548 31.2116 66.8775 30.9062 65.0877 30.9062H58.8661V67H49.6403Z" fill="#3FA9F5"/>
+                                </svg>                                       
+                                <div>
+                                    <h4>Compatibility Test</h4>
+                                    <h5>By <a target="_blank" href="https://www.proprofs.com/quiz-school/story.php?title=how-compatible-are-you-your-partner">Proprofs</a></h5>    
+                                </div>                                
+                            </div> 
+                            <p><strong>Strength:</strong></p>
+                            <ul>
+                                <li>A big set of in-depth questions that make the test feel professional and analytical. As a result, the result it provides has higher credibility.</li>
+                            </ul>
+                            <p><strong>Weakness:</strong></p>
+                            <ul>
+                                <li>Too many questions. It requires the user to commit plenty of time. It might intimidate the user from trying out the test.</li>
+                                <li>More like a serious test, so the entertainment aspect is hindered. </li>
+                                <li>The more credible feeling result might also be a drawback because if the result is less than ideal it is harder for users to take it as a joke, which might negatively affect a relationship.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Define -->
+                <section id="define" class="majorSections">
+                    <div class="secHead">
+                        <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.85 0V5.4855C14.257 6.7045 6.7045 14.257 5.4855 23.85H0V29.15H5.4855C6.7045 38.743 14.257 46.2955 23.85 47.5145V53H29.15V47.5145C38.743 46.2955 46.2955 38.743 47.5145 29.15H53V23.85H47.5145C46.2955 14.257 38.743 6.7045 29.15 5.4855V0M23.85 10.812V15.9H29.15V10.8385C35.775 11.925 41.075 17.225 42.188 23.85H37.1V29.15H42.1615C41.075 35.775 35.775 41.075 29.15 42.188V37.1H23.85V42.1615C17.225 41.075 11.925 35.775 10.812 29.15H15.9V23.85H10.8385C11.925 17.225 17.225 11.925 23.85 10.812ZM26.5 23.85C25.7972 23.85 25.1231 24.1292 24.6262 24.6262C24.1292 25.1231 23.85 25.7972 23.85 26.5C23.85 27.2028 24.1292 27.8769 24.6262 28.3738C25.1231 28.8708 25.7972 29.15 26.5 29.15C27.2028 29.15 27.8769 28.8708 28.3738 28.3738C28.8708 27.8769 29.15 27.2028 29.15 26.5C29.15 25.7972 28.8708 25.1231 28.3738 24.6262C27.8769 24.1292 27.2028 23.85 26.5 23.85Z" fill="#6EE9F0"/>
+                        </svg>  
+                        <h2>Define</h2>
+                    </div>
+                    
+                    <h3>Persona</h3>
+                    <p>
+                        <strong>To better empathize with my targeted users</strong>,
+                        I created a persona Cassie who is a college student interested in making connects with her partner in 
+                        new and entertaining ways.
+                    </p>
+                    <div id="persona">
+                        <div id="personaBack">
+                            <img id="personaPic" src="./media/baeometerMedia/Cassie.webp" alt="persona image">
+                            <h4>Cassie Wang</h4>
+                            <h5><strong>Background</strong></h5>
+                            <p>
+                                Name: Cassie <br/>
+                                Age: 20 <br/>
+                                Gender: Female <br/>
+                                Occupation: College student <br/>
+                                Major: Communication <br/>
+                                Relationship Status: In a casual relationship
+                            </p>
+                        </div>
+                        <div>
+                            <p id="cassieQoute"><i>"I'm always up for trying out new apps with my friends for a good laugh. If it's quick to use and offers some insights into relationships, count me in!"</i></p>
+                            <div id="personaInfo">
+                                <div>
+                                    <h5><strong>Goals and Needs</strong></h5>
+                                    <ul>
+                                        <li>Looking for ways to have fun and unwind after classes </li>
+                                        <li>Interested in exploring relationships but not necessarily seeking a serious commitment </li>
+                                        <li>Wants to connect with her partner in new and entertaining ways </li>
+                                        <li>Wants an engaging app that aligns with her college lifestyle </li>
+                                        <li>Enjoys fast-paced internet content </li>
+                                        <li>Interests in fortune telling for entertainment </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h5><strong>Challenges and Behaviors</strong></h5>
+                                    <ul>
+                                        <li>Busy college student, limited time for entertainment </li>
+                                        <li>Uses her smartphone for various social media and entertainment apps </li>
+                                        <li>Enjoys sharing funny and entertaining content with friends </li>
+                                        <li>Engages with social trends and memes </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3>User Stories</h3>
+                    <p><strong>From Persona Cassie’s perspective</strong>, I wrote the following user stories to pinpoint the user needs, and with the team’s effort, we came up with <strong>realistic solutions for each need</strong>.                        
+                    </p>
+                    <div id="userStories">
+                        <div class="stories">
+                            <h4>Story #1</h4>
+                            <p>As Cassie, a college student looking for fun and engaging apps, I want the app to be more engaging, so I can be more invested and have more fun.</p>
+                            <div class="solutions">
+                                <p><strong>Solution:</strong><br/>
+                                    Have <strong>multiple types of interaction</strong> with the app (typing, drawing, selecting). <br>
+                                   Have appealing visuals, including fancy animation & transition, and fun visual elements.</p>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="stories">
+                            <h4>Story #2</h4>
+                            <p>As Cassie, who is looking for a light-hearted fortune-telling experience, I want the fortune-telling to be somewhat believable, so I can maintain the suspension of disbelief and enjoy the playful outcome without it feeling entirely random.</p>
+                            <div class="solutions">                                
+                                <p><strong>Solution: </strong><br/>
+                                    All the inputs will be fed into a <strong>logical algorithm</strong> for calculating the result to make sure the result is consistent.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="stories">
+                            <h4>Story #3</h4>
+                            <p>As Cassie, who is currenly in a relationship and also as someone who values personal connections and experiences, I want the fortune telling to feel personal, so I can resonate with the predictions better.</p>
+                            <div class="solutions">                                
+                                <p><strong>Solution: </strong><br/>
+                                    Based on the user inputs, show an <strong>ai generated love story</strong> on the result screen.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="stories">
+                            <h4>Story #4</h4>
+                            <p>As Cassie, a busy college student with limited time and fast-paced internet content, I don't want to spend too much time on it, because I want to engage with the app without feeling like I'm investing too much time, preventing me from losing interest midway.</p>
+                            <div class="solutions">                                
+                                <p><strong>Solution: </strong><br/>
+                                    Keep the app short and sweet, <strong>keep friction at its minimum</strong>, and make sure the users can easily go through our app without blockers.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="stories">
+                            <h4>Story #5</h4>
+                            <p>As Cassie, a college student who enjoys spending time on her phone, I want websites to be mobile-friendly and responsive, so that I can easily access and use the app on my phone while on the go, without any usability issues.</p>
+                            <div class="solutions">                                
+                                <p><strong>Solution: </strong><br/>
+                                    <strong>Responsive design</strong> for all popular screen sizes.</p>
+                            </div>
+                        </div>    
+                    </div>
+                    
+                    
+
+                    <h3>User Flow</h3>
+                    <p>I use a user flow diagram to map out the process of a typical user using Beaometer to achieve their goal. It grants me an <strong>overview of the app’s functionality</strong> and makes sure that users can go through the entire process without structural blockers.</p>
+                    <div id="userFlow">
+                        <img src="./media/baeometerMedia/userFlowBaeometer.png" alt="baeometer user flow" >
+                    </div>
+
+                    <h3>Information Architecture</h3>
+                    <div id="IA">
+                        <div>
+                            <p>Even though Baeometer has a relatively simple structure, I still decided to build an information architecture. Because it maps out how different pages and pieces of information are connected and organized which <strong>establishes a clear hierarchical structure</strong> that benefits everyone on the team.</p>
+                            <div id="IABenefits">
+                                <p>Benefits for me as a designer: It will be a handy guide for me to <strong>know how the elements of our app fit together</strong>, and that will be helpful especially when I am creating wireframes and prototypes. And since IA is flexible, I can add additional features after receiving user feedback.
+                                </p>
+                                <p>Benefits for the team(including me): Every member of the team are software engineer. Having a clear IA <strong>helps us to better lay out the code structure</strong> which will improve the code quality, and better code quality leads to fewer usability issues, in other words, better UX.                
+                                </p>                                                        
+                            </div>
+                        </div>
+                        <img src="./media/baeometerMedia/IABaeometer.png" alt="baeometer information architecture" >
+                    </div>
+                </section>
+
+                <!-- Develop -->
+                <section id="develop" class="majorSections">
+                    <div class="secHead">
+                        <svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 17.5598C3 15.4792 3.43642 13.5005 4.22274 11.7103L10.9693 18.4568C13.0369 20.5244 16.3892 20.5244 18.4568 18.4568C20.5245 16.3892 20.5245 13.0369 18.4568 10.9693L11.7103 4.22274C13.5005 3.43642 15.4792 3 17.5598 3C25.6011 3 32.1197 9.51865 32.1197 17.5598C32.1197 19.6405 31.6832 21.6192 30.8969 23.4094L54.4492 46.9617C56.5169 49.0295 56.5169 52.3817 54.4492 54.4492C52.3817 56.5169 49.0295 56.5169 46.9617 54.4492L23.4094 30.8969C21.6192 31.6832 19.6405 32.1197 17.5598 32.1197C9.51865 32.1197 3 25.6011 3 17.5598Z" stroke="#DB82F0" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg> 
+                        <h2>Develop</h2>
+                    </div>
+                    
+                    <h3>Wireframe (Hand-Drawn and Digital)</h3>
+                    <p>I used both hand-drawn and digital wireframes to <strong>map out the visual structure</strong> of our app in a <strong>low-commitment way</strong>. And visualize the UX solutions that we came up with.</p>
+                    <a class="linkBtn" href="https://www.figma.com/file/n8ZghzToOscxGbh3v92xGj/Baeometer-(high-fidelity)?type=design&node-id=103%3A27&mode=design&t=GZOOcMvqIVDTx3rr-1">
+                        Visit Project 
+                    </a> 
+                    <h4 id="handDrawnHeader" class="wireFrameHeader">I. Hand-Drawn</h4>
+                    <div id="handDrawn" class="prototypeDisplay">
+                        <img class="displayEle" src="./media/baeometerMedia/baeHandDrawn1.webp" alt="Baeometer HandDrawn wireframe1">
+                        <img class="displayEle" src="./media/baeometerMedia/baeHandDrawn2.webp" alt="Baeometer HandDrawn wireframe2">
+                        <img class="displayEle" src="./media/baeometerMedia/baeHandDrawn3.webp" alt="Baeometer HandDrawn wireframe3">
+                        <img class="displayEle" src="./media/baeometerMedia/baeHandDrawn4.webp" alt="Baeometer HandDrawn wireframe4">
+                        <img class="displayEle" src="./media/baeometerMedia/baeHandDrawn5.webp" alt="Baeometer HandDrawn wireframe5">
+                        <img class="displayEle" src="./media/baeometerMedia/baeHandDrawn6.webp" alt="Baeometer HandDrawn wireframe6">
+                    </div>
+
+                    <h4 class="wireFrameHeader">II. Digital</h4>
+                    <div class="prototypeDisplay wireframe">
+                        <img class="displayEle" src="./media/baeometerMedia/DesktopVersion-Intro.webp" alt="DesktopVersion-Intro">
+                        <img class="displayEle" src="./media/baeometerMedia/DesktopVersion-Home.webp" alt="DesktopVersion-Home">
+                        <img class="displayEle" src="./media/baeometerMedia/DesktopVersion-Draw.webp" alt="DesktopVersion-Draw">
+                        <img class="displayEle" src="./media/baeometerMedia/DesktopVersion-Choose.webp" alt="DesktopVersion-Choose">
+                        <img class="displayEle" src="./media/baeometerMedia/DesktopVersion-Result.webp" alt="DesktopVersion-Result">
+                    </div>
+
+                    <h4 class="wireFrameHeader">III. Types of Interaction</h4>
+                    <p>To make our app more engaging, we decided to let our users have multiple types of interaction with our app.</p>
+                    <div class="prototypeDisplay wireframe cardsDisplay" id="interactionTypes">
+                        <div >
+                            <img class="displayEle" src="./media/baeometerMedia/interactions/type.webp" alt="type image"/>
+                            <h5>Typing</h5>
+                            <p>Users will be able to type in their birthday and name. Starting with simple interactions invite users to continue their user flow.</p>
+                        </div>
+                        <div >
+                            <img class="displayEle" src="./media/baeometerMedia/interactions/draw.webp" alt="canvas image"/>
+                            <h5>Drawing</h5>
+                            <p>User can draw on this page. Drawing is a rather uncommon interaction for apps, so such an interaction would make our app to be more memorable.</p>
+                        </div>
+                        <div >
+                            <img class="displayEle" src="./media/baeometerMedia/interactions/choose.webp" alt="select image"/>
+                            <h5>Selecting</h5>
+                            <p>User can also select one card from the three. Selecting without knowing the content enhances the mysterious theme for our fortune-telling app.</p>
+                        </div>
+                    </div>
+
+                    <h4 class="wireFrameHeader">IV. Inclusive Design</h4>
+                    <div class="featureDisplay wireframe" id="inclusiveDesign" >
+                        <p>Inclusive design: <strong>gender neutral</strong> word choice, does not assume user’s and their partner’s gender.</p>
+                        <img  src="./media/baeometerMedia/inclusive.webp" alt="front page image"/>
+                    </div>
+
+                    <h4 class="wireFrameHeader">V. Responsive Design</h4>
+                    <p>Make sure users on both <strong>mobile and desktop</strong> can have a similar experience.</p>
+                    <div class="prototypeDisplayMobile wireframe" id="responsiveDesign">
+                        <img class="displayEleMobile" src="./media/baeometerMedia/Moblie-Version-Intro.webp" alt="Moblie-Version-Intro">
+                        <img class="displayEleMobile" src="./media/baeometerMedia/Moblie-Version-Home.webp" alt="Moblie-Version-Home">
+                        <img class="displayEleMobile" src="./media/baeometerMedia/Moblie-Version-Draw.webp" alt="Moblie-Version-Draw">
+                        <img class="displayEleMobile" src="./media/baeometerMedia/Moblie-Version-Choose.webp" alt="Moblie-Version-Choose">
+                        <img class="displayEleMobile" src="./media/baeometerMedia/Moblie-Version-Result.webp" alt="Moblie-Version-Result">
+                    </div>
+
+                    <hr>
+                    <h3>High-Fidelity Prototype</h3>
+                    <p>Based on the structural foundation laid out by my wireframe, I designed clickable high-fidelity prototypes for both Mobile and Desktop versions of the responsive web app. </p>
+                    <div class="visitLinks">
+                        <a class="linkBtn fill" href="https://www.figma.com/file/n8ZghzToOscxGbh3v92xGj/Baeometer-(high-fidelity)?type=design&node-id=103%3A27&mode=design&t=GZOOcMvqIVDTx3rr-1">
+                            Try Prototype 
+                        </a> 
+                        <a class="linkBtn" href="https://www.figma.com/file/n8ZghzToOscxGbh3v92xGj/Baeometer-(high-fidelity)?type=design&node-id=103%3A27&mode=design&t=GZOOcMvqIVDTx3rr-1">
+                            Visit Project
+                        </a> 
+                    </div>
+                    <h4>I. High-Fidelity Design</h4>
+                    <div class="prototypeDisplay">
+                        <img class="displayEle" src="./media/baeometerMedia/Desktop-Version-Intro-Hi.webp" alt="Desktop-Version-Intro">
+                        <img class="displayEle" src="./media/baeometerMedia/Desktop-Version-Home-Hi.webp" alt="Desktop-Version-Home">
+                        <img class="displayEle" src="./media/baeometerMedia/Desktop-Version-Draw-Hi.webp" alt="Desktop-Version-Draw">
+                        <img class="displayEle" src="./media/baeometerMedia/Desktop-Version-Choose-Hi.webp" alt="Desktop-Version-Choose">
+                        <img class="displayEle" src="./media/baeometerMedia/Desktop-Version-Result-Hi.webp" alt="Desktop-Version-Result">
+                    </div>
+                    <h4>II. Responsive Design (High-Fidelity)</h4>
+                    <div class="prototypeDisplayMobile">
+                        <img class="displayEleMobile" src="./media/baeometerMedia/Moblie-Version-Intro-Hi.webp" alt="Moblie-Version-Intro">
+                        <img class="displayEleMobile" src="./media/baeometerMedia/Moblie-Version-Home-Hi.webp" alt="Moblie-Version-Home">
+                        <img class="displayEleMobile" src="./media/baeometerMedia/Moblie-Version-Draw-Hi.webp" alt="Moblie-Version-Draw">
+                        <img class="displayEleMobile" src="./media/baeometerMedia/Moblie-Version-Choose-Hi.webp" alt="Moblie-Version-Choose">
+                        <img class="displayEleMobile" src="./media/baeometerMedia/Moblie-Version-Result-Hi.webp" alt="Moblie-Version-Result">
+                    </div>
+                    
+                    <hr>
+                    <h3>Style Guide</h3>
+                    <p>Beaometer’s purpose is to create a fun experience of a couple's romantic relationship, hence the color choice of purple and pink highlights that romantic theme. Moreover, motifs of heart and other cute icons further insinuate the fun, romantic, and enjoyable UX of using Baeometer. </p>
+                    <div id="styleGuide">
+                        <img  src="./media/styleSheetBaeometer.png" alt="barometer style sheet"/>
+                    </div>
+
+                    <hr>
+                    <h3>Baeometer (Thermometer)</h3>
+                    <p>The Baeometer, a.k.a the thermometer graphic, is present throughout the Baeometer experience. <br>
+                         It mainly serves two purposes: <strong>branding</strong> and <strong>functionality</strong>.</p>
+                    <h4>I. Branding</h4>
+                    <p>The thermometer, traditionally used to measure temperature, 
+                        became our central graphic motif to reflect the concept of measuring the 'heat' or 
+                        intensity of relationships. By using this motif throughout our app's design, 
+                        I aimed to create a strong and consistent visual association between the app's brand and its function.
+                        This connection would enable users to quickly grasp the essence and the theme of our app 
+                        while reinforcing its playfulness.
+                    </p>
+                    <h4>II. Functionality</h4>
+                    <h5 id="progress">a) Progress</h5>
+                    <div class="prototypeDisplay" id="progressDisplay">
+                        <img class="displayEle" src="./media/baeometerMedia/progress/progress1.webp" alt="Desktop-Version-Home">
+                        <img class="displayEle" src="./media/baeometerMedia/progress/progress2.webp" alt="Desktop-Version-Draw">
+                        <img class="displayEle" src="./media/baeometerMedia/progress/progress3.webp" alt="Desktop-Version-Choose">
+                    </div>
+                    <p>It is a progress bar indicating how many steps a user needs to take to get to the result page </p>
+
+                    <h5>b) Result Indicator</h5>
+                    <div class="featureDisplay">
+                        <p>On the resulting page, the Baeometer(thermometer) is also a <strong>visual indicator of the strength of a relationship</strong> based on the calculated result.</p>    
+                        <img src="./media/baeometerMedia/Desktop-Version-Result-Hi.webp" alt="resulting page"/>
+                    </div>
+                    
+                    <hr>
+                    <h3>Web Application</h3>
+                    <h4>I. Design Engineering</h4>
+                    <p>I am a <strong>designer and an engineer</strong>. My <strong>user-centered design thinking</strong> helped guide the team to make engineering decisions. At the same time my <strong>expertise in development and technologies</strong> informs my design decisions: knowing the strength and weaknesses of pieces of technologies that we would probably use to develop our app allow me to <strong>make more informed decisions</strong> to create better user experiences.</p>
+                    <div id="designEngineering">
+                        <div>
+                            <h5>MPA vs. SPA</h5>
+                            <p><strong>UCD thinking influences engineering decisions of making Baeometer into a SPA (Single Page Application).</strong></p>
+                            <p>The traditional MPA or Multi-page Application might be faster to load in terms of clock speed and 
+                                does not break the web pattern. It refreshes the screen whenever a user goes to the next page.
+                                As a result, our app will appear to be slow and less attractive.
+                                <br><br>
+                                On the other hand, the SPA 
+                                architecture keeps all pages under a single URL, which means it <strong>allows me to create 
+                                fancy transitions and animations</strong> when jumping from page to page. 
+                                From the user’s perspective, this will be <strong>more appealing</strong>. 
+                                <br><br>
+                                The downside of SPA is its complexity. 
+                                However, this will not be a huge trouble for us, since the scope of our app is relatively constrained.
+                            </p>
+                        </div>
+                        <div>
+                            <h5>Real-Time Generated AI Stories <br>
+                                vs. Pre-generated AI Stories</h5>
+                            <p><strong>Technology expertise in using AI API influences the design decision of using Pre-generated AI Stories.</strong></p>
+                            <p>Real-time generated AI stories are very appealing because they are unique stories based on 
+                                the users’ input. However, using AI is extremely risky. 
+                                <br><br>
+                                 Firstly, we will be relying on programs
+                                 that are not under our control. If the server that powers the AI engine is down, 
+                                 our app will also be down. 
+                                 <br>
+                                 Secondly, AI is probabilistic, meaning testing is difficult 
+                                 and the results it produces are uncontrollable. And if it produces offensive results, 
+                                 we will be responsible for it. 
+                                 <br><br>
+                                 As a result, I decided to create a set of pre-generated stories to <strong>keep our app risk-free</strong>. 
+                                 And since our app aims to create a fast-paced experience, and if the set of stories is large enough,
+                                  we could create the <strong>illusions of real-time generated stories</strong>.
+                            </p>
+                        </div>
+                    </div>                    
+
+                    <h4>II. Inclusive Design</h4>
+                    <h5 id="keyboardSupport">a) Keyboard Support</h5>
+                    <p>We anticipate keyboard users. I developed the app so that users can walk through the app with <strong>keyboard controls only</strong>. Whenever the user lands on a new page, the elements that need interaction will be auto-focused. And with keys like “enter”, “tab” and “shift”, a user can complete the user journey without using a mouse.
+                    </p>
+                    <div class="prototypeDisplay cardsDisplay">
+                        <div>
+                            <img class="displayEle" src="./media/baeometerMedia/keyboard/Keyboard-Home.webp" alt="Desktop-Version-Home">
+                            <h5>Test Button</h5>
+                            <p>After the user fills out all the necessary information, hitting the enter key lets the user start the test. If there are unfilled required input fields, hitting the enter key will alert them to fill out all the blank spots.
+                            </p>                        
+                        </div>
+                        <div>
+                            <img class="displayEle" src="./media/baeometerMedia/keyboard/Keyboard-Draw.webp" alt="Desktop-Version-Draw">
+                            <h5>Next Button</h5>
+                            <p>After the user finishes drawing on the canvas, hitting the enter key will first focus on the next button. Hitting the enter key again will confirm the drawing and proceed to the next step.                                
+                            </p>                        
+                        </div>
+                        <div>
+                            <img class="displayEle" src="./media/baeometerMedia/keyboard/Keyboard-Choose.webp" alt="Desktop-Version-Choose">
+                            <h5>Card Selection</h5>
+                            <p>On load, Baeometer will first focus on the first card. Pressing the Tab key allows users to select the cards in order. Hitting the enter key once will confirm the selection.,hitting it again will then lead to the resulting page.</p>                        
+                        </div>
+                    </div>                   
+
+                    <h5>b) Touch Screen</h5>
+                    <p>We also anticipate touchscreen users. As we are coding the app, we make sure that <strong>each element is interactive on a touch screen</strong>. For example, we developed touchscreen support for the canvas element that does not natively support touchscreen drawing.</p>
+                    <div id="touchScreen">
+                        <img id="drawTouch" src="./media/baeometerMedia/draw/Draw-Touch.webp" alt="Desktop-Version-Draw">
+                        <img id="drawCursor" src="./media/baeometerMedia/draw/Draw-Cursor.webp" alt="Desktop-Version-Draw">
+                    </div>                    
+
+                    <h4>III. Responsive Design Edge Cases</h4>
+                    <p>Typically desktop screens are in landscape mode and mobile screens are in portrait mode. To make our app <strong>more accessible for a wider range of screen sizes and orientations</strong>, I coded the app so that it fully supports both desktop screens in portrait mode and mobile screens in landscape mode.</p>
+                    <div id="edgeCase">
+                        <img id="edgeTablet" src="./media/baeometerMedia/edge/Edge-Tablet.webp" alt="portrait on desktop" />
+                        <img id="edgeMobile" src="./media/baeometerMedia/edge/Edge-Phone.webp" alt="landscape on mobile" />
+                    </div>                    
+                </section>
+
+                <!-- Deliver -->
+                <section id="deliver" class="majorSections">
+                    <div class="secHead">
+                        <svg width="53" height="39" viewBox="0 0 53 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.0909 38.4573H13.25C9.58818 38.4573 6.46439 37.1994 3.87864 34.6837C1.29288 32.1519 0 29.0673 0 25.4299C0 22.3052 0.939546 19.5171 2.81864 17.0654C4.71379 14.6138 7.18712 13.0514 10.2386 12.3784C11.2505 8.69295 13.258 5.71251 16.2614 3.43712C19.2808 1.14571 22.6936 0 26.5 0C31.2058 0 35.1888 1.63444 38.4491 4.90331C41.7255 8.15616 43.3636 12.1301 43.3636 16.8251C46.1421 17.1456 48.4388 18.3473 50.2536 20.4304C52.0845 22.4815 53 24.8851 53 27.6412C53 30.6537 51.948 33.2095 49.8441 35.3086C47.7402 37.4078 45.1785 38.4573 42.1591 38.4573H28.9091V21.2717L32.7636 24.9973L36.1364 21.6322L26.5 12.0179L16.8636 21.6322L20.2364 24.9973L24.0909 21.2717V38.4573Z" fill="#9371F4"/>
+                        </svg>  
+                        <h2>Deliver</h2>
+                    </div>
+                    <h3>Usability Tests and Iteration</h3>
+                    <p>After developing our app, I conducted multiple usability tests. From the participants of the tests, I gathered many valuable feedbacks that helped us <strong>improve our app's user experience</strong>.                        
+                    </p>
+
+                    <div class="iterations">
+                        <h4>Feedback:</h4>
+                        <p><strong>There are too many things to interact with on the front page, it is quite confusing which one to interact with and in what order.</strong></p>
+                        <p>Solution: By following the principles of Progressive Disclosure, I decided to have two additional pages before the front page to break down the overwhelming unclear user flow into a streamlined 3 steps process.</p>
+                        <div class="iterationsImgs">
+                            <img src="./media/baeometerMedia/Desktop-Version-Home-Hi.webp" alt="Before Change">
+                            <svg width="24" height="48" viewBox="0 0 24 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3L21 23.5532L3 45" stroke="white" stroke-width="6.5" stroke-linecap="round"/>
+                            </svg>
+                            <img src="./media/baeometerMedia/iterations/Add-Steps.webp" alt="After Change">
+                        </div>
+                        <hr>
+
+                        <p><strong>Due to the low multiplier of our original algorithm, the resulting score is relatively low. 
+                            Many of the testers reflected that they did not like the "bad fortune" results they were getting.
+                            As an app for entertainment, we need to make sure users are satisfied with the results</strong> </p>
+                        <p>Solution: Make changes to the underlying algorithm, and boost the test results up.</p>
+                        <div class="iterationsImgs">
+                            <img src="./media/baeometerMedia/iterations/Before-Increase.webp" alt="Before Change">
+                            <svg width="24" height="48" viewBox="0 0 24 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3L21 23.5532L3 45" stroke="white" stroke-width="6.5" stroke-linecap="round"/>
+                            </svg>
+                            <img src="./media/baeometerMedia/iterations/Increase-Result.webp" alt="After Change">
+                        </div>
+                        <hr>
+
+                        <p><strong>Some testers said they wanted to redraw the picture on the canvas, and hitting the reload button reloads the entire website.</strong></p>
+                        <p>Solution: Add a delete button on the canvas-drawing page.</p>
+                        <div class="iterationsImgs">
+                            <img src="./media/baeometerMedia/Desktop-Version-Draw-Hi.webp" alt="Before Change">
+                            <svg width="24" height="48" viewBox="0 0 24 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3L21 23.5532L3 45" stroke="white" stroke-width="4.5" stroke-linecap="round"/>
+                            </svg>
+                            <img src="./media/baeometerMedia/iterations/Add-Delete.webp" alt="After Change">
+                        </div>                        
+                    </div>
+
+   
+
+                    <div class="iterations">
+                        <h4>Observation:</h4>
+                        <p><strong>Testers often hit the next button before filling out the blanks, which triggers an error message.</strong></p>
+                        <p>Solution: Use grayed-out buttons to signify the button is inactive at this moment. And hitting enter key will automatically focus on the field that needs to be completed.</p>
+                        <div class="iterationsImgs">
+                            <img src="./media/baeometerMedia/iterations/Alert-Fill.webp" alt="Before Change">
+                            <svg width="24" height="48" viewBox="0 0 24 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3L21 23.5532L3 45" stroke="white" stroke-width="4.5" stroke-linecap="round"/>
+                            </svg>                               
+                            <img src="./media/baeometerMedia/iterations/Add-Grayout.webp" alt="After Change">
+                        </div>
+                    </div>
+
+                    <h3>Try It Out</h3>
+                    <div>
+                        <div class="tryItOutTitles">
+                            <div>
+                                <h4>Interactive Website</h4>
+                                <p>Click the screen below to interact</p>
+                            </div>
+                            <a class="linkBtn" target="_blank" href="https://jasonarong.github.io/baeometer/">Visit</a>    
+                        </div>                        
+                        <iframe loading="lazy" src="https://jasonarong.github.io/baeometer/" frameborder="0"></iframe>
+                    </div>
+                    <div>
+                        <div class="tryItOutTitles">
+                            <div>
+                                <h4>Prototype</h4>
+                                <p>Click the screen below to interact</p>
+                            </div>
+                            <a class="linkBtn" target="_blank" href="https://www.figma.com/proto/n8ZghzToOscxGbh3v92xGj/Baeometer-(high-fidelity)?type=design&node-id=103-27&t=7CIt53lROF4vRZ6X-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=103%3A27">
+                                Visit 
+                            </a>    
+                        </div>
+                        
+                        <iframe loading="lazy" id="mobileFigma" style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fn8ZghzToOscxGbh3v92xGj%2FBaeometer-(high-fidelity)%3Ftype%3Ddesign%26node-id%3D107-136%26t%3DBj2Jr2OyWCyoxfC9-1%26scaling%3Dscale-down%26page-id%3D103%253A46%26starting-point-node-id%3D107%253A136%26mode%3Ddesign" allowfullscreen></iframe>
+                        <iframe loading="lazy" id="desktopFigma" style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fn8ZghzToOscxGbh3v92xGj%2FBaeometer-(high-fidelity)%3Ftype%3Ddesign%26node-id%3D103-27%26t%3DfPurx0I1nnvcGbCz-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D103%253A27%26mode%3Ddesign" allowfullscreen></iframe>
+                    </div>
+                    
+                </section>                
+            </section>
+        </main>
+    </body>
+    <script src="./scripts/navigation.js"></script>
+    <script src="./scripts/highlightOnScroll.js"></script>
+</html>

@@ -1,0 +1,396 @@
+/* Global */
+@import url(global.css);
+
+
+/* Content */
+#mainContent{
+    max-width: 960px;
+}
+/* Intorduction */
+#introduction{
+    display: flex;
+    padding-top: 30px;
+    width: 100%;
+}
+
+#introduction h2{
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+h1{
+    font-size: 50px;
+    margin: 0;
+}
+    
+h1 span{
+    background: linear-gradient(90deg, #487BFF 0%, #FFF 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#introText p{
+    line-height:1.5;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+
+
+#socialIcons{
+    display: flex;
+    align-items: center;
+    gap:18px;
+    margin-top: 60px;
+
+}
+#socialIcons svg{
+    fill: #eee;
+    transition: 0.15s;
+}
+
+#socialIcons svg:hover{
+    fill: #6f98ff;
+}
+
+
+/* UI Alien */
+#coolStuff{
+    min-width: 364px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#UIalienS{
+    cursor: pointer;
+}
+#blush rect{
+    fill: #C2C2C2;
+    transition: 0.25s ease;
+}
+#eyeClose,
+#eyeOpen{
+    transition: 0.25s ease;
+}
+
+#output{
+    opacity: 0;
+    transition: 0.2s;
+}
+
+#UIalienMobile{
+    display: none;
+}
+
+
+/* Projects */
+#projects{
+    margin-top: 30px;
+    width: 100%;
+}
+#projects a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.project{
+    height: 480px;
+    width: 100%;
+    max-width: 960px;
+
+    display: flex;
+    margin-bottom: 40px;
+
+    border-radius: 20px;
+    border: 0.5px solid #c2c2c25f;
+    overflow: hidden;
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.project:hover{
+    box-shadow: 0px 0px 18px 0px rgba(255, 255, 255, 0.35);
+}
+
+
+.projectImage{
+    width: 63%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#baeometerImg{
+    background-image: url("../media/BaeometerMockup.jpg");
+}
+#artPlaceImg{
+    background-image: url("../media/artPlaceMockup.webp");
+}
+.projectInfo{
+    width: 37%;
+    min-width: 284px;
+    background-color: #222222;
+
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+}
+
+.projectInfo h3{
+    font-size: 20px;
+    color: #C2C2C2;
+    margin-bottom: 0;
+}
+.projectInfo h2{
+    font-size: 40px;
+    margin: 0;
+}
+#baeometerProject .projectInfo h2{
+    background: linear-gradient(90deg, #F9B1B1 0%, #DB8FFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#artPlaceProject .projectInfo h2{
+    color: #FFCA2A;
+    text-shadow: 0px 0px 13px rgba(255, 255, 255, 0.40);
+
+}
+
+.taskList{
+    margin-top: 50px;
+    color: #C2C2C2;
+}
+
+/* ///Contact/// */
+hr{
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+#contact{
+    color: #EEE;
+
+    display: flex;
+    width: 100%;
+    max-width: 960px;
+
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+#emailInfo{
+    padding-left: 5px;
+}
+
+#contact h2{
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+#contact h3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#contact svg{
+    fill: #EEE;
+}
+
+#myEmail{
+    background-color: var(--lightBack);
+    padding: 10px 20px;
+    border-radius: 10px;
+    max-width: 300px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+.visitLinks{
+    display: flex;
+    gap:10px;
+
+    margin: 20px 0 50px 0;
+}
+.linkBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    background-color: #eeeeee00;
+    text-decoration: none;
+    font-size: 16px;
+
+    border: 1.5px solid var(--borderColor);
+    border-radius: 50px;
+
+    width: 140px;
+    height: 46px;
+    padding: 0 8px;
+
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.linkBtn:hover{
+    color: var(--background);
+    background-color: #fff;
+    border: 1.5px solid var(--paragraph);
+}
+
+.linkBtn.fill{
+    color: var(--background);
+    background-color: #fff;
+    border: 1.5px solid var(--paragraph);
+}
+.linkBtn.fill:hover{
+    color: #fff;
+    background-color: var(--borderColor);
+    border: 1.5px solid var(--borderColor);
+}
+
+
+
+#contactWays{
+    border-left: var(--border);
+    padding: 20px 40px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 42%;
+}
+
+
+#contactWays a{
+    display: flex;
+    color: #EEE;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    text-align: center;
+
+    border: 1px solid var(--borderColor);
+    border-radius: 10px;
+    padding: 12px;
+
+    transition: 0.2s ease;
+}
+
+.spaceHolder{
+    width: 26px;
+}
+
+#contactWays a:hover{
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.25);
+}
+
+/* Small Screen */
+@media only screen and (max-width: 767px), 
+screen and (max-height: 480px) {
+    
+    /* Introduction */
+    #introduction h2{
+        font-size: 20px;
+    }
+    h1{
+        max-width: 200px;
+        font-size: 40px;
+    }
+
+    #introText p {
+        font-size: 16px;
+    }
+    /* UI Alien */
+    #coolStuff{
+        display: none;
+    }
+    #UIalienMobile{
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+
+        width: 150px;
+        z-index: -1;
+        opacity: 0.25;
+    }
+
+    /* Project */
+    .project{
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .projectInfo{
+        min-width: 0;
+        width: 100%;
+        padding: 20px;
+    }
+    .projectInfoContainer{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        gap: 10px
+    }
+    .projectInfoContainer > div{
+        max-width: 300px;
+    }
+
+    .projectImage{
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    .projectInfo h3 {
+        margin-top: 0;
+        font-size: 16px;
+    }
+    .projectInfo h2{
+        font-size: 30px;
+    }
+    .projectInfo p{
+        font-size: 14px;
+    }
+
+    .taskList{
+        margin-top: 0;
+    }
+
+    /* Contact */
+    #contact{
+        flex-direction: column;
+    }
+    #contact h2{
+        font-size: 30px;
+    }
+
+    #emailInfo{
+        width: 100%;
+        max-width: 300px;
+        margin: 30px auto 0 auto;
+        padding: 0;
+    }
+    .visitLinks{
+        margin-bottom: 20px;
+    }
+
+
+    #contactWays{
+        width: 100%;
+        
+        border: none;
+        padding: 20px;
+    }
+
+    /* Even smaller screen */
+    @media only screen and (max-width: 310px){
+        .projectInfoContainer{
+            flex-direction: column;
+        }
+    } 
+}

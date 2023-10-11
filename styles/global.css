@@ -1,0 +1,315 @@
+:root {
+    --borderColor: #c2c2c25f;
+    --border: 0.2px solid #c2c2c25f;
+
+    --secBottom: 60px;
+
+    --lightBack: #292929;
+    --background: #1E1E1E;
+    --paragraph: #d5d5d5;
+
+    --defineColor: #6EE9F0;
+    --developColor: #DB82F0;
+    --deliverColor: #A07EFF;
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/Inter/static/Inter-Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Inter/static/Inter-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/Inter/static/Inter-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/Inter/static/Inter-SemiBold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/Inter/static/Inter-Bold.ttf") format("truetype");
+}
+
+/* Global Rules*/
+*{
+    box-sizing: border-box;
+    /* border: 1px solid red !important; */
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    display: flex;
+
+    font-family: 'Inter',sans-serif;
+    color: white;
+    letter-spacing: 0.18px;
+
+    background-color: var(--background);
+}
+
+h1{
+    font-size: 40px;
+}
+hr{
+    border: none;
+    border-top: var(--border);
+}
+
+/* ///Side bar/// */
+aside{
+    border-right: var(--border);
+    padding-left: 40px;
+    position: fixed;
+    height: 100vh;
+    overflow: scroll;
+    background-color: var(--background);
+}
+aside h2{
+    margin:0;
+    padding: 50px 0 50px 40px;
+    font-size: 20px;
+    position: fixed;
+    background: linear-gradient(180deg, var(--background) 70%, rgba(30, 30, 30, 0.00) 100%);
+
+    width: 280px;
+    left: 0;
+    z-index: 2;
+}
+aside h2 a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Navigation */
+nav{
+    margin-top: 146px;
+    margin-bottom: 100px;
+
+    cursor: pointer;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    min-width: 240px;
+}
+nav li{
+    font-weight: 700;
+}
+.options{
+    /* transition: 0.2s ease; */
+    border-right: 4px solid #ffffff00;
+}
+.options:hover{
+    border-right: 4px solid #767676;
+    background: linear-gradient(270deg, #3b3b3b 0%, #51515100 100%);
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF; 
+    padding: 14px 12px 14px 0;
+}
+nav button {
+    height: 46.5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    padding: 0 6px 0 0;
+
+    color: #FFFFFF; 
+    font-weight: 700;
+    font-size: 16px;
+
+    cursor: pointer;
+
+
+    /* Display initiate to none, and enabled to flex by js */
+    display: none;
+}
+
+.projectNames{
+    font-weight: 200;
+}
+
+.dropDown{
+    padding-left: 10px;
+    font-weight: 200;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.2s ease-out;
+}
+
+.arrowIcon{
+    transition: 0.2s ease-out;;
+}
+.arrowIcon.expand{
+    transform: rotate(0.25turn);
+}
+
+
+.options.selected{
+    border-right: 4px solid #487BFF;
+    background: linear-gradient(270deg, #50659C 0%, rgba(80, 101, 156, 0.00) 100%);
+}
+
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width: 280px;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(30, 30, 30, 0.00) 0%, var(--background) 30%);
+
+    padding-top: 20px;
+}
+
+footer p{
+    font-size: 12px;
+    font-weight: 400;
+    margin: 20px 0;
+    background-color: var(--background);
+}
+footer p span{
+    color: #C2C2C2;
+}
+
+
+/* Content */
+main{
+    margin-left: 280px;
+    padding: 0 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#mainContent{
+    width: 100%;
+}
+
+
+
+/* Responsive design */
+/* humberger and side menu */
+#check {
+    position: fixed;
+    top: 40px;
+    right: 10px;
+    height: 3rem;
+    width: 3rem;
+    opacity: 0;
+    z-index: 3;
+    background-color: red;
+    display: none;
+}
+#hamMenu{
+    height: 3rem;
+    width: 3rem;
+    position: fixed;
+    top: 40px;
+    right: 10px;
+    padding: 0.5rem;
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: black; */
+}
+
+#hamMenu .line {
+    background-color: white;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.40);
+    border-radius: 1em;
+    width: 2rem;
+    height: 0.25rem;
+}
+
+#hamMenu .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 100ms ease-in-out;
+}
+
+#hamMenu .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 100ms ease-in-out;
+}
+
+#check:checked~#hamMenu .line1 {
+    display: block;
+    transform: rotate(45deg);
+}
+
+#check:checked~#hamMenu .line2 {
+    opacity: 0;
+}
+
+#check:checked~#hamMenu .line3 {
+    display: block;
+    transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 767px), 
+screen and (max-height: 480px){
+    main{
+        margin-left: 0;
+    }
+
+    /* Aside Navigation */
+    aside{
+        width: 100vw;
+        overflow-x: hidden;
+        opacity: 0;
+        transform: translateX(-100%); 
+        transition: transform 0.3s ease-in-out, opacity 0.5s;
+    }
+    aside h2{
+        width: 100vw;
+    }
+    footer {
+        display: none;
+    }
+
+    /* humburger menu */
+    #check {
+        display: block;
+    }
+    #hamMenu{
+        display: flex;
+    }
+
+
+
+    #check:checked~aside{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    
+
+    /* Content */
+    main{
+        padding: 0 20px;
+    }
+}

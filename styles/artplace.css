@@ -1,0 +1,302 @@
+@import url(global.css);
+@import url(project.css);
+
+/* /////PAGE///// */
+
+
+/* //Overview// */
+h1{
+    color: #ffca2a;
+    text-shadow:0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+#mainTitle svg{
+    border-radius: 11px;
+    box-shadow:0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+/* My Efforts */
+#myEfforts{
+    font-weight: 300;
+
+    padding: 20px;
+    border: var(--border);
+    border-radius: 10px;
+
+    margin-bottom: var(--secBottom);
+}
+
+/* //Discover// */
+/* competitive analysis */
+.competitorsInfo img{
+    width: 78px;
+    border-radius: 16px;
+    border: var(--border);
+}
+
+/* //Define// */
+/* Persona */
+#persona{
+    padding: 40px;
+    padding-bottom: 30px;
+    border: var(--border);
+    border-radius: 10px;
+
+    
+    margin-bottom: var(--secBottom);
+}
+#personaContainer{
+    display: flex;
+    gap: 40px;
+}
+
+#personaBack{
+    min-width: 200px;
+}
+#personaBack p{
+    font-size: 14px;
+}
+#personaPic{
+    min-width: 0;
+    width: 100%;
+    max-width: 260px;
+    aspect-ratio: 1/1;
+    border-radius: 20rem;
+}
+#persona h4{
+    font-size: 24px;
+}
+#persona h5{
+    margin-top: 15px;
+    margin-bottom: 0;
+    color: var(--defineColor);
+}
+#cassieQoute{
+    font-family: serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+#personaInfo{
+    display: flex;
+    gap: 20px;
+}
+#personaInfo div{
+    /* width: 50%; */
+    border: var(--border);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#personaInfo h5{
+    margin-left: 10px;
+    margin-top: 0;
+    
+}
+#personaInfo ul{
+    margin-top: 4px;
+}
+
+/* Information Architecture */
+#infoArchi{
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* //Develop// */
+#develop h4{
+    color: #E886FF;
+}
+
+/* Low Fidelity */
+#handDrawn{
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+
+    margin-bottom: var(--secBottom);
+}
+#handDrawn img{
+    width: 100%;
+    max-width: 230px;
+    border-radius: 10px;
+    opacity: 0.94;
+}
+
+#handDrawnContainer1,
+#handDrawnContainer2{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+}
+#handDrawnContainer1{
+    justify-content: flex-end;
+}
+#handDrawnContainer2{
+    justify-content: flex-start;
+}
+
+
+
+#wireframeDigital,
+#wireframeDigitalMobile{
+    width: 100%;
+    margin-bottom: var(--secBottom);
+}
+#wireframeDigitalMobile{
+    display:none;
+}
+/* High Fidelity */
+.hiFiDisplay{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+.hiFiDisplay img{
+    width: 100%;
+    border-radius: 10px;
+}
+#lastDisplay{
+    margin-bottom: 60px;
+}
+
+a[href="#prototypeDisplay"]{
+    color:#E886FF;
+    font-weight: 600;
+}
+
+/* //Deliver// */
+#deliver h4{
+    color: var(--deliverColor);
+}
+/* Test and Iteration */
+.iterations{
+    margin-bottom: 80px;
+}
+.iterationsImgs{
+    width: 70%;
+    margin: 40px auto 0px auto;
+}
+.iterationsImgs img{
+    width: 75%;
+    border-radius: 15px;
+    border: 0.3px solid var(--borderColor);
+}
+
+#followingIteration{
+    margin-bottom: 30px;
+}
+#followingIteration img{
+    border: none;
+    width: 78%;
+}
+
+/* Feature showcase */
+#userNeeds1{
+    margin-top: 45px;
+}
+.featureShowcase{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    
+    margin-top: 30px;
+    margin-bottom: 90px;
+}
+.featureShowcase p{
+    margin-top: 0;
+}
+
+.featureShowcase h5:nth-child(1){
+    margin-top: 0;
+}
+
+.featuresImgContainer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.featuresImgContainer img{
+    width: 30%;
+}
+.featureShowcase img,
+.featureShowcase div{
+    width: 85%;
+    border-radius: 10px;
+}
+
+
+
+/* ///Responsive Design/// */
+@media only screen and (max-width: 767px), 
+screen and (max-height: 480px){
+    /* //Discover// */
+    /* competitive analysis */
+    .competitorsInfo img{
+        width: 60px;
+    }
+
+    /* //Define// */
+    /* Persona*/
+    #persona{
+        padding: 10px;
+    }
+    #personaContainer{
+        flex-direction: column;
+        gap: 0;
+    }
+    #personaPic{
+        max-width: 230px;
+        display: block;
+        margin: 20px auto 20px auto;
+    }
+    #persona h4{
+        text-align: center;
+    }
+    #personaInfo{
+        flex-direction: column;
+    }
+
+
+    /* //Develop// */
+    /* Low Fidelity */
+    #wireframeDigital,
+    #wireframeDigitalMobile{
+        display: none;
+    }
+    #wireframeDigitalMobile{
+        display: block;
+    }
+
+    .lofiPrototype{
+        display: none;
+    }
+    /* High-fidelity Design */
+    .hiFiDisplay{        
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* //Deliver// */
+    /* Iteration */
+    .iterationsImgs {
+        width: 85%;
+    }
+    /* Feature Showcase */
+    .featureShowcase{
+        grid-template-columns: 1fr;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .featureShowcase h5{
+        margin-top: 15px;
+    }
+    .featureShowcase img{
+        width: 85%;
+        display: block;
+        margin: 0 auto;
+    }
+
+}

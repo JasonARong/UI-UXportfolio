@@ -1,0 +1,402 @@
+/* Global */
+@import url(global.css);
+@import url(project.css);
+
+
+/* Prototype Displays */
+.prototypeDisplay{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px;
+
+    margin-bottom: var(--secBottom);
+}
+.prototypeDisplay .displayEle{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.prototypeDisplayMobile{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+
+    margin-bottom: var(--secBottom);
+}
+.prototypeDisplayMobile .displayEleMobile{
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+
+/* Feature Display */
+.featureDisplay{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+    margin-bottom: var(--secBottom);
+}
+.featureDisplay img{
+    width: 100%;
+    grid-column: span 2;
+    border-radius: 10px;
+}
+.featureDisplay p{
+    margin-top: 0;
+}
+
+/* Cards Display */
+.cardsDisplay div{
+    background-color: var(--lightBack);
+    border: var(--border);
+    border-radius: 10px;
+}
+.cardsDisplay img{
+    border-radius: 10px 10px 0 0;
+}
+.cardsDisplay h5{
+    margin: 10px 15px 0px 15px;
+    /* color: var(--developColor); */
+}
+.cardsDisplay p{
+    margin: 5px 15px 15px 15px;
+}
+
+
+
+/* /////PAGE///// */
+
+/* //Overview// */
+
+/* Title
+ => project.css */
+ h1{
+    background: linear-gradient(90deg, #F9B1B1 0%, #DB8FFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* My efforts and Team */
+#effortTeam{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    margin-bottom: 18px;
+}
+#effortTeam div{
+    font-weight: 300;
+
+    padding: 20px;
+    border: var(--border);
+    border-radius: 10px;
+}
+#visitTeamBtn{
+    margin-bottom: var(--secBottom);
+}
+
+/* Design Process
+ => project.css */
+
+
+
+/* //Discover//
+ => project.css */
+
+
+/* //Define// */
+/* Persona */
+#persona{
+    padding: 40px;
+    border: var(--border);
+    border-radius: 10px;
+
+    display: flex;
+    gap: 40px;
+    margin-bottom: var(--secBottom);
+}
+#personaBack{
+    min-width: 200px;
+}
+#personaBack p{
+    font-size: 14px;
+}
+#personaPic{
+    min-width: 0;
+    width: 100%;
+    max-width: 260px;
+    aspect-ratio: 1/1;
+    border-radius: 20rem;
+}
+#persona h4{
+    font-size: 24px;
+}
+#persona h5{
+    color: var(--defineColor);
+}
+#cassieQoute{
+    font-family: serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+#personaInfo{
+    display: flex;
+    gap: 20px;
+}
+#personaInfo div{
+    width: 50%;
+    border: var(--border);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#personaInfo h5{
+    margin-left: 10px;
+    margin-top: 0;
+    
+}
+#personaInfo ul{
+    margin-top: 4px;
+}
+
+/* User Stories 
+ => project.css*/
+
+/* User Flow */
+#userFlow{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#userFlow img{
+    max-width: 800px;
+    min-width: 0;
+}
+
+/* Information Architecture */
+#IA{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+#IA div{
+    width: 100%;
+}
+#IA img{
+    min-width: 0;
+    width: 100%;
+    max-width: 400px;
+    border: var(--border);
+    border-radius: 10px;
+}
+#IABenefits{
+    background-color: var(--lightBack);
+
+    padding: 4px 20px;
+    border-radius: 10px;
+}
+
+/* ///Develop/// */
+.wireFrameHeader{
+    color: var(--developColor);
+}
+
+#handDrawnHeader{
+    margin-top: 40px;
+}
+#handDrawn img{
+    border: var(--border);
+}
+
+.wireframe img{
+    opacity: 0.97;
+}
+
+#interactionTypes img{
+    border-radius: 10px 10px 0 0;
+}
+
+
+#styleGuide{
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: var(--secBottom);
+}
+#styleGuide img{
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+    border:var(--border);
+    border-radius: 10px;
+}
+
+#progress{
+    margin-top: 0;
+}
+#progressDisplay{
+    margin-bottom: 10px;
+}
+
+/* Web APP */
+#designEngineering{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    margin-bottom: var(--secBottom);
+}
+#designEngineering div{
+    width: 50%;
+    border: var(--border);
+    padding: 0 20px;
+    border-radius: 10px;
+}
+#designEngineering h5{
+    color: var(--developColor);
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#keyboardSupport{
+    margin-top: 0;
+}
+
+
+#touchScreen, 
+#edgeCase{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    margin-bottom: var(--secBottom);
+}
+#touchScreen img,
+#edgeCase img{
+    min-width: 0;
+    
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.15);
+}
+
+#drawCursor{
+    width: 100%;
+    max-width: 430px;
+    border-radius: 5px;
+    
+}
+#drawTouch{
+    width: 100%;
+    max-width: 200px;
+    border-radius: 30px;
+}
+
+#edgeTablet{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px;  
+}
+#edgeMobile{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 25px;
+}
+
+
+
+/* //Deliver// 
+ => project.css */
+
+
+
+/* ///Responsive Design/// */
+@media only screen and (max-width: 767px), 
+screen and (max-height: 480px){
+    /* Global
+     => project.css */
+
+    .prototypeDisplay,
+    .prototypeDisplayMobile{
+        grid-template-columns: 1fr;
+    }
+    .prototypeDisplayMobile .displayEleMobile{
+        width: 60%;
+    }
+
+
+    /* Overview */
+    /* Title 
+     => project.css */
+    #effortTeam{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    #effortTeam div{
+        padding: 10px;
+    }
+
+    /* Discover 
+     => project.css */
+
+    /* Define */
+    /* Persona*/
+    #persona{
+        flex-direction: column;
+        gap: 0;
+
+        padding: 10px;
+    }
+    #personaPic{
+        max-width: 230px;
+        display: block;
+        margin: 20px auto 20px auto;
+    }
+    #persona h4{
+        text-align: center;
+    }
+    #personaInfo{
+        flex-direction: column;
+    }
+    #personaInfo div{
+        width: 100%;
+    }
+    
+    /* User stories 
+     => project.css*/
+
+    #IA {
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   
+
+    /* Develop */
+    #designEngineering{
+        flex-direction: column;
+    }
+    #designEngineering div{
+        width: 100%;
+    }
+
+    #touchScreen,
+    #edgeCase{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    #drawCursor{
+        border-radius: 8px;
+    }
+    #drawTouch{
+        width: 60%;
+        border-radius: 28px;
+    }
+
+    /* Deliver 
+     => project.css**/
+}
