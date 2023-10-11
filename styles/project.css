@@ -384,8 +384,10 @@ screen and (max-height: 480px){
         font-size: 16px;
         margin-bottom: 5px;
     }
-    p,li,div{
-        font-size: 13px;
+    main p,
+    main li,
+    main div{
+        font-size: 14px;
     }
 
     main{
@@ -400,6 +402,7 @@ screen and (max-height: 480px){
     #UIalienBae{
         max-width: 140px;
         transform: translateY(-100px);
+        filter: brightness(0.5);
     }
 
     /* Discover */
