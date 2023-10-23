@@ -1,2 +1,274 @@
 /* Global */
 @import url(global.css);
+
+
+#mainContent{
+    max-width: 960px;
+    margin-bottom: var(--secBottom);
+}
+
+p{
+    line-height: 1.6;
+}
+/* /////PAGE///// */
+.projectShowcase{
+    margin-bottom: 0;
+}
+hr{
+    margin: 75px 0;
+}
+/* //introduction// */
+#introduction{
+    display: flex;
+    padding-top: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+h1{
+    font-size: 50px;
+    margin: 0;
+}
+h1 span{
+    background: linear-gradient(90deg, #487BFF 0%, #FFF 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#introText p{
+    line-height:1.5;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+/* UI Alien */
+#UIalienMobile{
+    display: none;
+}
+#coolStuff{
+    min-width: 364px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 40px;
+}
+#UIalienS{
+    cursor: pointer;
+}
+#blush rect{
+    fill: #C2C2C2;
+    transition: 0.25s ease;
+}
+#eyeClose,
+#eyeOpen{
+    transition: 0.25s ease;
+}
+
+#output{
+    opacity: 0;
+    transition: 0.2s;
+}
+
+#UIalienMobile{
+    display: none;
+}
+
+
+
+
+/* //Showcase// */
+#topHr{
+    margin-top: 20px;
+}
+/* Project Title */
+.projectTitle{
+    display: flex;
+    gap: 28px;
+}
+.projectTitle img{
+    width: 120px;
+    aspect-ratio: 1 / 1;
+     border-radius: 24px;
+}
+h3{
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    /* letter-spacing: 1px; */
+}
+.projectTitle p{
+    margin-top: 0px;
+    font-size: 22px;
+    color: var(--paragraph);
+}
+
+
+/* Visit Link Buttons */
+.visitLinks{
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+
+    margin: 20px 0 20px 0;
+}
+
+.linkBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-decoration: none;
+    border: 1.5px solid var(--borderColor);
+    border-radius: 50px;
+
+    width: 140px;
+    height: 46px;
+    padding: 0 8px;
+
+    transition: 0.2s ease;
+}
+
+.linkBtn:hover{
+    color: var(--background);
+    background-color: #fff;
+    border: 1.5px solid var(--paragraph);
+}
+
+.linkBtn.fill{
+    color: var(--background);
+    background-color: #fff;
+    border: 1.5px solid var(--paragraph);
+}
+.linkBtn.fill:hover{
+    color: #fff;
+    background-color: var(--borderColor);
+    border: 1.5px solid var(--borderColor);
+}
+
+/* Description */
+.textDescription{
+    background-color: var(--lightBack);
+    padding: 20px;
+    border-radius: 20px;
+}
+.textDescription strong{
+    color: #eee;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+strong{
+    color: #9f9f9f;
+    
+}
+
+/* Prototype Display */
+.prototypeDisplay{
+    margin-top: 20px;
+}
+.columns6{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+
+    margin-bottom: 40px;
+}
+
+.columns2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(307px, 1fr));
+    gap: 20px;
+
+    margin-bottom: 0;
+}
+.prototypeDisplay .displayEle{
+    width: 100%;
+    border-radius: 10px;
+    border: 0.5px solid #c2c2c25f;
+
+    object-fit: cover;
+}
+
+.columns2 .displayEle{
+    aspect-ratio: 1.65/1;
+}
+
+/* ///Responsive Design/// */
+@media only screen and (max-width: 767px), 
+screen and (max-height: 480px){
+    #mainContent{
+        margin-bottom:10px;
+    }
+    hr{
+        margin: 50px 0;
+    }
+
+    /* //introduction// */
+    #introduction{
+        margin: 50px 0 70px 0;
+    }
+    p{
+        font-size: 14px;
+    }
+    /* UI Alien */
+    #coolStuff{
+        display: none;
+    }
+    #UIalienMobile{
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+
+        width: 150px;
+        z-index: -1;
+        opacity: 0.25;
+    }
+    
+    /* Show Case */
+    .projectShowcase{
+        margin-bottom: var(--secBottom);
+    }
+    /* Project Title */
+    h1{
+        font-size: 40px;
+        max-width: 100px;
+    }
+    #introText p{
+        font-size: 16px;
+    }
+
+
+    .projectTitle{
+        display: flex;
+        gap: 10px;
+    }
+    .projectTitle img{
+        width: 85px;
+        height: 85px;
+        border-radius: 20px;
+    }
+    h3{
+        font-size: 22px;
+        margin-top: 5px;
+        margin-bottom: 0;
+        /* letter-spacing: 1px; */
+    }
+    .projectTitle p{
+        margin-top: 0px;
+        font-size: 18px;
+        color: var(--paragraph);
+    }
+
+
+    .columns6{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .columns2{
+        width: 90%;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        margin: 0 auto 40px auto;
+    }
+}

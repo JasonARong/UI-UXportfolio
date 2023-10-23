@@ -400,9 +400,10 @@ screen and (max-height: 480px){
         display: none;
     }
     #UIalienBae{
-        max-width: 140px;
+        display: none;
+        /* max-width: 140px;
         transform: translateY(-100px);
-        filter: brightness(0.5);
+        filter: brightness(0.5); */
     }
 
     /* Discover */

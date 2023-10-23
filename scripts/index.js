@@ -24,8 +24,12 @@ window.onmousemove = e => {
     let rangeX = (e.clientX - centerX) / radius;
     let rangeY = (e.clientY - centerY) / radius;
     
-    shift(eyeIn, 8, rangeX, rangeY);
-    shift(eyeOut, 5, rangeX, rangeY);
+    if(rangeX<1.1 && rangeY<1.1){
+        shift(eyeIn, 8, rangeX, rangeY);
+        shift(eyeOut, 5, rangeX, rangeY);
+        // console.log(rangeX);
+        // console.log(rangeY);
+    }
 }
 
 document.body.onmouseleave = () => {
@@ -67,14 +71,22 @@ UIalienS.addEventListener('mouseout', () => {
 
 
 //UI alien talking
-const strings = ['Hello! How\'s going?', 
+let strings = [ 'Hello! How\'s going?', 
                 'Welcome to Jiecheng\'s protfolio.', 
                 'He is an awesome UI/UX Designer.',
                 'I hope you enjoy his works!'];
+const otherProjectStrings = [
+                'Here are some more projects.',
+                'Please Enjoy!'  
+                ];                
 let currentIndex = 0;
 let typingTimer; //timer for the typewriter effect.
 
-
+let path = window.location.pathname;
+console.log( path );
+if(path=='/otherProjects.html'){
+    strings = otherProjectStrings;
+}
 
 //charIndex: the curr index of the char in the string
 function typeString(str, charIndex) { 

@@ -57,7 +57,7 @@ body{
     display: flex;
 
     font-family: 'Inter',sans-serif;
-    color: white;
+    color: #eee;
     letter-spacing: 0.18px;
 
     background-color: var(--background);

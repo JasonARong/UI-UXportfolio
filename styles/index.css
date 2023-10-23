@@ -126,6 +126,9 @@ h1 span{
 #artPlaceImg{
     background-image: url("../media/artPlaceMockup.webp");
 }
+#otherProjectsImg{
+    background-image: url("../media/otherProjectsMockup.webp");
+}
 .projectInfo{
     width: 37%;
     min-width: 284px;
@@ -144,6 +147,9 @@ h1 span{
 .projectInfo h2{
     font-size: 40px;
     margin: 0;
+}
+#otherProjects h2{
+    font-size: 33px;
 }
 #baeometerProject .projectInfo h2{
     background: linear-gradient(90deg, #F9B1B1 0%, #DB8FFF 100%);
