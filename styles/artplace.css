@@ -52,6 +52,7 @@ h1{
     min-width: 200px;
 }
 #personaBack p{
+    margin-top: 0;
     font-size: 14px;
 }
 #personaPic{
@@ -92,6 +93,10 @@ h1{
 }
 #personaInfo ul{
     margin-top: 4px;
+}
+#persona li{
+    line-height: 1.5;
+    margin-bottom: 9px;
 }
 
 /* Information Architecture */

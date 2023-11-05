@@ -162,6 +162,10 @@
 #personaInfo ul{
     margin-top: 4px;
 }
+#personaInfo li{
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
 
 /* User Stories 
  => project.css*/
@@ -201,9 +205,13 @@
 }
 
 /* ///Develop/// */
-.wireFrameHeader{
+#develop h4 {
     color: var(--developColor);
 }
+
+/* .wireFrameHeader{
+    color: var(--developColor);
+} */
 
 #handDrawnHeader{
     margin-top: 40px;
