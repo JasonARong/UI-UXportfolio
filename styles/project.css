@@ -1,4 +1,7 @@
 /* Global */
+main{
+    z-index: -1;
+}
 #mainContent{
     line-height: 1.8;
     max-width: 960px;
