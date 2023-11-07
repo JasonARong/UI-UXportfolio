@@ -408,6 +408,11 @@ screen and (max-height: 480px){
         transform: translateY(-100px);
         filter: brightness(0.5); */
     }
+    #mainTitle svg {
+        width: 42px;
+        height: 42px;
+        border-radius: 0px;
+    }
 
     /* Discover */
     #competitiveAnalysis{
