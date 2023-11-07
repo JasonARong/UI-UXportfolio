@@ -179,6 +179,11 @@
 #userFlow img{
     max-width: 800px;
     min-width: 0;
+    aspect-ratio: 1/.9;
+    object-fit: cover;
+
+    margin-top: -15px;
+    margin-bottom: var(--secBottom);
 }
 
 /* Information Architecture */
