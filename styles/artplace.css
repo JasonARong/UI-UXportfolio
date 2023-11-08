@@ -25,6 +25,13 @@ h1{
 }
 
 /* //Discover// */
+/* Interview */
+.interviewQuestions{
+    color: #EEE;
+}
+#interviewFindings{
+    margin-bottom: var(--secBottom);
+}
 /* competitive analysis */
 .competitorsInfo img{
     width: 78px;
@@ -46,6 +53,7 @@ h1{
 #personaContainer{
     display: flex;
     gap: 40px;
+    align-items: flex-end;
 }
 
 #personaBack{
@@ -84,6 +92,7 @@ h1{
     border: var(--border);
     border-radius: 10px;
     padding: 10px;
+    margin-bottom: 14px;
 }
 
 #personaInfo h5{
@@ -252,6 +261,7 @@ screen and (max-height: 480px){
     #personaContainer{
         flex-direction: column;
         gap: 0;
+        align-items: normal;
     }
     #personaPic{
         max-width: 230px;

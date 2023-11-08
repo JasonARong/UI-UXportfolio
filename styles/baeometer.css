@@ -248,6 +248,11 @@
     border-radius: 10px;
 }
 
+#brandingDescription{
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
 #progress{
     margin-top: 0;
 }
