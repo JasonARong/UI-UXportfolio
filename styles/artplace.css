@@ -26,8 +26,13 @@ h1{
 
 /* //Discover// */
 /* Interview */
+#interviewFindings h4{
+    margin-top: 20px;
+    color: var(--discoverColor);
+}
 .interviewQuestions{
     color: #EEE;
+    margin-top: 0;
 }
 #interviewFindings{
     margin-bottom: var(--secBottom);

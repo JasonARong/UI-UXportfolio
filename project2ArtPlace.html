@@ -162,7 +162,7 @@
                         <h2>Discover</h2>
                     </div>
                     
-                    <h3>Interview</h3>
+                    <h3>Interview Insights</h3>
                     <p id="interview">As my app caters to both artists and art enthusiasts, each with distinct usage patterns, I conducted separate interviews with representatives from each group. Based on their feedback, I arrived at the following conclusions    
                     </p>
                     <p>*I recognize that a user can be both someone who posts artworks and views other’s art (an artist and a viewer at the same time), but they will be categorized differently each time they interact with the app.*                        
@@ -578,15 +578,18 @@
                         </svg>  
                         <h2>Deliver</h2>
                     </div>
-                    <h3>Usability Tests and Iteration</h3>
-                    <p>After developing our app, I conducted multiple usability tests. And from the participants of the tests, I gathered many valuable feedbacks that helped us improving our app's user experience</p>
+                    <h3>Tests and Iterations</h3>                    
 
                     <div class="iterations">
-                        <h4>I. Feedback To Improvements</h4>
-                        <p><strong>Due to the low multiplier of our original algorithm, the resulting score is relatively low. 
-                            Many of the testers reflected that they did not like the "bad fortune" results they were getting.
-                            As an app for entertainment, we need to make sure users are satisfied with the results</strong> </p>
-                        <p>Solution: Making changes to how the underlying algorithm, and boost up the test results.</p>
+                        <h4>I. Feedback To Solutions</h4>
+                        <div class="feedbackImprove"> 
+                            <p>
+                                <strong>Feedback:</strong><br>
+                                <em>"<strong>Too many steps</strong> to get to the page <strong>for uploading</strong> new artwork, not very convenient."</em></p>
+                            <p><strong>Solution: </strong><br>
+                                A <strong>floating bubble button</strong> on the bottom right corner of the main pages that <strong>leads to the upload page on-clicked</strong>.
+                            </p>
+                        </div>
                         <div class="iterationsImgs">
                             <img src="./media/artPlaceMedia/Home.webp" alt="Before Change">
                             <svg width="24" height="48" viewBox="0 0 24 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -597,8 +600,19 @@
                         <hr>
 
                         <h4>II. Observation To Improvements</h4>
-                        <p><strong>Some testers wanted to redraw the picture on the canvas, but hitting the reload button reloads the entire website.</strong></p>
-                        <p>Solution: Add a delete button on the canvas-drawing page.</p>
+                        <div class="feedbackImprove"> 
+                            <p>
+                                <strong>Observation:</strong><br>
+                                Testers quickly scroll through all the art posts feed in the following section. 
+                                It prompts me to consider the <strong>
+                                issue of running out of fresh posts to engage with
+                                </strong>
+                            </p>
+                            <p><strong>Solution: </strong><br>
+                                <strong>Add in recommended art posts</strong> in the “Following” section, 
+                                so it can bring in more content for the users, and it also helps users discover new artists to follow.
+                            </p>
+                        </div>
                         <div id="followingIteration" class="iterationsImgs">
                             <img src="./media/artPlaceMedia/Following.webp" alt="Before Change">
                             <svg width="24" height="48" viewBox="0 0 24 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -609,17 +623,17 @@
                     </div>
 
                     <h3>Features Showcase</h3>
-                    <p>From needs to features, each feature within the Art Place app is designed according to a specific user need to ensure my design stays user-centered. A couple of notable examples are listed below.                        
+                    <p><strong>From needs to features</strong>, each feature within the Art Place app is designed according to a specific user need to ensure my design stays user-centered. A couple of notable examples are listed below.                        
                     </p>
 
                     <h4 id="userNeeds1">User Needs 1: Discover New Art and Artists</h4>
                     <div class="featureShowcase">
                         <div>                            
                             <h5>Top Art/Gallery</h5>
-                            <p>Recommends top quality art and artists to users.</p>
+                            <p>Dedicated sections to host top quality art and artists.</p>
                             
                             <h5>New Artists</h5>
-                            <p>Increase new artists' visibility. Faster popularity gain. 
+                            <p>Recommends artworks made by new artists on the home page.
                             </p>
 
                             <h5>Recommended Artworks</h5>
@@ -637,8 +651,8 @@
                     <h4>User Needs 2: Search for Specific Types of Art</h4>
                     <div class="featureShowcase">
                         <div>                            
-                            <h5>Advanced Search</h5>
-                            <p>Conveniently filter artworks by subject, medium, and tag.
+                            <h5>Faceted Search</h5>
+                            <p>Conveniently search artworks by subject, medium, and tag.
                             </p>
 
                             <h5>Popular Categories</h5>
@@ -659,7 +673,7 @@
                     <div class="featureShowcase">
                         <div>                            
                             <h5>Comment Section</h5>
-                            <p>Allows users to interact with the artist and other viewers. Also helps artists to get valuable feedback.
+                            <p>Allows users to interact with the artist and other viewers. Also helps artists to get feedback.
                             </p>
                             <h5>Direct Messages</h5>
                             <p>Enables users to reach out to artists to build connections or even to make friends.

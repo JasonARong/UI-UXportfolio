@@ -50,7 +50,7 @@ a[data-item="overview"].active{
     background: linear-gradient(270deg, #515151 0%, #51515100 100%);
 }
 a[data-item="discover"].active{
-    border-right: 4px solid #487BFF;
+    border-right: 4px solid var(--discoverColor);
     background: linear-gradient(270deg, #50659C 0%, #51515100 100%);
 }
 a[data-item="define"].active{
@@ -175,7 +175,7 @@ h1{
 
 /* //Discover// */
 #discover h2{
-    background: linear-gradient(90deg, #487BFF 0%, #FFF 70%);
+    background: linear-gradient(90deg, var(--discoverColor) 0%, #FFF 70%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -226,7 +226,7 @@ h1{
 }
 .competitorsInfo h5 a{
     font-weight: 800;
-    color: #487BFF;
+    color: var(--discoverColor);
 }
 
 
@@ -305,6 +305,15 @@ h1{
 .iterations h4{
     /* font-size: 24px; */
     color: var(--deliverColor);
+}
+
+.feedbackImprove{
+    display: flex;
+    gap: 20px;
+}
+.feedbackImprove p{
+    width: 50%;
+    margin-top: 0;
 }
 
 .iterationsImgs{
@@ -437,6 +446,12 @@ screen and (max-height: 480px){
     }
 
     /* Deliver */
+    .feedbackImprove{
+        flex-direction: column;
+    }
+    .feedbackImprove p{
+        width: 100%;
+    }
     .iterationsImgs{
         grid-template-columns: 1fr;
         gap: 20px;

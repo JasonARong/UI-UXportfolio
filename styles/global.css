@@ -8,6 +8,7 @@
     --background: #1E1E1E;
     --paragraph: #d9d9d9;
 
+    --discoverColor: #5787ff;
     --defineColor: #6EE9F0;
     --developColor: #DB82F0;
     --deliverColor: #A07EFF;
@@ -183,7 +184,7 @@ nav button {
 
 
 .options.selected{
-    border-right: 4px solid #487BFF;
+    border-right: 4px solid var(--discoverColor);
     background: linear-gradient(270deg, #50659C 0%, rgba(80, 101, 156, 0.00) 100%);
 }
 
