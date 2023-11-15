@@ -7,7 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Jiecheng's UI/UX portfolio</title>
         <link href="styles/artplace.css" rel="stylesheet"  type="text/css"/>
-        <!-- <link href="images/favicon.ico" rel="icon"> -->
+        <link href="media/favicon.ico" rel="icon">
+        <link href="media/icon.svg" rel="icon" type="image/svg+xml">
     </head>
     <body>
         <input type="checkbox" name="" id="check">
@@ -60,7 +61,7 @@
                             </svg>
                         </button>
                         <div class="dropDown" id="currentMenu">
-                            <a class="options" href="#" data-item="overview">Overview</a>
+                            <a class="options active" href="#" data-item="overview">Overview</a>
                             <a class="options" href="#discover" data-item="discover">Discover</a>
                             <a class="options" href="#define" data-item="define">Define</a>
                             <a class="options" href="#develop" data-item="develop">Develope</a>
@@ -123,7 +124,7 @@
                     </div>
                     
                     <h2>Overview</h2>
-                    <p>Art Place is a versatile mobile platform dedicated to the world of art sharing. This art-sharing platform is packed with useful features such as a ranking list, chatting function for artists, and an advanced search function. This is a design that caters to the needs of two types of users — artists eager to showcase their creations and art enthusiasts who relish exploring the digital galleries.
+                    <p><strong>Art Place is a versatile mobile platform dedicated to the world of art sharing.</strong> This art-sharing platform is packed with useful features such as a ranking list, chatting function for artists, and an advanced search function. This is a design that caters to the needs of two types of users — artists eager to showcase their creations and art enthusiasts who relish exploring the digital galleries.
                     </p>
 
                     <div class="visitLinks">
@@ -161,33 +162,33 @@
                         <h2>Discover</h2>
                     </div>
                     
-                    <h3>Interview</h3>
+                    <h3>Interview Insights</h3>
                     <p id="interview">As my app caters to both artists and art enthusiasts, each with distinct usage patterns, I conducted separate interviews with representatives from each group. Based on their feedback, I arrived at the following conclusions    
                     </p>
                     <p>*I recognize that a user can be both someone who posts artworks and views other’s art (an artist and a viewer at the same time), but they will be categorized differently each time they interact with the app.*                        
                     </p>
 
-                    <div>
+                    <div id="interviewFindings">
                         <h4>I. Artists</h4>
-                        <p>Can you describe the ideal process for you to share and manage your artwork?
+                        <p class="interviewQuestions">Can you describe the ideal process for you to share and manage your artwork?
                         </p>
                         <ul>
-                            <li>People like to use tags to describe their works, because they will increase their works’ visibility by helping viewers to find them more easily.</li>
-                            <li>Artists want their favorite artworks to be the first thing to be seen on their personal page by a visitor.</li>
-                            <li>Some artists like to share art pieces in batches, such as an art series, a short comic story, or just a group of recent works. </li>
-                            <li>Artists like to customize their profile page to make it more personalized and informative in terms of telling the visitor what kind of artist they are.</li>
+                            <li>People like to have ways to <strong>label their works</strong>, because they will increase their works’ discoverability by helping visitors to find them more easily.</li>
+                            <li>Artists want their <strong>most successful artwork</strong> to be the <strong>first thing to be seen</strong> by other people.</li>
+                            <li>Some artists like to <strong>share art pieces in batches</strong>, such as an art series or a short comic story.</li>
+                            <li>Artists enjoy <strong>expressing themselves</strong>, showcasing both their artistic identity and the nature of their artistic pursuits.</li>
                         </ul>
                         <hr>
 
                         <h4>II. Art Viewers</h4>
-                        <p>Can you show me how you usually use your current art-sharing app?
+                        <p class="interviewQuestions">Can you show me how you usually use your current art-sharing app?
                         </p>
                         <ul>
-                            <li>People like to scroll through the art that is posted by the artists that they are following.</li>
-                            <li>People like to discover amazing arts and artists more easily, so they can follow the artist and see more cool art.</li>
-                            <li>Sometimes people want to find a specific type of art.</li>
-                            <li>People like to interact with other users, especially the artists.</li>
-                            <li>People like to collect art that they enjoy, and they like to organize the collected art according to their liking.</li>
+                            <li>People like <strong>see the lasted work</strong> made by their favorite artists.</li>
+                            <li>People like to <strong>discover amazing arts and artists</strong> more easily, so they can follow the artist and see more cool art.</li>
+                            <li>Sometimes people want to <strong>find a specific type of art</strong>.</li>
+                            <li>People like to <strong>interact with other users</strong>, especially with the artists.</li>
+                            <li>People like to <strong>collect art</strong> that they enjoy, and they like to <strong>organize</strong> the collected art according to their liking.</li>
                         </ul>
                     </div>
 
@@ -206,8 +207,8 @@
                             <ul>
                                 <li>Easy to upload new artworks.</li>
                                 <li>Groups function that builds communities.</li>
-                                <li>Easy to make connections with other users and artists.</li>
-                                <li>Beginner friendly, less intimidating to amateur and hobbyist</li>
+                                <li>Easy to make connections with other users.</li>
+                                <li>Beginner friendly, less intimidating to amateurs.</li>
                             </ul>
                             <p><strong>Weakness:</strong></p>
                             <ul>
@@ -215,7 +216,7 @@
                                 <li>Cannot upload images in batches.</li>
                                 <li>No regulations on AI-generated content.</li>
                                 <li>Hard to search/join groups.</li>
-                                <li>Mobile version lacks complete functionalities that are on the web.</li>
+                                <li>Mobile version lacks complete functionalities.</li>
                                 <li>Aggressive mature content protection.</li>
                             </ul>
                         </div>
@@ -239,11 +240,11 @@
                             <ul>
                                 <li>Intrusive advertisement.</li>
                                 <li>Pay-walled access to better quality artwork.</li>
-                                <li>Required Login.</li>
-                                <li>Basic filter function.</li>
-                                <li>Basic profile customization.</li>
-                                <li>Lacks direct message function.</li>
-                                <li>Difficult to share an arts post on mobile.</li>
+                                <li>Mandatory Login to get access to the app.</li>
+                                <li>Very basic filter function.</li>
+                                <li>Lackluster profile customization.</li>
+                                <li>Lacks direct message functionality.</li>
+                                <li>Difficult to share an art post on mobile.</li>
 
                             </ul>
                         </div>
@@ -260,15 +261,15 @@
                             <ul>
                                 <li>Offer browse options (grid view vs. feed view), and it is easy to switch between the two views.</li>
                                 <li>Advanced sorting/filter function.</li>
-                                <li>Can upload images in batches.</li>            
+                                <li>Help artists to advertise themselves.</li>            
                             </ul>
                             <p><strong>Weakness:</strong></p>
                             <ul>
                                 <li>Un-clickable tags.</li>
-                                <li>Confusing login.</li>
+                                <li>Confusing login process.</li>
                                 <li>No sense of community</li>
                                 <li>Daunting process to add artwork to collection.</li>
-                                <li>Cannot easily see the new works posted by followed artists.</li>
+                                <li>Cannot easily get access to the new works posted by followed artists.</li>
                             </ul>
                         </div>
 
@@ -327,14 +328,14 @@
                             </div>
 
                             <div>
-                                <p id="cassieQoute"><i>"My love for creating art, immersing myself in the vibrant world of visual storytelling, and connecting with fellow artists and art enthusiasts is what fuels my artistic journey. It's a canvas for me to share my creations while discovering the boundless creativity of others."</i></p>
+                                <p id="cassieQoute"><i>"Immersing myself in the vibrant world of visual storytelling, and connecting with fellow artists is what fuels my artistic journey."</i></p>
                                 <div id="personaInfo">                                
                                     <div>
                                         <h5><strong>Challenges and Behaviors</strong></h5>
                                         <ul>
-                                            <li>Balancing her freelance design work with her passion for creating art and engaging with the art community.</li>
-                                            <li>Finding a platform that effectively recommends art that aligns with her interests and preferences.</li>
-                                            <li>Ensuring that her art gets noticed and appreciated in a crowded online art space.</li>
+                                            <li>Balancing her freelance design work with her passion for creating art and engaging with the board art community.</li>
+                                            <li>Finding a platform that effectively recommends art that aligns with her tastes, interests and preferences.</li>
+                                            <li>Ensuring that her art gets noticed and appreciated online.</li>
                                             <li>Establish some levels of popularity on a new platform.</li>
                                         </ul>
                                     </div>
@@ -346,10 +347,10 @@
                         <div>
                             <h5><strong>Goals and Needs</strong></h5>
                             <ul>
-                                <li>Discovering Inspiring Art: As an art enthusiast, Emily is always on the lookout for fresh and inspiring artworks. </li>
-                                <li>Sharing Her Creations: Emily wants a platform where she can showcase her anime-styled art pieces and short comic series to a community that appreciates her work. She desires a space where her art can be easily organized and viewed by others.</li>
-                                <li>Engaging with the Art Community: Emily enjoys engaging with fellow art lovers and artists. She values the ability to make connections with other artists and have meaningful discussions.  </li>
-                                <li>Personalization and Expression: Emily wants a better way to use her artworks to express her unique style and personality.</li>                                       
+                                <li><strong>Discovering Inspiring Art:</strong> Emily is always on the lookout for fresh and inspiring artworks. </li>
+                                <li><strong>Sharing Her Creations:</strong> Emily wants a platform where she can showcase her anime-styled art pieces and short comic series to a community that appreciates her work. She desires a space where her art can be easily organized and viewed by others.</li>
+                                <li><strong>Engaging with the Art Community:</strong> Emily enjoys engaging with fellow art lovers and artists. She values the ability to make connections with other artists and have meaningful discussions.  </li>
+                                <li><strong>Personalization and Expression:</strong> Emily wants a better way to use her artworks to express herself.</li>                                       
                             </ul>
                         </div>
                     </div>
@@ -438,7 +439,7 @@
                     </div>
                     
                     <h3>Information Architecture</h3>
-                    <p>I have created an information architecture to ensure Art Place has a clear hierarchical structure. The IA helps me to organize different screens and information, and reminds me how users would move through my app by certain orders or steps.</p>
+                    <p>I have created an information architecture to <strong>ensure Art Place has a clear hierarchical structure</strong>. It helps me to organize different screens and information, and reminds me how users would move through my app by certain orders or steps.</p>
                     <img id="infoArchi" src="./media/artPlaceMedia/artPlaceIA.webp" alt="Art Place Information Architecture">
                 </section>
 
@@ -453,7 +454,7 @@
 
                     <h3>Low-Fidelity</h3>
                     <h4>I. Hand-Drawn Wireframe</h4>
-                    <p>I used hand-drawn sketches as my first step in the development process. Even though the sketches are very rough, they serve me well as a very low-commitment way of getting my ideas out quickly. It also allows me to establish a foundation for iterations and improvements in later development processes. 
+                    <p>I used hand-drawn sketches as my first step in the development process. Even though the sketches are very rough, they serve me well as <strong>a low-commitment way of getting my ideas out quickly</strong>. It also allows me to establish a foundation for iterations and improvements in later development processes. 
                     </p>
                     <div id="handDrawn">
                         <div id="handDrawnContainer1">
@@ -467,7 +468,7 @@
                     </div>
 
                     <h4>II. Digital Wireframe</h4>
-                    <p>Based on the hand-drawn wireframe, I made the following digital wireframe design in Figma. Digital wireframes helped me to focus on the functionality and the structure of the app. It also allows me to easily share my design with others to get feedback.
+                    <p>Based on the sketches, I made the following digital wireframe. Digital wireframes helped me to <strong>focus on the functionality and the structure</strong> of the app. It also allows me to easily share my design with others to get feedback.
                     </p>
                     <img id="wireframeDigital" src="./media/artPlaceMedia/Low-FidelityDesignS.webp" alt="Digital Lo-Fi Wireframe">
                     <img id="wireframeDigitalMobile" src="./media/artPlaceMedia/Low-FidelityDesignL.webp" alt="Digital Lo-Fi Wireframe">
@@ -577,15 +578,18 @@
                         </svg>  
                         <h2>Deliver</h2>
                     </div>
-                    <h3>Usability Tests and Iteration</h3>
-                    <p>After developing our app, I conducted multiple usability tests. And from the participants of the tests, I gathered many valuable feedbacks that helped us improving our app's user experience</p>
+                    <h3>Tests and Iterations</h3>                    
 
                     <div class="iterations">
-                        <h4>Feedback:</h4>
-                        <p><strong>Due to the low multiplier of our original algorithm, the resulting score is relatively low. 
-                            Many of the testers reflected that they did not like the "bad fortune" results they were getting.
-                            As an app for entertainment, we need to make sure users are satisfied with the results</strong> </p>
-                        <p>Solution: Making changes to how the underlying algorithm, and boost up the test results.</p>
+                        <h4>I. Feedback To Solutions</h4>
+                        <div class="feedbackImprove"> 
+                            <p>
+                                <strong>Feedback:</strong><br>
+                                <em>"<strong>Too many steps</strong> to get to the page <strong>for uploading</strong> new artwork, not very convenient."</em></p>
+                            <p><strong>Solution: </strong><br>
+                                A <strong>floating bubble button</strong> on the bottom right corner of the main pages that <strong>leads to the upload page on-clicked</strong>.
+                            </p>
+                        </div>
                         <div class="iterationsImgs">
                             <img src="./media/artPlaceMedia/Home.webp" alt="Before Change">
                             <svg width="24" height="48" viewBox="0 0 24 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -595,9 +599,20 @@
                         </div>
                         <hr>
 
-                        <h4>Observation:</h4>
-                        <p><strong>Some testers said they wanted to redraw the picture on the canvas, and hitting the reload button reloads the entire website.</strong></p>
-                        <p>Solution: Add a delete button on the canvas-drawing page.</p>
+                        <h4>II. Observation To Solutions</h4>
+                        <div class="feedbackImprove"> 
+                            <p>
+                                <strong>Observation:</strong><br>
+                                Testers quickly scroll through all the art posts feed in the following section. 
+                                It prompts me to consider the <strong>
+                                issue of running out of fresh posts to engage with.
+                                </strong>
+                            </p>
+                            <p><strong>Solution: </strong><br>
+                                <strong>Add in recommended art posts</strong> in the “Following” section, 
+                                so it can bring in more content for the users, and it also helps users discover new artists to follow.
+                            </p>
+                        </div>
                         <div id="followingIteration" class="iterationsImgs">
                             <img src="./media/artPlaceMedia/Following.webp" alt="Before Change">
                             <svg width="24" height="48" viewBox="0 0 24 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -608,17 +623,17 @@
                     </div>
 
                     <h3>Features Showcase</h3>
-                    <p>From needs to features, each feature within the Art Place app is designed according to a specific user need to ensure my design stays user-centered. A couple of notable examples are listed below.                        
+                    <p><strong>From needs to features</strong>, each feature within the Art Place app is designed according to a specific user need to ensure my design stays user-centered. A couple of notable examples are listed below.                        
                     </p>
 
                     <h4 id="userNeeds1">User Needs 1: Discover New Art and Artists</h4>
                     <div class="featureShowcase">
                         <div>                            
                             <h5>Top Art/Gallery</h5>
-                            <p>Recommends top quality art and artists to users.</p>
+                            <p>Dedicated sections to host top quality art and artists.</p>
                             
                             <h5>New Artists</h5>
-                            <p>Increase new artists' visibility. Faster popularity gain. 
+                            <p>Recommends artworks made by new artists on the home page.
                             </p>
 
                             <h5>Recommended Artworks</h5>
@@ -636,12 +651,12 @@
                     <h4>User Needs 2: Search for Specific Types of Art</h4>
                     <div class="featureShowcase">
                         <div>                            
-                            <h5>Advanced Search</h5>
-                            <p>Conveniently filter artworks by subject, medium, and tag.
+                            <h5>Faceted Search</h5>
+                            <p>Conveniently search artworks by subject, medium, and tag.
                             </p>
 
                             <h5>Popular Categories</h5>
-                            <p>Offers specific categories of art that are currently trending/popular.
+                            <p>Offers specific categories of art that are currently trending.
                             </p>
 
                             <h5>Clickable Tags</h5>
@@ -658,7 +673,7 @@
                     <div class="featureShowcase">
                         <div>                            
                             <h5>Comment Section</h5>
-                            <p>Allows users to interact with the artist and other viewers. Also helps artists to get valuable feedback.
+                            <p>Allows users to interact with the artist and other viewers. Also helps artists to get feedback.
                             </p>
                             <h5>Direct Messages</h5>
                             <p>Enables users to reach out to artists to build connections or even to make friends.

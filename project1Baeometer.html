@@ -7,7 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Jiecheng's UI/UX portfolio</title>
         <link href="styles/baeometer.css" rel="stylesheet"  type="text/css"/>
-        <!-- <link href="images/favicon.ico" rel="icon"> -->
+        <link href="media/favicon.ico" rel="icon">
+        <link href="media/icon.svg" rel="icon" type="image/svg+xml">
     </head>
     <body>
         <input type="checkbox" name="" id="check">
@@ -119,19 +120,8 @@
                         </a>
                     </div>
 
-                    <h3>My Efforts & The Team</h3>                    
+                    <h3>My Team & My Efforts</h3>                    
                     <div id="effortTeam">
-                        <div>
-                            <strong>My Role</strong> <br/>
-                            UX/UI Designer, Developer<br/>
-                            <strong>Tools Used</strong> <br/>
-                            Figma, Miro, VScode, Github<br/>
-                            <strong>Scope</strong> <br/>
-                            7 weeks agile development sprint<br/>
-                            <strong>What I Did</strong> <br/>
-                            UX Design, Mobile & Desktop UI Design, Development
-                            
-                        </div>
                         <div>
                             Cody Rupp, Leader <br/>
                             Jackie Piepkorn, Leader <br/>
@@ -143,6 +133,18 @@
                             Brandon Reponte, Developer <br/>
                             Alvaro Ramos-Sanchez, Developer <br/>
                         </div>
+                        <div>
+                            <strong>My Role</strong> <br/>
+                            UX/UI Designer, Developer<br/>
+                            <strong>Tools Used</strong> <br/>
+                            Figma, Miro, VScode, Github<br/>
+                            <strong>Scope</strong> <br/>
+                            7 Weeks Agile Development Sprint<br/>
+                            <strong>What I Did</strong> <br/>
+                            UX Design, Mobile & Desktop UI Design, Development
+                            
+                        </div>
+                        
                     </div>
                     <a id="visitTeamBtn" class="linkBtn" target="_blank" href="https://github.com/cse110-sp23-group28/cse110-sp23-group28" >Team GitHub</a>
 
@@ -162,10 +164,10 @@
                         <h2>Discover</h2>
                     </div>
                     
-                    <h3>Interview</h3>
+                    <h3>Interview Insights</h3>
                     <p id="interview"><strong>What would make you want to use a relation prediction fortune-telling app?</strong>
                         <br>
-                        By analyzing the interview data to understand users' actions, thoughts, and emotions, I was able to extract some key insights:
+                        By analyzing the interview data, I was able to extract some key insights:
                     </p>
                     <ul>
                         <li>People want the app <strong>to be enjoyable</strong> to play with because having fun is the main motivator for using apps like this.</li>
@@ -273,10 +275,10 @@
                                     <h5><strong>Goals and Needs</strong></h5>
                                     <ul>
                                         <li>Looking for ways to have fun and unwind after classes </li>
-                                        <li>Interested in exploring relationships but not necessarily seeking a serious commitment </li>
-                                        <li>Wants to connect with her partner in new and entertaining ways </li>
-                                        <li>Wants an engaging app that aligns with her college lifestyle </li>
-                                        <li>Enjoys fast-paced internet content </li>
+                                        <li>Interested in exploring relationships.</li>
+                                        <li>Wants to connect with her partner in entertaining ways </li>
+                                        <li>Wants an engaging experience that aligns with her overall college lifestyle </li>
+                                        <li>Enjoys fast-paced content </li>
                                         <li>Interests in fortune telling for entertainment </li>
                                     </ul>
                                 </div>
@@ -285,8 +287,8 @@
                                     <ul>
                                         <li>Busy college student, limited time for entertainment </li>
                                         <li>Uses her smartphone for various social media and entertainment apps </li>
-                                        <li>Enjoys sharing funny and entertaining content with friends </li>
-                                        <li>Engages with social trends and memes </li>
+                                        <li>Enjoys sharing funny content with friends </li>
+                                        <li>Actively engages with social trends and memes </li>
                                     </ul>
                                 </div>
                             </div>
@@ -477,7 +479,7 @@
                     <p>The Baeometer, a.k.a the thermometer graphic, is present throughout the Baeometer experience. <br>
                          It mainly serves two purposes: <strong>branding</strong> and <strong>functionality</strong>.</p>
                     <h4>I. Branding</h4>
-                    <p>The thermometer, traditionally used to measure temperature, 
+                    <p id="brandingDescription">The thermometer, traditionally used to measure temperature, 
                         became our central graphic motif to reflect the concept of measuring the 'heat' or 
                         intensity of relationships. By using this motif throughout our app's design, 
                         I aimed to create a strong and consistent visual association between the app's brand and its function.
@@ -533,7 +535,7 @@
                                  <br>
                                  Secondly, AI is probabilistic, meaning testing is difficult 
                                  and the results it produces are uncontrollable. And if it produces offensive results, 
-                                 we will be responsible for it. 
+                                 we are responsible. 
                                  <br><br>
                                  As a result, I decided to create a set of pre-generated stories to <strong>keep our app risk-free</strong>. 
                                  And since our app aims to create a fast-paced experience, and if the set of stories is large enough,
@@ -589,14 +591,18 @@
                         </svg>  
                         <h2>Deliver</h2>
                     </div>
-                    <h3>Usability Tests and Iteration</h3>
+                    <h3>Tests and Iterations</h3>
                     <p>After developing our app, I conducted multiple usability tests. From the participants of the tests, I gathered many valuable feedbacks that helped us <strong>improve our app's user experience</strong>.                        
                     </p>
 
                     <div class="iterations">
-                        <h4>Feedback:</h4>
-                        <p><strong>There are too many things to interact with on the front page, it is quite confusing which one to interact with and in what order.</strong></p>
-                        <p>Solution: By following the principles of Progressive Disclosure, I decided to have two additional pages before the front page to break down the overwhelming unclear user flow into a streamlined 3 steps process.</p>
+                        <h4>I. Feedback To Solutions</h4>
+                        <div class="feedbackImprove">                            
+                            <p><strong>Feedback:</strong><br>
+                                <em>"There are <strong>too many things to interact with</strong> on the front page, it is quite confusing which one to interact with and in what order."</em></p>
+                            <p><strong>Solution:</strong><br> 
+                                By following the principles of <strong>progressive disclosure</strong>, I decided to have two additional pages before the front page to break down the overwhelming unclear user flow into a streamlined 3 steps process.</p>
+                        </div>
                         <div class="iterationsImgs">
                             <img src="./media/baeometerMedia/Desktop-Version-Home-Hi.webp" alt="Before Change">
                             <svg width="24" height="48" viewBox="0 0 24 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -606,10 +612,15 @@
                         </div>
                         <hr>
 
-                        <p><strong>Due to the low multiplier of our original algorithm, the resulting score is relatively low. 
-                            Many of the testers reflected that they did not like the "bad fortune" results they were getting.
-                            As an app for entertainment, we need to make sure users are satisfied with the results</strong> </p>
-                        <p>Solution: Make changes to the underlying algorithm, and boost the test results up.</p>
+                        <div class="feedbackImprove">
+                            <p><strong>Feedback:</strong><br>
+                                <em>"Why the <strong>result is so low</strong>? Why it only says 3 weeks for me and my boyfriend?"</em>
+                               </p>
+                            <p><strong>Solution:</strong><br>
+                                Due to the low multiplier of our original algorithm, the resulting score is relatively low.
+                                To make sure users are satisfied with the results, we made changes to the underlying algorithm, 
+                                and <strong>boost the test results up</strong>.</p>
+                        </div>
                         <div class="iterationsImgs">
                             <img src="./media/baeometerMedia/iterations/Before-Increase.webp" alt="Before Change">
                             <svg width="24" height="48" viewBox="0 0 24 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -619,8 +630,13 @@
                         </div>
                         <hr>
 
-                        <p><strong>Some testers said they wanted to redraw the picture on the canvas, and hitting the reload button reloads the entire website.</strong></p>
-                        <p>Solution: Add a delete button on the canvas-drawing page.</p>
+                        <div class="feedbackImprove"> 
+                            <p><strong>Feedback:</strong><br>
+                                <em>"<strong>I wanted to redraw the picture</strong>, but hitting the reload button reloads the entire page."</em>
+                            </p>
+                            <p><strong>Solution:</strong><br>
+                                <strong>Add a delete button</strong> on the canvas-drawing page.</p>
+                        </div>
                         <div class="iterationsImgs">
                             <img src="./media/baeometerMedia/Desktop-Version-Draw-Hi.webp" alt="Before Change">
                             <svg width="24" height="48" viewBox="0 0 24 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -633,9 +649,13 @@
    
 
                     <div class="iterations">
-                        <h4>Observation:</h4>
-                        <p><strong>Testers often hit the next button before filling out the blanks, which triggers an error message.</strong></p>
-                        <p>Solution: Use grayed-out buttons to signify the button is inactive at this moment. And hitting enter key will automatically focus on the field that needs to be completed.</p>
+                        <h4>II. Observation To Solutions</h4>
+                        <div class="feedbackImprove"> 
+                            <p><strong>Observation:</strong><br>
+                                Testers often <strong>hit the next button before filling</strong> out the blanks, which triggers an error message.</p>
+                            <p><strong>Solution:</strong><br>
+                                 Use grayed-out buttons to signify the button is inactive at this moment. And hitting enter key will <strong>automatically focus on the field</strong> that needs to be completed.</p>
+                        </div>
                         <div class="iterationsImgs">
                             <img src="./media/baeometerMedia/iterations/Alert-Fill.webp" alt="Before Change">
                             <svg width="24" height="48" viewBox="0 0 24 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -652,7 +672,7 @@
                                 <h4>Interactive Website</h4>
                                 <p>Click the screen below to interact</p>
                             </div>
-                            <a class="linkBtn" target="_blank" href="https://jasonarong.github.io/baeometer/">Visit</a>    
+                            <a class="linkBtn fill" target="_blank" href="https://jasonarong.github.io/baeometer/">Visit Website</a>    
                         </div>                        
                         <iframe loading="lazy" src="https://jasonarong.github.io/baeometer/" frameborder="0"></iframe>
                     </div>
@@ -663,7 +683,7 @@
                                 <p>Click the screen below to interact</p>
                             </div>
                             <a class="linkBtn" target="_blank" href="https://www.figma.com/proto/n8ZghzToOscxGbh3v92xGj/Baeometer-(high-fidelity)?type=design&node-id=103-27&t=7CIt53lROF4vRZ6X-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=103%3A27">
-                                Visit 
+                                Try Prototype 
                             </a>    
                         </div>
                         

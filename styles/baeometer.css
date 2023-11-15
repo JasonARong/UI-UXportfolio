@@ -162,6 +162,10 @@
 #personaInfo ul{
     margin-top: 4px;
 }
+#personaInfo li{
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
 
 /* User Stories 
  => project.css*/
@@ -175,6 +179,11 @@
 #userFlow img{
     max-width: 800px;
     min-width: 0;
+    aspect-ratio: 1/.9;
+    object-fit: cover;
+
+    margin-top: -15px;
+    margin-bottom: var(--secBottom);
 }
 
 /* Information Architecture */
@@ -201,9 +210,13 @@
 }
 
 /* ///Develop/// */
-.wireFrameHeader{
+#develop h4 {
     color: var(--developColor);
 }
+
+/* .wireFrameHeader{
+    color: var(--developColor);
+} */
 
 #handDrawnHeader{
     margin-top: 40px;
@@ -233,6 +246,11 @@
     margin: 0 auto;
     border:var(--border);
     border-radius: 10px;
+}
+
+#brandingDescription{
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 #progress{
