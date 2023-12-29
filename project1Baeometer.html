@@ -68,6 +68,28 @@
                             <a class="options" href="project2ArtPlace.html#deliver" >Deliver</a>
                         </div>
                     </li>
+                    <li class="projectOptions">
+                        <noscript>
+                            <a class="options" href="./project3Triton2Go.html">
+                                Project 3 <span class="projectNames">| Triton 2 Go</span>    
+                            </a> 
+                        </noscript>
+                        <button class="options">                            
+                            <span>
+                                Project 3 <span class="projectNames">| Triton 2 Go</span>    
+                            </span>                        
+                            <svg class="arrowIcon" xmlns="http://www.w3.org/2000/svg" width="8" height="18" viewBox="0 0 10 18" fill="none">
+                            <path d="M2 2L8 8.85106L2 16" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="dropDown">
+                            <a class="options" href="./project3Triton2Go.html">Overview</a>
+                            <a class="options" href="project3Triton2Go.html#discover" >Discover</a>
+                            <a class="options" href="project3Triton2Go.html#define" >Define</a>
+                            <a class="options" href="project3Triton2Go.html#develop" >Develope</a>
+                            <a class="options" href="project3Triton2Go.html#deliver" >Deliver</a>
+                        </div>
+                    </li>
                     <li class="options"><a href="./otherProjects.html">Other Projects</a></li>
                     <li class="options"><a href="./about.html">About</a></li>
                     <li class="options"><a href="./index.html#contact">Contact</a></li>
@@ -358,13 +380,10 @@
                     <h3>Information Architecture</h3>
                     <div id="IA">
                         <div>
-                            <p>Even though Baeometer has a relatively simple structure, I still decided to build an information architecture. Because it maps out how different pages and pieces of information are connected and organized which <strong>establishes a clear hierarchical structure</strong> that benefits everyone on the team.</p>
-                            <div id="IABenefits">
-                                <p>Benefits for me as a designer: It will be a handy guide for me to <strong>know how the elements of our app fit together</strong>, and that will be helpful especially when I am creating wireframes and prototypes. And since IA is flexible, I can add additional features after receiving user feedback.
-                                </p>
-                                <p>Benefits for the team(including me): Every member of the team are software engineer. Having a clear IA <strong>helps us to better lay out the code structure</strong> which will improve the code quality, and better code quality leads to fewer usability issues, in other words, better UX.                
-                                </p>                                                        
-                            </div>
+                            <p>We used Information Architecture to map out how different pages and pieces of information are 
+                                connected and organized which <strong>establishes a clear hierarchical structure</strong> 
+                                that benefits the designing and the development process.</p>
+                            
                         </div>
                         <img src="./media/IABaeometerold.webp" alt="baeometer information architecture" >
                     </div>
@@ -403,8 +422,7 @@
                         <img class="displayEle" src="./media/baeometerMedia/DesktopVersion-Result.webp" alt="DesktopVersion-Result">
                     </div>
 
-                    <h4 class="wireFrameHeader">III. Types of Interaction</h4>
-                    <p>To make our app more engaging, we decided to let our users have multiple types of interaction with our app.</p>
+                    <h4 class="wireFrameHeader">III. Types of Interaction</h4>        
                     <div class="prototypeDisplay wireframe cardsDisplay" id="interactionTypes">
                         <div >
                             <img class="displayEle" src="./media/baeometerMedia/interactions/type.webp" alt="type image"/>
@@ -469,7 +487,7 @@
                     
                     <hr>
                     <h3>Style Guide</h3>
-                    <p>Beaometer’s purpose is to create a fun experience of a couple's romantic relationship, hence the color choice of purple and pink highlights that romantic theme. Moreover, motifs of heart and other cute icons further insinuate the fun, romantic, and enjoyable UX of using Baeometer. </p>
+                    <p>Employed to keep the deisgn language consistent through out our app</p>
                     <div id="styleGuide">
                         <img  src="./media/styleSheetBaeometer.webp" alt="barometer style sheet"/>
                     </div>
@@ -546,37 +564,40 @@
 
                     <h4>II. Inclusive Design</h4>
                     <h5 id="keyboardSupport">a) Keyboard Support</h5>
-                    <p>We anticipate keyboard users. I developed the app so that users can walk through the app with <strong>keyboard controls only</strong>. Whenever the user lands on a new page, the elements that need interaction will be auto-focused. And with keys like “enter”, “tab” and “shift”, a user can complete the user journey without using a mouse.
+                    <p><strong>We anticipate keyboard users.</strong>  <br>
+                        With “enter”, “tab” and “shift” keys, a user can complete their user journey.
                     </p>
                     <div class="prototypeDisplay cardsDisplay">
                         <div>
                             <img class="displayEle" src="./media/baeometerMedia/keyboard/Keyboard-Home.webp" alt="Desktop-Version-Home">
                             <h5>Test Button</h5>
-                            <p>After the user fills out all the necessary information, hitting the enter key lets the user start the test. If there are unfilled required input fields, hitting the enter key will alert them to fill out all the blank spots.
+                            <p>Auto-focus on the test button. Hit Enter to start testing.
                             </p>                        
                         </div>
                         <div>
                             <img class="displayEle" src="./media/baeometerMedia/keyboard/Keyboard-Draw.webp" alt="Desktop-Version-Draw">
                             <h5>Next Button</h5>
-                            <p>After the user finishes drawing on the canvas, hitting the enter key will first focus on the next button. Hitting the enter key again will confirm the drawing and proceed to the next step.                                
+                            <p>After drawing on the canvas, htting Enter allows you to proceed.                               
                             </p>                        
                         </div>
                         <div>
                             <img class="displayEle" src="./media/baeometerMedia/keyboard/Keyboard-Choose.webp" alt="Desktop-Version-Choose">
                             <h5>Card Selection</h5>
-                            <p>On load, Baeometer will first focus on the first card. Pressing the Tab key allows users to select the cards in order. Hitting the enter key once will confirm the selection.,hitting it again will then lead to the resulting page.</p>                        
+                            <p>Hit Tab to select a card, and hit Enter to comfirm your selection.</p>                        
                         </div>
                     </div>                   
 
                     <h5>b) Touch Screen</h5>
-                    <p>We also anticipate touchscreen users. As we are coding the app, we make sure that <strong>each element is interactive on a touch screen</strong>. For example, we developed touchscreen support for the canvas element that does not natively support touchscreen drawing.</p>
+                    <p><strong>We anticipate touchscreen users.</strong> <br>
+                        We made sure that each UI element is interactive on a touch screen.</p>
                     <div id="touchScreen">
                         <img id="drawTouch" src="./media/baeometerMedia/draw/Draw-Touch.webp" alt="Desktop-Version-Draw">
                         <img id="drawCursor" src="./media/baeometerMedia/draw/Draw-Cursor.webp" alt="Desktop-Version-Draw">
                     </div>                    
 
                     <h4>III. Responsive Design Edge Cases</h4>
-                    <p>Typically desktop screens are in landscape mode and mobile screens are in portrait mode. To make our app <strong>more accessible for a wider range of screen sizes and orientations</strong>, I coded the app so that it fully supports both desktop screens in portrait mode and mobile screens in landscape mode.</p>
+                    <p><strong>We anticipate edge case screen sizes/orientations.</strong>  <br>
+                        I coded the app so that it fully supports both desktop screens in portrait mode and mobile screens in landscape mode.</p>
                     <div id="edgeCase">
                         <img id="edgeTablet" src="./media/baeometerMedia/edge/Edge-Tablet.webp" alt="portrait on desktop" />
                         <img id="edgeMobile" src="./media/baeometerMedia/edge/Edge-Phone.webp" alt="landscape on mobile" />
@@ -691,7 +712,45 @@
                         <iframe loading="lazy" id="desktopFigma" style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fn8ZghzToOscxGbh3v92xGj%2FBaeometer-(high-fidelity)%3Ftype%3Ddesign%26node-id%3D103-27%26t%3DfPurx0I1nnvcGbCz-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D103%253A27%26mode%3Ddesign" allowfullscreen></iframe>
                     </div>
                     
-                </section>                
+                </section>  
+
+                
+                <section>
+                    <hr>
+                    <h2>More Projects</h2>
+                    <div id="moreProjects">
+                        <a href="./project2ArtPlace.html">
+                            <div class="project" id="artPlaceProject">
+                                <div class="projectImage" id="artPlaceImg"></div>
+                                <div class="projectInfo">                                    
+                                    <h3>UI/UX Design</h3>
+                                    <h2>Art Place</h2>
+                                    <p>An mobile app that allows both artists and enthusiasts to share arts and build connections</p>                                                    
+                                </div>                                
+                            </div>    
+                        </a>
+                        <a href="./project3Triton2Go.html">
+                            <div class="project" id="tritonProject">
+                                <div class="projectImage" id="tritonImg"></div>
+                                <div class="projectInfo">                                    
+                                    <h3>UI Redesign</h3>
+                                    <h2>Triton2Go</h2>
+                                    <p>A redesign of the map feature of the UCSD cafeteria food ordering mobile app Triton2Go</p>                                                    
+                                </div>                                
+                            </div>    
+                        </a>
+                        <a href="./otherProjects.html">
+                            <div class="project" id="otherProjects">
+                                <div class="projectImage" id="otherProjectsImg"></div>
+                                <div class="projectInfo">                                    
+                                    <h3>UI/UX Design & Dev.</h3>
+                                    <h2>Others</h2>
+                                    <p>From class projects to professional works, I have created a wide variety of designs</p>                                                    
+                                </div>                                
+                            </div>    
+                        </a>
+                    </div>
+                </section>              
             </section>
         </main>
     </body>

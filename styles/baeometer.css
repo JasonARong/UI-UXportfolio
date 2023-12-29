@@ -198,7 +198,9 @@
 #IA img{
     min-width: 0;
     width: 100%;
-    max-width: 400px;
+    max-width: 460px;
+    aspect-ratio: 1/1.2;
+    object-fit:cover;
     border: var(--border);
     border-radius: 10px;
 }

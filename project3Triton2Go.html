@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Jiecheng's UI/UX portfolio site" />
+	    <meta name="author" content="Jiecheng Chen" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jiecheng's UI/UX portfolio</title>
+        <link href="styles/triton2go.css" rel="stylesheet"  type="text/css"/>
+        <link href="media/favicon.ico" rel="icon">
+        <link href="media/icon.svg" rel="icon" type="image/svg+xml">
+    </head>
+    <body>
+        <input type="checkbox" name="" id="check">
+        <div id="hamMenu">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        <aside>
+            <h2><a href="./index.html">Jiecheng <br>
+                UI/UX Portfolio</a>
+            </h2>
+            <nav>
+                <ul>
+                    <li class="options" ><a href="./index.html">Home</a></li>
+                    <li class="projectOptions">
+                        <noscript >
+                            <a class="options" href="./project1Baeometer.html">
+                                Project 1 <span class="projectNames">| Beaometer</span>    
+                            </a> 
+                        </noscript>
+                        <button class="options">
+                            <span>
+                                Project 1 <span class="projectNames">| Beaometer</span>    
+                            </span>                        
+                            <svg class="arrowIcon" xmlns="http://www.w3.org/2000/svg" width="8" height="18" viewBox="0 0 10 18" fill="none">
+                            <path d="M2 2L8 8.85106L2 16" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="dropDown">
+                            <a class="options" href="./project1Baeometer.html">Overview</a>
+                            <a class="options" href="project1Baeometer.html#discover" >Discover</a>
+                            <a class="options" href="project1Baeometer.html#define" >Define</a>
+                            <a class="options" href="project1Baeometer.html#develop" >Develope</a>
+                            <a class="options" href="project1Baeometer.html#deliver" >Deliver</a>
+                        </div>
+                    </li>
+                    <li class="projectOptions">
+                        <noscript>
+                            <a class="options" href="./project2ArtPlace.html">
+                                Project 2 <span class="projectNames">| Art Place</span>  
+                            </a> 
+                        </noscript>
+                        <button class="options">
+                            <span>
+                                Project 2 <span class="projectNames">| Art Place</span>
+                            </span>                        
+                            <svg class="arrowIcon" xmlns="http://www.w3.org/2000/svg" width="8" height="18" viewBox="0 0 10 18" fill="none">
+                                <path d="M2 2L8 8.85106L2 16" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="dropDown">
+                            <a class="options" href="./project2ArtPlace.html">Overview</a>
+                            <a class="options" href="project2ArtPlace.html#discover" >Discover</a>
+                            <a class="options" href="project2ArtPlace.html#define" >Define</a>
+                            <a class="options" href="project2ArtPlace.html#develop" >Develope</a>
+                            <a class="options" href="project2ArtPlace.html#deliver" >Deliver</a>
+                        </div>
+                    </li>
+                    <li class="projectOptions">
+                        <noscript>
+                            <a class="options selected" href="./project3Triton2Go.html">
+                                Project 3 <span class="projectNames">| Triton 2 Go</span>    
+                            </a> 
+                        </noscript>
+                        <button class="options" id="selectedOption">                            
+                            <span>
+                                Project 3 <span class="projectNames">| Triton 2 Go</span>    
+                            </span>                        
+                            <svg class="arrowIcon" xmlns="http://www.w3.org/2000/svg" width="8" height="18" viewBox="0 0 10 18" fill="none">
+                            <path d="M2 2L8 8.85106L2 16" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="dropDown" id="currentMenu">
+                            <a class="options active" href="#" data-item="overview">Overview</a>
+                            <a class="options" href="project3Triton2Go.html#discover" data-item="discover">Discover</a>
+                            <a class="options" href="project3Triton2Go.html#define" data-item="define">Define</a>
+                            <a class="options" href="project3Triton2Go.html#develop" data-item="develop">Develope</a>
+                            <a class="options" href="project3Triton2Go.html#deliver" data-item="deliver">Deliver</a>
+                        </div>
+                    </li>
+                    <li class="options"><a href="./otherProjects.html">Other Projects</a></li>
+                    <li class="options"><a href="./about.html">About</a></li>
+                    <li class="options"><a href="./index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <footer>
+                <p id="copyright">&copy; Jiecheng Chen UI/UX Portfolio 2023<br>
+                    <span>Designed and Coded by Jiecheng</span>
+                </p>
+            </footer>
+        </aside>
+
+
+        <main>
+            <section id="mainContent">
+                <!-- Overview -->
+                <section id="overview" class="majorSections">
+                    <h3 id="descriptionHeading">UI Redesign</h3>
+                    <div id="mainTitle">
+                        <h1>Triton2Go</h1> 
+                        
+                        <img  width="50" height="50" src="./media/triton2go/triton2goLogo.webp" alt="triton2goLogo">                                                       
+                    </div>
+                    
+                    <div id="titleHeader">
+                        <img id="UIalienBae" src="./media/triton2go/UIalienTriton.webp" alt="UI alien Baeometer pic">
+                        <img id="titleImg" src="./media/triton2go/triton2goMockup.webp" alt="Baeometer Mockup Image">    
+                    </div>
+                    
+                    <h2>Overview</h2>
+                    <p><strong>We redesigned the map feature for UCSD’s food ordering app Triton2Go to help students navigate 
+                        to dining halls more easily on our campus.</strong>
+                         Although popular, the app, especially the map feature, 
+                        is plagued with usability and discoverability issues. To combat the issues, we redesigned the app 
+                        with additional functionalities like a search bar, navigation feature, estimated walking time and 
+                        wait time for online orders, and more.
+                    </p>
+
+                    <div class="visitLinks">
+                        <a class="linkBtn fill" target="_blank" href="https://www.figma.com/proto/1EGSbf1Px2TkwLyng2Ktcx/DSGN-1---Final-Project?page-id=17%3A3&node-id=106%3A3788&viewport=250%2C302%2C0.29&scaling=scale-down&starting-point-node-id=106%3A3788" >
+                            Try Prototype</a>
+                        <a class="linkBtn" target="_blank" href="https://www.figma.com/file/1EGSbf1Px2TkwLyng2Ktcx/DSGN-1---Final-Project?type=design&node-id=11-2&mode=design&t=9F4RILeCJJ1MUAR1-0">
+                            Visit Project 
+                        </a>
+                    </div>
+
+                    <h3>My Team & My Efforts</h3>                    
+                    <div id="effortTeam">
+                        <div>
+                            Aska Demirci, Designer <br/>
+                            Anna Le, Designer <br/>
+                            <strong>(Jason)Jiecheng Chen, UI/UX Researcher</strong> <br/>
+                            Justine Dang, Designer<br/>
+                            Shuoyu Ge, Designer <br/>
+                            Sophia Fang, Designer <br/>                            
+                        </div>
+                        <div>
+                            <strong>My Role</strong> <br/>
+                            UX Researcher<br/>
+                            <strong>Tools Used</strong> <br/>
+                            Figma, Google Sheet<br/>
+                            <strong>Scope</strong> <br/>
+                            3 weeks Academic Project<br/>
+                            <strong>What I Did</strong> <br/>
+                            Brainstorm, UI Design, UX Research, 
+                            
+                        </div>                
+                    </div>
+                    
+
+                    <h3>Design Process</h3>
+                    <div id="designProcess" >
+                        <img src="./media/triton2go/DesginProcessTriton.webp" alt="design process img" />
+                    </div>
+                   
+                </section>
+
+                <!-- Discover -->
+                <section id="discover" class="majorSections">
+                    <div class="secHead">
+                        <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.966437 49.6916L3.30841 52.0336C4.59699 53.3221 6.70378 53.3221 7.99236 52.0336L20.166 39.8599C23.452 41.8905 27.3244 43.0632 31.4684 43.0632C43.3605 43.0632 53 33.4236 53 21.5316C53 9.63953 43.3605 0 31.4684 0C19.5764 0 9.93683 9.63953 9.93683 21.5316C9.93683 25.6756 11.1095 29.548 13.1401 32.834L0.966437 45.0076C-0.322146 46.2962 -0.322146 48.403 0.966437 49.6916ZM31.4684 36.4381C27.4867 36.4381 23.7435 34.8878 20.9279 32.0721C18.1122 29.2565 16.5619 25.5133 16.5619 21.5316C16.5619 17.5499 18.1122 13.8067 20.9279 10.991C23.7435 8.17538 27.4867 6.6251 31.4684 6.6251C35.4501 6.6251 39.1933 8.17538 42.009 10.991C44.8246 13.8067 46.3749 17.5499 46.3749 21.5316C46.3749 25.5133 44.8246 29.2565 42.009 32.0721C39.1933 34.8878 35.4501 36.4381 31.4684 36.4381Z" fill="#487BFF"/>
+                        </svg> 
+                        <h2>Discover</h2>
+                    </div>
+                    
+                    <h3>Interview Insights</h3>
+                    <p id="interview">
+                        After <strong>interviewing and observing 18 participants</strong> completing tasks, using the current 
+                        Triton2Go app’s map feature to find a specific dining hall and order food, we have 
+                        discovered multiple trends and made the following conclusions.
+                    </p>
+                    <h4>Insight 1: Hard to Find and Access the Map Feature</h4>
+                    <p class="task"><strong>Task 1: find the map feature on the app.</strong> </p>
+                    <div class="insights" id="insight1">
+                        <img src="./media/triton2go/frontpage.webp" alt="triton2go image">
+                        <div>
+                            <div class="insightsDescriptions">
+                                <p class="trends"><strong>Trend A: </strong> <br>
+                                    <strong>15</strong> of the 18 interviewees said they had <strong>never used</strong> nor had even heard 
+                                    of the existence of <strong>the map feature</strong> on the Triton 2 Go app before.
+                                </p>
+                                <p class="findings">                                    
+                                    Low Discoverability <br>
+                                    Unclear Signifiers <br>
+                                    Poor Functionality
+                                </p>
+                            </div>
+                            <div class="insightsDescriptions">
+                                <p class="trends"><strong>Trend B:</strong> <br>
+                                    <strong>7</strong> out of the 18 interviewees <strong>immediately scrolled down</strong> or clicked through the bottom 
+                                    navigation bar to try to find the map feature (neither is correct).
+                                </p>
+                                <p class="findings">
+                                    Bad Information Design <br>
+                                    Low Discoverability <br> 
+                                    Counterintuitive                                                                                                          
+                                </p>
+                            </div>
+                            <hr>
+                            <p class="note"><strong>Conclusions:</strong> <br>
+                                <em>
+                                    The map feature's entrance has <strong>horrible discoverability</strong>. First, it is placed <strong>at an unexpected 
+                                    location</strong>, because most participants are expecting it to be at the nav bar, as most of 
+                                    them first go down to the nav bar to look for it. Secondly, its <strong>visual similarity</strong> to the tabs 
+                                    above and below it makes it even less visible.
+                                </em>                                  
+                            </p>                            
+                        </div>                        
+                    </div>
+
+
+                    <h4>Insight 2: Hard to Locate the Dining Halls</h4>
+                    <p class="task"><strong>Task 2: use the map feature to find the given dining hall and order food from it.</strong></p>
+                    <div class="insights">
+                        <img src="./media/triton2go/ogmap.webp" alt="triton2go image">
+                        <div>
+                            <div class="insightsDescriptions">
+                                <p class="trends"><strong>Trend C:</strong> <br>
+                                    <strong>7</strong> out of 18 interviewees <strong>locate multiple incorrect dining halls</strong> 
+                                    before finding the correct one.
+                                </p>
+                                <p class="findings">
+                                    Lacks Error Handling <br>
+                                    Confusing Signifiers 
+                                </p>
+                            </div>
+                            <div class="insightsDescriptions">
+                                <p class="trends"><strong>Trend D:</strong> <br>
+                                    <strong>6</strong> out of 18 interviewees <strong>mistakenly exited</strong> the map interface 
+                                    when trying to place an order.
+                                </p>
+                                <p class="findings">
+                                    Lacks Error Handling<br>
+                                    Unclear Affordances
+                                </p>
+                            </div>
+                            
+                            <hr>
+                            <p class="note"><strong>Conclusions:</strong> <br>
+                                <em>
+                                    The user interface for the map feature is extremely <strong>barebone</strong>. All it does 
+                                    is pining the locations of the dining halls<strong> without communicating which dining hall it is
+                                    </strong> to the users. Furthermore, with <strong>no features like a search bar</strong>,
+                                    users have to look for a dining hall by going through all the pins one by one.
+                                </em>                                  
+                            </p>                             
+                        </div>                        
+                    </div>
+
+                    <h3>Research Charts</h3>
+                    <div id="charts">
+                        <div>
+                            <img class="chartImgs" src="./media/triton2go/chartErrors.webp" alt="errors chart">
+                            <p><strong>Errors mades in Task 1 vs. Task 2</strong></p>
+                            <p>                                
+                                A bar chart showing the average and cumulative errors made in Task 1: 
+                                Finding the map feature and Task 2: Finding a dining hall on the map.
+                                On average,<strong> interviewees made more errors during Task #2</strong>.
+                            </p>
+                        </div>
+                        <div>
+                            <img class="chartImgs" src="./media/triton2go/chartTask2.webp" alt="task 2 chart"> 
+                            <p><strong>Average time to complete Task 2</strong></p>
+                            <p>                                
+                                The <strong>average time</strong> in seconds for the interviewees to complete the assigned task of 
+                                finding a specific dinning hall called Foodworx was around <strong>24.48 seconds</strong>.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+                </section>
+
+                <!-- Define -->
+                <section id="define" class="majorSections">
+                    <div class="secHead">
+                        <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.85 0V5.4855C14.257 6.7045 6.7045 14.257 5.4855 23.85H0V29.15H5.4855C6.7045 38.743 14.257 46.2955 23.85 47.5145V53H29.15V47.5145C38.743 46.2955 46.2955 38.743 47.5145 29.15H53V23.85H47.5145C46.2955 14.257 38.743 6.7045 29.15 5.4855V0M23.85 10.812V15.9H29.15V10.8385C35.775 11.925 41.075 17.225 42.188 23.85H37.1V29.15H42.1615C41.075 35.775 35.775 41.075 29.15 42.188V37.1H23.85V42.1615C17.225 41.075 11.925 35.775 10.812 29.15H15.9V23.85H10.8385C11.925 17.225 17.225 11.925 23.85 10.812ZM26.5 23.85C25.7972 23.85 25.1231 24.1292 24.6262 24.6262C24.1292 25.1231 23.85 25.7972 23.85 26.5C23.85 27.2028 24.1292 27.8769 24.6262 28.3738C25.1231 28.8708 25.7972 29.15 26.5 29.15C27.2028 29.15 27.8769 28.8708 28.3738 28.3738C28.8708 27.8769 29.15 27.2028 29.15 26.5C29.15 25.7972 28.8708 25.1231 28.3738 24.6262C27.8769 24.1292 27.2028 23.85 26.5 23.85Z" fill="#6EE9F0"/>
+                        </svg>  
+                        <h2>Define</h2>
+                    </div>
+                    
+                    <h3>Design Spaces</h3>
+                    <h4>Design Space A</h4>
+                    <p class="designSpaceIntro">
+                        <strong>Discoverability:</strong> Ability to find and use the different functions of a map. <br>
+                        <strong>Visual Design:</strong> Simplicity of design to not look overwhelming.
+                    </p>
+                    <div class="designSpaceImgs">
+                        <div>
+                            <img src="./media/triton2go/DSAtable.webp" alt="Design Space A table">    
+                            <p>
+                                <strong>Ideal Design:</strong> 10 for Discoverability & Visual Design <br>
+                                It would have an intuitive and easy-to-use interface with distinctive signifiers of all its affordances.
+                                The ideal design would also be visually simple and clear to navigate.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./media/triton2go/DSAgraph.webp" alt="Design Space A graph">     
+                            <p>
+                                <strong>Challenges: </strong> Unavoidable Trade-offs <br>
+                                The trade-off of simplistic visual design is discoverability due to the 
+                                minimizing of signifiers, leading to users having a wider gulf of execution.
+    
+                            </p>        
+                        </div>
+                         
+                    </div>
+
+
+                    <h4>Design Space B</h4>
+                    <p class="designSpaceIntro">
+                        <strong>Efficiency:</strong> The time it takes to find the map function, order, and navigate to the dining hall. <br>
+                        <strong>Functionality:</strong> The amount of features and options on the map.
+                    </p>
+                    <div class="designSpaceImgs">
+                        <div>
+                            <img src="./media/triton2go/DSBtable.webp" alt="Design Space A table">    
+                            <p>
+                                <strong>Ideal Design:</strong> 10 for Efficiency & Functionality <br>
+                                Include all the features needed to afford finding, ordering, and navigating
+                                to a specific dining location while also keeping those processes as efficient 
+                                as possible. 
+                            </p>
+                        </div>    
+                        <div>
+                            <img src="./media/triton2go/DSBgraph.webp" alt="Design Space A graph">  
+                            <p>
+                                <strong>Challenges:</strong> Unavoidable Trade-offs <br>
+                                In reality the more functionality in an app, the less efficient it is 
+                                (more buttons to click, more screens, etc.).
+                            </p>        
+                        </div>                    
+                    </div>
+                    
+                    
+                                                            
+                </section>
+
+                <!-- Develop -->
+                <section id="develop" class="majorSections">
+                    <div class="secHead">
+                        <svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 17.5598C3 15.4792 3.43642 13.5005 4.22274 11.7103L10.9693 18.4568C13.0369 20.5244 16.3892 20.5244 18.4568 18.4568C20.5245 16.3892 20.5245 13.0369 18.4568 10.9693L11.7103 4.22274C13.5005 3.43642 15.4792 3 17.5598 3C25.6011 3 32.1197 9.51865 32.1197 17.5598C32.1197 19.6405 31.6832 21.6192 30.8969 23.4094L54.4492 46.9617C56.5169 49.0295 56.5169 52.3817 54.4492 54.4492C52.3817 56.5169 49.0295 56.5169 46.9617 54.4492L23.4094 30.8969C21.6192 31.6832 19.6405 32.1197 17.5598 32.1197C9.51865 32.1197 3 25.6011 3 17.5598Z" stroke="#DB82F0" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg> 
+                        <h2>Develop</h2>
+                    </div>
+                    
+                    <h3>Sketches (Team Ideation)</h3>
+                    <div class="sketches" id="jasonSketch">
+                        <div><h4>Jiecheng’s Redesign</h4>
+                            <p><strong>Search bar</strong> feature with included filter option to sort through different dining halls.</p>                            
+                            <p>The <strong>bottom card</strong> pops out when the pins on the map are clicked 
+                                to reveal more information.</p> 
+                            <p>Displaying accurate mileage <strong>distance</strong> to each dining hall and 
+                                its estimate wait time.</p>
+
+                        </div>
+                        <img src="./media/triton2go/sketch1-1.webp" alt="">
+                    </div>
+                    <div class="sketches">
+                        <img src="./media/triton2go/sketch2.webp" alt="">
+                        <div><h4>Anna’s Redesign</h4>
+                            <p>Grayed out pin for dining halls that are currently closed or not accepting mobile orders.</p>
+                            <p>Created more distinctive icons in order to differentiate between markets and dining halls on campus.</p> 
+
+                        </div>
+                    </div>
+                    <div class="sketches">
+                        <img src="./media/triton2go/sketch3.webp" alt="">
+                        <div><h4>Justine’s Redesign</h4>                            
+                            <p>Focused on relocating the map feature on the main menu and inside a hamburger menu to improve discoverability.</p> 
+                            <p>Included a wayfinding feature which is inspired by the map feature on maps.ucsd.edu.</p> 
+                        </div>
+                    </div>
+                    <div class="sketches">
+                        <img src="./media/triton2go/sketch4.webp" alt="">
+                        <div><h4>Aska's Redesign</h4>
+                            <p>Using a static map as opposed to the “Google Earth” style map currently used in Triton2Go.</p>                            
+                            <p>Have a complete redesign of the original Triton 2 Go navigation bar to improve usability.</p>  
+
+                        </div>
+                    </div>
+                    <div class="sketches" id="lastSketch">
+                        <img src="./media/triton2go/sketch6.webp" alt="">
+                        <div><h4>Shuoyu’s Redesign</h4>
+                            <p>Color coded boundaries for each college’s respective dining halls.
+                                Make it easier for students on campus to find dining halls based on colleges.
+                            </p>                            
+
+                        </div>
+                    </div>
+
+                    <h3>Wireframes </h3>
+                    <p><strong>Problems:</strong> Based on the analysis and design spaces, we found that users have trouble 
+                        finding the map feature, can’t find the desired dining hall conveniently with the 
+                        Triton2Go map, and can’t use the map to aid their navigation.
+                    </p>
+                    <div id="wireframes">
+                        <div id="wireframeImgs">
+                            <img src="./media/triton2go/mapWire1.webp" alt="wireframe 1">
+                            <img src="./media/triton2go/mapWire2.webp" alt="wireframe 2">
+                        </div>
+                        <div>
+                            <h5>Solutions: </h5>                            
+                            <ol>
+                                <li>Placed the new map icon on the navbar </li>
+                                <li>Colored the pins with colleges’ colors </li> 
+                                <li>Added a search bar </li> 
+                                <li>Added navigation feature “directions” </li>
+                                <li>Displayed the  estimated walk and wait time</li>
+                                <li>Crossed out the closed dining halls</li>
+                                <li>Added a masthead on the menu page</li>
+                            </ol>    
+                                
+                            
+                        </div>
+                    </div>
+                    
+
+                                     
+                </section>
+
+                <!-- Deliver -->
+                <section id="deliver" class="majorSections">
+                    <div class="secHead">
+                        <svg width="53" height="39" viewBox="0 0 53 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.0909 38.4573H13.25C9.58818 38.4573 6.46439 37.1994 3.87864 34.6837C1.29288 32.1519 0 29.0673 0 25.4299C0 22.3052 0.939546 19.5171 2.81864 17.0654C4.71379 14.6138 7.18712 13.0514 10.2386 12.3784C11.2505 8.69295 13.258 5.71251 16.2614 3.43712C19.2808 1.14571 22.6936 0 26.5 0C31.2058 0 35.1888 1.63444 38.4491 4.90331C41.7255 8.15616 43.3636 12.1301 43.3636 16.8251C46.1421 17.1456 48.4388 18.3473 50.2536 20.4304C52.0845 22.4815 53 24.8851 53 27.6412C53 30.6537 51.948 33.2095 49.8441 35.3086C47.7402 37.4078 45.1785 38.4573 42.1591 38.4573H28.9091V21.2717L32.7636 24.9973L36.1364 21.6322L26.5 12.0179L16.8636 21.6322L20.2364 24.9973L24.0909 21.2717V38.4573Z" fill="#9371F4"/>
+                        </svg>  
+                        <h2>Deliver</h2>
+                    </div>
+                    <h3>Final Iteration</h3>
+                    <p>After developing our app, I conducted multiple usability tests. From the participants of the tests, I gathered many valuable feedbacks that helped us <strong>improve our app's user experience</strong>.                        
+                    </p>
+                    <div class="hiFiDisplay">
+                        <img src="./media/triton2go/HI-FI/tritonHi1.webp" alt="fianl designs">
+                        <img src="./media/triton2go/HI-FI/tritonHi2.webp" alt="fianl designs">
+                        <img src="./media/triton2go/HI-FI/tritonHi3.webp" alt="fianl designs">
+                        <img src="./media/triton2go/HI-FI/tritonHi4.webp" alt="fianl designs">
+                        <img src="./media/triton2go/HI-FI/tritonHi5.webp" alt="fianl designs">
+                        <img src="./media/triton2go/HI-FI/tritonHi6.webp" alt="fianl designs">
+                    </div>
+
+                    <h4>Design Details</h4>
+                    <div class="designDetails">   
+                        <div id="designDetailsImgs">
+                            <img src="./media/triton2go/HI-FI/tritonHi1.webp" alt="fianl designs">
+                            <img src="./media/triton2go/HI-FI/tritonHi3.webp" alt="fianl designs">
+                            <img src="./media/triton2go/HI-FI/tritonHi4.webp" alt="fianl designs">
+                            <img src="./media/triton2go/HI-FI/tritonHi6.webp" alt="fianl designs">
+                        </div>                     
+                        <div id="uiElements">
+                            <p><strong> Map Icon On the Navbar </strong><br>
+                                We placed the map icon in the middle of the nav bar to improve
+                                the discoverability for the map feature.
+                            </p>
+                            <img src="./media/triton2go/UIelements/UIele1.webp" alt="UI elements">
+                            <p><strong>Search Bar</strong> <br>
+                                We added a search bar to help users directly find specific dining halls by typing in the dining halls' names.
+                            </p>
+                            <img src="./media/triton2go/UIelements/UIele2.webp" alt="UI elements">
+                            <p><strong>Cross Out the Closed Dining Halls</strong> <br>
+                                We crossed out closed dining halls to prevent the users from wasting time clicking on these dining hall menus.
+                            </p>
+                            <img src="./media/triton2go/UIelements/UIele3.webp" alt="UI elements">
+                            <p><strong>Color Coded Pins</strong> <br>
+                                We colored coded pins with their respective college logos to help people find dining halls by their general location.
+                            </p>
+                            <img id="lastUIele" src="./media/triton2go/UIelements/UIele4.webp" alt="UI elements">
+
+                            <div class="smallUiElements"> 
+                                <p><strong>Estimated walk time</strong><br>
+                                    Helps users to decide which dining hall to go to based on accurate walk time.
+                                </p>
+                                <div>
+
+                                    <img src="./media/triton2go/UIelements/UIele5.webp" alt="UI elements">
+                                </div>
+                            </div>
+                            <div class="smallUiElements"> 
+                                <p><strong>Direction feature</strong><br>
+                                    Offers GPS navigation feature to help users in reaching their destinations.
+                                </p>
+                                <div>
+                                    <img src="./media/triton2go/UIelements/UIele6.webp" alt="UI elements">
+
+                                </div>
+                            </div>
+                        </div>                                           
+                    </div>
+                    
+
+                    <h3>Try It Out</h3>
+                    <div>
+                        <div class="tryItOutTitles">
+                            <div>
+                                <h4>Prototype</h4>
+                                <p>Click the screen below to interact</p>
+                            </div>
+                            <a class="linkBtn" target="_blank" href="https://www.figma.com/proto/1EGSbf1Px2TkwLyng2Ktcx/DSGN-1---Final-Project?page-id=17%3A3&node-id=106-3788&viewport=250%2C302%2C0.29&scaling=scale-down&starting-point-node-id=106%3A3788">
+                                Try Prototype 
+                            </a>    
+                        </div>                                        
+                        <iframe loading="lazy" style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F1EGSbf1Px2TkwLyng2Ktcx%2FDSGN-1---Final-Project%3Fpage-id%3D17%253A3%26node-id%3D106-3788%26viewport%3D250%252C302%252C0.29%26scaling%3Dscale-down%26starting-point-node-id%3D106%253A3788%26mode%3Ddesign%26t%3DB97jCjrhdHdqAghA-1" allowfullscreen></iframe>                        
+                    </div>
+                    
+                </section>   
+                
+                <section>
+                    <hr>
+                    <h2>More Projects</h2>
+                    <div id="moreProjects">
+                        <a href="./project1Baeometer.html">
+                            <div class="project" id="baeometerProject">
+                                <div class="projectImage" id="baeometerImg"></div>
+                                <div class="projectInfo">                                    
+                                    <h3>UI/UX Design & Dev.</h3>
+                                    <h2>Baeometer</h2>
+                                    <p>A fortune telling responsive web app that predicts the relationship between a couple</p>                                                    
+                                </div>                                
+                            </div>    
+                        </a>
+                        <a href="./project2ArtPlace.html">
+                            <div class="project" id="artPlaceProject">
+                                <div class="projectImage" id="artPlaceImg"></div>
+                                <div class="projectInfo">                                    
+                                    <h3>UI/UX Design</h3>
+                                    <h2>Art Place</h2>
+                                    <p>An mobile app that allows both artists and enthusiasts to share arts and build connections</p>                                                    
+                                </div>                                
+                            </div>    
+                        </a>
+                        <a href="./otherProjects.html">
+                            <div class="project" id="otherProjects">
+                                <div class="projectImage" id="otherProjectsImg"></div>
+                                <div class="projectInfo">                                    
+                                    <h3>UI/UX Design & Dev.</h3>
+                                    <h2>Others</h2>
+                                    <p>From class projects to professional works, I have created a wide variety of designs</p>                                                    
+                                </div>                                
+                            </div>    
+                        </a>
+                    </div>
+                </section> 
+            </section>
+        </main>
+    </body>
+    <script src="./scripts/navigation.js"></script>
+    <script src="./scripts/highlightOnScroll.js"></script>
+</html>
