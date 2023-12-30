@@ -298,6 +298,8 @@ screen and (max-height: 480px){
         opacity: 0;
         transform: translateX(-100%); 
         transition: transform 0.3s ease-in-out, opacity 0.5s;
+
+        z-index: 1;
     }
     aside h2{
         width: 100vw;
