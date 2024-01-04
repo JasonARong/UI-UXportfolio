@@ -19,15 +19,15 @@
 
 .prototypeDisplayMobile{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
     justify-items: center;
 
     margin-bottom: var(--secBottom);
 }
 .prototypeDisplayMobile .displayEleMobile{
     width: 100%;
-    max-width: 200px;
+    /* max-width: 200px; */
     border-radius: 10px;
 }
 
@@ -341,11 +341,12 @@ screen and (max-height: 480px){
 
     .prototypeDisplay,
     .prototypeDisplayMobile{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
     }
-    .prototypeDisplayMobile .displayEleMobile{
+    /* .prototypeDisplayMobile .displayEleMobile{
         width: 60%;
-    }
+    } */
 
 
     /* Overview */
@@ -353,7 +354,7 @@ screen and (max-height: 480px){
      => project.css */
     #effortTeam{
         grid-template-columns: 1fr;
-        gap: 10px;
+        gap: 5px;
     }
     #effortTeam div{
         padding: 10px;
@@ -389,7 +390,7 @@ screen and (max-height: 480px){
      => project.css*/
 
     #IA {
-        gap: 10px;
+        gap: 5px;
         flex-direction: column;
         align-items: center;
     }

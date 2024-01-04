@@ -2,7 +2,7 @@
     --borderColor: #c2c2c25f;
     --border: 0.2px solid #c2c2c25f;
 
-    --secBottom: 65px;
+    --secBottom: 75px;
 
     --lightBack: #292929;
     --background: #1E1E1E;
@@ -75,7 +75,7 @@ h1{
     font-size: 40px;
     font-family: 'Montserrat',sans-serif;
 }
-h2,h3,h4{
+h2,h3,h4,h5{
     font-family: 'Montserrat',sans-serif;
 }
 
@@ -92,7 +92,7 @@ aside{
     padding-left: 40px;
     position: fixed;
     height: 100vh;
-    overflow: scroll;
+    overflow: hidden;
     background-color: var(--background);
 }
 aside h2{
@@ -298,6 +298,8 @@ screen and (max-height: 480px){
         opacity: 0;
         transform: translateX(-100%); 
         transition: transform 0.3s ease-in-out, opacity 0.5s;
+
+        z-index: 1;
     }
     aside h2{
         width: 100vw;

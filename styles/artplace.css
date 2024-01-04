@@ -1,9 +1,12 @@
 @import url(global.css);
 @import url(project.css);
 
+
+/* Aside */
+aside{
+    overflow: scroll;
+}
 /* /////PAGE///// */
-
-
 /* //Overview// */
 h1{
     color: #ffca2a;

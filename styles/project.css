@@ -412,6 +412,9 @@ iframe{
 #artPlaceImg{
     background-image: url("../media/artPlaceMockup.webp");
 }
+#pharmailyImg{
+    background-image: url("../media/PharmailyMockUp.webp");
+}
 #tritonImg{
     background-image: url("../media/triton2goMockupClean.webp");
     opacity: 0.9;
@@ -457,6 +460,13 @@ iframe{
     color: #FFCA2A;
     text-shadow: 0px 0px 13px rgba(255, 255, 255, 0.40);
 
+}
+#pharmailyProject .projectInfo h2{
+    background: linear-gradient(90deg, #66C3D4 2.56%, #6ACBB7 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.20);
 }
 
 #tritonProject .projectInfo h2{

@@ -82,6 +82,69 @@ h1 span{
 #topHr{
     margin-top: 20px;
 }
+
+
+/* Art Place */
+a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.project{
+    height: 480px;
+    width: 100%;
+    max-width: 960px;
+
+    display: flex;
+    margin-bottom: 40px;
+
+    border-radius: 20px;
+    border: 0.5px solid #c2c2c25f;
+    overflow: hidden;
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.project:hover{
+    box-shadow: 0px 0px 18px 0px rgba(255, 255, 255, 0.35);
+}
+.projectImage{
+    width: 63%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#artPlaceImg{
+    background-image: url("../media/artPlaceMockup.webp");
+}
+.projectInfo{
+    width: 37%;
+    min-width: 284px;
+    background-color: #222222;
+
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+}
+.projectInfo h3{
+    font-size: 20px;
+    color: #C2C2C2;
+    margin-bottom: 0;
+}
+.projectInfo h2{
+    font-size: 40px;
+    margin: 0;
+}
+#artPlaceProject .projectInfo h2{
+    color: #FFCA2A;
+    text-shadow: 0px 0px 13px rgba(255, 255, 255, 0.40);
+
+}
+
+
+
+
 /* Project Title */
 .projectTitle{
     display: flex;
@@ -231,6 +294,49 @@ screen and (max-height: 480px){
     .projectShowcase{
         margin-bottom: var(--secBottom);
     }
+
+    /* Extra Project  */
+    .project{
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .projectInfo{
+        min-width: 0;
+        width: 100%;
+        padding: 20px;
+    }
+    .projectInfoContainer{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        gap: 10px
+    }
+    .projectInfoContainer > div{
+        max-width: 300px;
+    }
+
+    .projectImage{
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    .projectInfo h3 {
+        margin-top: 0;
+        font-size: 16px;
+    }
+    .projectInfo h2{
+        font-size: 30px;
+    }
+    .projectInfo p{
+        font-size: 14px;
+    }
+
+    .taskList{
+        margin-top: 0;
+    }
+
+
+
     /* Project Title */
     h1{
         font-size: 40px;
