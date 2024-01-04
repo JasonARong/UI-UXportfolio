@@ -92,7 +92,7 @@ aside{
     padding-left: 40px;
     position: fixed;
     height: 100vh;
-    overflow: scroll;
+    overflow: hidden;
     background-color: var(--background);
 }
 aside h2{
