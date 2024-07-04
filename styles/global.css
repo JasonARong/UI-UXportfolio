@@ -48,6 +48,19 @@
 @font-face {
     font-family: "Montserrat";
     font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Montserrat/static/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/Montserrat/static/Montserrat-Italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
     font-weight: 700;
     src: url("../fonts/Montserrat/static/Montserrat-Bold.ttf") format("truetype");
 }
@@ -92,7 +105,7 @@ aside{
     padding-left: 40px;
     position: fixed;
     height: 100vh;
-    overflow: hidden;
+    overflow: scroll;
     background-color: var(--background);
 }
 aside h2{
