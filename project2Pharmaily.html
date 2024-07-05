@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Jiecheng's UI/UX portfolio site" />
+	    <meta name="author" content="Jiecheng Chen" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="color-scheme" content="dark light">
+        <title>Jiecheng's UI/UX portfolio</title>
+        <link href="styles/pharmaily.css" rel="stylesheet"  type="text/css"/>
+        <link href="media/favicon.ico" rel="icon">
+        <link href="media/icon.svg" rel="icon" type="image/svg+xml">
+    </head>
+    <body>
+        <input type="checkbox" name="" id="check">
+        <div id="hamMenu">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        <aside>
+            <h2><a href="./index.html">Jiecheng <br>
+                UI/UX Portfolio</a>
+            </h2>
+            <nav>
+                <ul>
+                    <li class="options" ><a href="./index.html">Home</a></li>
+                    <li class="projectOptions">
+                        <noscript >
+                            <a class="options" href="./project1Baeometer.html">
+                                Project 1 <span class="projectNames">| Beaometer</span>    
+                            </a> 
+                        </noscript>
+                        <button class="options">
+                            <span>
+                                Project 1 <span class="projectNames">| Beaometer</span>    
+                            </span>                        
+                            <svg class="arrowIcon" xmlns="http://www.w3.org/2000/svg" width="8" height="18" viewBox="0 0 10 18" fill="none">
+                            <path d="M2 2L8 8.85106L2 16" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="dropDown">
+                            <a class="options" href="./project1Baeometer.html">Overview</a>
+                            <a class="options" href="project1Baeometer.html#discover" >Discover</a>
+                            <a class="options" href="project1Baeometer.html#define" >Define</a>
+                            <a class="options" href="project1Baeometer.html#develop" >Develope</a>
+                            <a class="options" href="project1Baeometer.html#deliver" >Deliver</a>
+                        </div>
+                    </li>                    
+                    <li class="projectOptions">
+                        <noscript>
+                            <a class="options selected" href="./project2Pharmaily.html">
+                                Project 2 <span class="projectNames">| Pharmaily</span>    
+                            </a> 
+                        </noscript>
+                        <button class="options" id="selectedOption">                            
+                            <span>
+                                Project 2 <span class="projectNames">| Pharmaily</span>    
+                            </span>                        
+                            <svg class="arrowIcon" xmlns="http://www.w3.org/2000/svg" width="8" height="18" viewBox="0 0 10 18" fill="none">
+                            <path d="M2 2L8 8.85106L2 16" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="dropDown" id="currentMenu">
+                            <a class="options active" href="#" data-item="overview">Overview</a>
+                            <a class="options" href="project2Pharmaily.html#discover" data-item="discover">Discover</a>
+                            <a class="options" href="project2Pharmaily.html#define" data-item="define">Define</a>
+                            <a class="options" href="project2Pharmaily.html#develop" data-item="develop">Develope</a>
+                            <a class="options" href="project2Pharmaily.html#deliver" data-item="deliver">Deliver</a>
+                        </div>
+                    </li>
+                    <li class="projectOptions">
+                        <noscript>
+                            <a class="options" href="./project3Triton2Go.html">
+                                Project 3 <span class="projectNames">| Triton 2 Go</span>    
+                            </a> 
+                        </noscript>
+                        <button class="options">                            
+                            <span>
+                                Project 3 <span class="projectNames">| Triton 2 Go</span>    
+                            </span>                        
+                            <svg class="arrowIcon" xmlns="http://www.w3.org/2000/svg" width="8" height="18" viewBox="0 0 10 18" fill="none">
+                            <path d="M2 2L8 8.85106L2 16" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="dropDown">
+                            <a class="options" href="./project3Triton2Go.html">Overview</a>
+                            <a class="options" href="project3Triton2Go.html#discover" >Discover</a>
+                            <a class="options" href="project3Triton2Go.html#define" >Define</a>
+                            <a class="options" href="project3Triton2Go.html#develop" >Develope</a>
+                            <a class="options" href="project3Triton2Go.html#deliver" >Deliver</a>
+                        </div>
+                    </li>
+                    <li class="options"><a href="./otherProjects.html">Other Projects</a></li>
+                    <li class="options"><a href="./about.html">About</a></li>
+                    <li class="options"><a href="./index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <footer>
+                <p id="copyright">&copy; Jiecheng Chen UI/UX Portfolio 2023<br>
+                    <span>Designed and Coded by Jiecheng</span>
+                </p>
+            </footer>
+        </aside>
+
+
+        <main>
+            <section id="mainContent">
+                <!-- Overview -->
+                <section id="overview" class="majorSections">
+                    <h3 id="descriptionHeading">Design & Prototype</h3>
+                    <div id="mainTitle">
+                        <h1>Pharmaily</h1> 
+                        
+                        <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="55" height="55" rx="13" fill="#71D5E7"/>
+                            <g filter="url(#filter0_d_368_241)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M45.5082 9.6566C45.5175 9.84484 45.5081 10.0321 45.4801 10.2185C40.4006 15.1577 35.3152 20.0839 30.2239 24.9971C29.9616 24.9971 29.6994 24.9971 29.4372 24.9971C29.4372 23.0304 29.4372 21.0637 29.4372 19.0969C27.9013 19.0969 26.3653 19.0969 24.8294 19.0969C24.8294 21.0637 24.8294 23.0304 24.8294 24.9971C22.8627 24.9971 20.8959 24.9971 18.9292 24.9971C18.9292 26.5518 18.9292 28.1064 18.9292 29.6611C20.8772 29.6611 22.8252 29.6611 24.7732 29.6611C24.7732 29.8672 24.7732 30.0732 24.7732 30.2792C19.6898 35.1472 14.6137 40.0265 9.54506 44.9174C9.35867 44.9454 9.17138 44.9547 8.98313 44.9455C8.97375 38.0712 8.98313 31.197 9.01123 24.3228C9.74443 18.1219 12.9193 13.6733 18.5359 10.9771C20.1898 10.268 21.913 9.8372 23.7056 9.68469C30.9731 9.6566 38.2406 9.64721 45.5082 9.6566Z" fill="#5091DD"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M45.5083 9.65662C45.5645 16.3716 45.5832 23.0959 45.5645 29.8297C45.4838 30.4958 45.4089 31.1701 45.3397 31.8526C44.9387 33.8231 44.227 35.6774 43.2044 37.4157C42.5923 38.3089 41.9367 39.1706 41.2376 40.0005C39.6796 41.5567 37.9003 42.793 35.8993 43.7093C35.4585 43.8646 35.0277 44.0331 34.6069 44.215C33.9163 44.3923 33.2233 44.5609 32.5278 44.7207C31.8925 44.8128 31.2557 44.8971 30.6173 44.9736C23.5558 45.0017 16.4942 45.0111 9.43269 45.0017C9.27058 45.0189 9.12071 45.0002 8.98315 44.9455C9.1714 44.9548 9.35869 44.9454 9.54508 44.9174C14.6138 40.0266 19.6898 35.1472 24.7732 30.2793C24.7732 32.0587 24.7732 33.8381 24.7732 35.6175C26.3466 35.6175 27.92 35.6175 29.4934 35.6175C29.4934 33.6321 29.4934 31.6466 29.4934 29.6611C31.4601 29.6611 33.4269 29.6611 35.3936 29.6611C35.4122 28.0968 35.3935 26.5422 35.3374 24.9972C33.6329 24.9972 31.9284 24.9972 30.2239 24.9972C35.3152 20.0839 40.4006 15.1577 45.4802 10.2185C45.5081 10.0322 45.5175 9.84486 45.5083 9.65662Z" fill="#4883C7"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M30.2239 24.9971C31.9284 24.9971 33.6329 24.9971 35.3374 24.9971C35.3374 26.533 35.3374 28.069 35.3374 29.6049C33.3611 29.5863 31.3943 29.605 29.4372 29.6611C29.4372 31.6278 29.4372 33.5946 29.4372 35.5613C27.9013 35.5613 26.3653 35.5613 24.8294 35.5613C24.8481 33.585 24.8293 31.6182 24.7732 29.6611C22.8252 29.6611 20.8772 29.6611 18.9292 29.6611C18.9292 28.1064 18.9292 26.5518 18.9292 24.9971C20.8959 24.9971 22.8627 24.9971 24.8294 24.9971C24.8294 23.0304 24.8294 21.0637 24.8294 19.0969C26.3653 19.0969 27.9013 19.0969 29.4372 19.0969C29.4372 21.0637 29.4372 23.0304 29.4372 24.9971C29.6994 24.9971 29.9616 24.9971 30.2239 24.9971Z" fill="#FEFEFE"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M35.3373 24.9971C35.3934 26.5421 35.4121 28.0968 35.3935 29.6611C33.4268 29.6611 31.4601 29.6611 29.4933 29.6611C29.4746 29.6611 29.4558 29.6611 29.4371 29.6611C31.3943 29.605 33.361 29.5863 35.3373 29.6049C35.3373 28.069 35.3373 26.533 35.3373 24.9971Z" fill="#D1E0F1"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.7732 29.6611C24.8293 31.6183 24.848 33.585 24.8294 35.5613C26.3653 35.5613 27.9013 35.5613 29.4372 35.5613C29.4372 33.5946 29.4372 31.6279 29.4372 29.6611C29.4559 29.6611 29.4746 29.6611 29.4934 29.6611C29.4934 31.6466 29.4934 33.6321 29.4934 35.6175C27.92 35.6175 26.3466 35.6175 24.7732 35.6175C24.7732 33.8381 24.7732 32.0587 24.7732 30.2793C24.7732 30.0732 24.7732 29.8672 24.7732 29.6611Z" fill="#6F9ED4"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_368_241" x="4.97961" y="9.65308" width="44.5918" height="43.3548" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="2"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_368_241"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_368_241" result="shape"/>
+                            </filter>
+                            </defs>
+                        </svg>
+                                                                                  
+                    </div>
+                    
+                    <div id="titleHeader">
+                        <img id="UIalienBae" src="./media/pharmaily/UIalienMeds.webp" alt="UI alien Baeometer pic">
+                        <img id="titleImg" src="./media/pharmaily/PharmailyMockUp.webp" alt="pharmaily Mockup Image">    
+                    </div>
+                    
+                    <h2>Overview</h2>
+                    <p><strong>Pharmaily is a pharmaceutical Kiosk that aims to create an efficient 
+                        and safe medicine pickup experience for patients. </strong>
+                        To ensure patients’ satisfaction and safety, Pharmaily Kiosks provide 24/7 service outside of 
+                        pharmacies that grant patients easy access to prescribed medications and consultation. 
+                    </p>
+
+                    <div class="visitLinks">
+                        <a class="linkBtn fill" target="_blank" href="https://www.figma.com/proto/AzEdwd1VnbOXzexeNNR7vs/DSGN-100-A4-Mooodboard-%26-Style-guide?type=design&node-id=108-305&t=u4pd4nteAxggW4O6-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=108%3A305&mode=design" >
+                            Try Prototype</a>
+                        <a class="linkBtn" target="_blank" href="https://www.figma.com/file/AzEdwd1VnbOXzexeNNR7vs/DSGN-100-A4-Mooodboard-%26-Style-guide?type=design&node-id=0-1&mode=design&t=XN29BuP4dPD31JM9-0">
+                            Visit Project 
+                        </a>
+                    </div>
+
+                    <h3>My Team & My Efforts</h3>                    
+                    <div id="effortTeam">
+                        <div>
+                            <strong>(Jason)Jiecheng Chen, 
+                                UI/UX Researcher, Designer</strong> <br/>
+                            Haowei Li, Designer<br/>
+                            Shuchang Liu, Designer <br/>
+                            Yang yu, Designer <br/>                            
+                        </div>
+                        <div>
+                            <strong>My Role</strong> <br/>
+                            Lead UI/UX Researcher, Designer<br/>
+                            <strong>Tools Used</strong> <br/>
+                            Figma, Figjam, Inkscape, Dovetail, 
+                            Epilog laser cutter<br/>
+                            <strong>Scope</strong> <br/>
+                            4 weeks Academic Project<br/>
+                            <strong>What I Did</strong> <br/>
+                            Team Management, User Research, UI Design, 
+                            Kiosk Design, Prototype Building, User Testing                            
+                        </div>                
+                    </div>
+                    
+
+                    <h3>Design Process</h3>
+                    <div id="designProcess" >
+                        <img src="./media/pharmaily/DesginProcess.webp" alt="design process img" />
+                    </div>
+                   
+                </section>
+
+                <!-- Discover -->
+                <section id="discover" class="majorSections">
+                    <div class="secHead">
+                        <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.966437 49.6916L3.30841 52.0336C4.59699 53.3221 6.70378 53.3221 7.99236 52.0336L20.166 39.8599C23.452 41.8905 27.3244 43.0632 31.4684 43.0632C43.3605 43.0632 53 33.4236 53 21.5316C53 9.63953 43.3605 0 31.4684 0C19.5764 0 9.93683 9.63953 9.93683 21.5316C9.93683 25.6756 11.1095 29.548 13.1401 32.834L0.966437 45.0076C-0.322146 46.2962 -0.322146 48.403 0.966437 49.6916ZM31.4684 36.4381C27.4867 36.4381 23.7435 34.8878 20.9279 32.0721C18.1122 29.2565 16.5619 25.5133 16.5619 21.5316C16.5619 17.5499 18.1122 13.8067 20.9279 10.991C23.7435 8.17538 27.4867 6.6251 31.4684 6.6251C35.4501 6.6251 39.1933 8.17538 42.009 10.991C44.8246 13.8067 46.3749 17.5499 46.3749 21.5316C46.3749 25.5133 44.8246 29.2565 42.009 32.0721C39.1933 34.8878 35.4501 36.4381 31.4684 36.4381Z" fill="#487BFF"/>
+                        </svg> 
+                        <h2>Discover</h2>
+                    </div>
+                    
+                    <h3>Interview & Analysis</h3>
+                    <div id="interviewIntro" class="gridDisplay">
+                        <img src="./media/pharmaily/dovetail.webp" alt="dovetail project screenshot">
+                        <p>We have conducted interviews <strong>targeting two major potential user groups:
+                            patients and pharmacy workers.</strong> <br><br>
+                            After gathering the responses, we <strong>analyzed the qualitative data with coding</strong> 
+                            in Dovetail.</p>
+                    </div>
+                    <h4>Insight 1: Need for 24/7 & Remote Pick up</h4>
+                    <div class="gridDisplay insights">
+                        <p class="insightFindings">Both patients and pharmacists want to have ways for the patients to pick 
+                            up their prescribed medications during off-hours and outside of the pharmacies.
+                        </p>   
+                        <div>
+                            <p><strong>Patients</strong><br>
+                                <em>“I dont really want to travel to a pharmacy to pickup my medicines, especially when I am sick.”</em>
+                            </p>
+                            <p><strong>Pharmacists</strong><br>
+                                <em>“It's always about making sure a patient has a way to get the medications 
+                                on the next day or after work, after class.”</em>
+                            </p>    
+                                
+                        </div>    
+                    </div>
+                    
+                    <h4>Insight 2: Importance of Consultation</h4>
+                    <div class="gridDisplay insights">
+                        <p class="insightFindings">Pharmacists emphasizes the importance of consultation, since it is crucial for 
+                            them to make sure patients knows how to take the medicines safely.
+                        </p>   
+                        <div>
+                            <p><strong>Pharmacists</strong><br>
+                            <em>“The hardest job I think sometimes it's either you know, making sure they understand.”<br><br>
+                                “we're just mainly giving them as much as information before they start taking the 
+                                medication because we're the last resort before you start taking it.”</em>
+                            </p>                                
+                        </div>
+                    </div>
+                    
+
+                    <h4>Insight 3: Need for Efficient Pickup Process</h4>
+                    <div class="gridDisplay insights">
+                        <p class="insightFindings">Many patients reflects that the current pharmacy they went to have repetitive check-in process, 
+                            and long waiting time.
+                        </p>
+                        <div>
+                            <p><strong>Patients</strong><br>
+                            <em>“I was quite anxious at the time when I explain to them. So I want them to 
+                                make the step the the steps faster for me.”<br><br>
+                                “So when I first took up the pill, it was like I explained the symptoms for three times”</em>
+                            </p>                                
+                        </div>
+                    </div>
+                    
+                    
+
+                    
+                    
+                </section>
+
+                <!-- Define -->
+                <section id="define" class="majorSections">
+                    <div class="secHead">
+                        <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.85 0V5.4855C14.257 6.7045 6.7045 14.257 5.4855 23.85H0V29.15H5.4855C6.7045 38.743 14.257 46.2955 23.85 47.5145V53H29.15V47.5145C38.743 46.2955 46.2955 38.743 47.5145 29.15H53V23.85H47.5145C46.2955 14.257 38.743 6.7045 29.15 5.4855V0M23.85 10.812V15.9H29.15V10.8385C35.775 11.925 41.075 17.225 42.188 23.85H37.1V29.15H42.1615C41.075 35.775 35.775 41.075 29.15 42.188V37.1H23.85V42.1615C17.225 41.075 11.925 35.775 10.812 29.15H15.9V23.85H10.8385C11.925 17.225 17.225 11.925 23.85 10.812ZM26.5 23.85C25.7972 23.85 25.1231 24.1292 24.6262 24.6262C24.1292 25.1231 23.85 25.7972 23.85 26.5C23.85 27.2028 24.1292 27.8769 24.6262 28.3738C25.1231 28.8708 25.7972 29.15 26.5 29.15C27.2028 29.15 27.8769 28.8708 28.3738 28.3738C28.8708 27.8769 29.15 27.2028 29.15 26.5C29.15 25.7972 28.8708 25.1231 28.3738 24.6262C27.8769 24.1292 27.2028 23.85 26.5 23.85Z" fill="#6EE9F0"/>
+                        </svg>  
+                        <h2>Define</h2>
+                    </div>
+                    
+                    <h3>Personas</h3>
+                    <p id="personaText">Two personas representing the two user groups: patients and pharmacy workers.</p>
+                    <div id="persona" class="gridDisplay">
+                        <img src="./media/pharmaily/persona1.webp" alt="persona 1">
+                        <img src="./media/pharmaily/persona2.webp" alt="persona 2">
+                    </div>
+                    <h3>Storyboards</h3>                                    
+                    <div class="storyboard">
+                        <div>
+                            <img src="./media/pharmaily/storyboards/storyboard1-1.webp" alt="storyboard panel">
+                            <p><strong>Context</strong><br>
+                                Jack, a student, needs medicine after a basketball injury.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./media/pharmaily/storyboards/storyboard1-2.webp" alt="storyboard panel">
+                            <p><strong>Problem</strong><br>
+                                Long waits at the campus pharmacy cause frustration.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./media/pharmaily/storyboards/storyboard1-3.webp" alt="storyboard panel">
+                            <p><strong>Solution</strong><br>
+                                Use of a quick, self-service kiosk for medicine pickup.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./media/pharmaily/storyboards/storyboard1-4.webp" alt="storyboard panel">
+                            <p><strong>Resolution</strong><br>
+                                Jack gets medicine faster, reducing wait time and stress.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="storyboard">
+                        <div>
+                            <img src="./media/pharmaily/storyboards/storyboard2-1.webp" alt="storyboard panel">
+                            <p><strong>Context</strong><br>
+                                As a Pharmacist, Dr. Mark wants to take care of his patients.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./media/pharmaily/storyboards/storyboard2-2.webp" alt="storyboard panel">
+                            <p><strong>Problem</strong><br>
+                                Difficult to provide quality consultation to patients outside of his pharmacy. 
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./media/pharmaily/storyboards/storyboard2-3.webp" alt="storyboard panel">
+                            <p><strong>Solution</strong><br>
+                                If patients can talk to Dr. Mark remotely through the kiosk.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./media/pharmaily/storyboards/storyboard2-4.webp" alt="storyboard panel">
+                            <p><strong>Resolution</strong><br>
+                                Then Dr. Mark can better take care of his patients who cannot come to his pharmacy.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+                                                            
+                </section>
+
+
+                <!-- Develop -->
+                <section id="develop" class="majorSections">
+                    <div class="secHead">
+                        <svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 17.5598C3 15.4792 3.43642 13.5005 4.22274 11.7103L10.9693 18.4568C13.0369 20.5244 16.3892 20.5244 18.4568 18.4568C20.5245 16.3892 20.5245 13.0369 18.4568 10.9693L11.7103 4.22274C13.5005 3.43642 15.4792 3 17.5598 3C25.6011 3 32.1197 9.51865 32.1197 17.5598C32.1197 19.6405 31.6832 21.6192 30.8969 23.4094L54.4492 46.9617C56.5169 49.0295 56.5169 52.3817 54.4492 54.4492C52.3817 56.5169 49.0295 56.5169 46.9617 54.4492L23.4094 30.8969C21.6192 31.6832 19.6405 32.1197 17.5598 32.1197C9.51865 32.1197 3 25.6011 3 17.5598Z" stroke="#DB82F0" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg> 
+                        <h2>Develop</h2>
+                    </div>
+                    
+                    <h3>UI Design</h3>
+                    <h4>Sketches</h4>
+                    <p>A sketch of the digital  user interface that <strong>maps out the general user flow.</strong></p>
+                    <img id="uiSketches" src="./media/pharmaily/UIsketch.webp" alt="UI Sketches">
+
+                    <h4>Moodboard</h4>
+                    <div id="moodboard" class="gridDisplay">
+                        <img src="./media/pharmaily/moodboard.webp" alt="Moodboard">
+                        <p>To express the desired mood of our design, we built a moodboard with a collection of images. <br><br>
+                            Since we are designing a medical Kiosk, the vibes we are aiming for are <strong>safety, efficiency, and reliability</strong>. 
+                            We found that the <strong>greenish-blue</strong> that is usually associated with anything pharmaceutical is the most effective 
+                            color conveying the desired mood.
+                        </p>
+                    </div>
+
+                    <h4>Style Guide</h4>
+                    <p>Based on our moodboard, we developed the style guide. It not only detailed the <strong>color schemes and the fonts</strong>,
+                        but also provided a <strong>variety of UI elements</strong>, serving as tool kits and building blocks for our final design.
+                    </p>
+                    <div id="styleGuides">
+                        <img src="./media/pharmaily/styleGuides/styleGuide1.webp" alt="style guide image">
+                        <img src="./media/pharmaily/styleGuides/styleGuide2.webp" alt="style guide image">
+                        <img src="./media/pharmaily/styleGuides/styleGuide3.webp" alt="style guide image">
+                        <img src="./media/pharmaily/styleGuides/styleGuide4.webp" alt="style guide image">
+                    </div>
+
+                    <h4>HI-FI Prototype</h4>
+                    <img id="hifiPrototype" src="./media/pharmaily/Hi-Fiui.webp" alt="HI-FI Prototype">
+                    
+                    
+                    <h3>Kiosk Prototype Design</h3>
+                    <h4>Sketches</h4>
+                    <p>After listing out a set of functionalities our Kiosk needs to have –– 
+                        <strong>medicine pickup, payment, identity verification, and remote consultation</strong> –– 
+                        we used sketches as a low-commitment way to ideate many solutions.</p>
+                    <div id="kioskSketches" >
+                        <img src="./media/pharmaily/kioskSketch1.webp" alt="kiosk sketches">
+                        <img src="./media/pharmaily/kioskSketch2.webp" alt="kiosk sketches">
+                        <img src="./media/pharmaily/kioskSketch3.webp" alt="kiosk sketches">  
+                        <img src="./media/pharmaily/kioskSketch4.webp" alt="kiosk sketches">    
+                    </div>
+
+                    <h4>Digital Design</h4>
+                    <div id="digitalDesign" class="gridDisplay">
+                        <p>According to the design proposed by the sketches, I used <strong>
+                            Inkscape to digitally design all the components of our kiosk</strong>. 
+                            Laser cutters can read this file and cut out components based on my design
+                        </p>
+                        <img src="./media/pharmaily/digitalDesign.webp" alt="Digital Design">
+                    </div>
+
+                    <h4>Building Kiosk</h4>
+                    
+                    <div class="prototypeGrid gridDisplay">
+                        <div class="imgContainer bigDisplay">
+                            <div class="overlay">
+                                <div class="overlayContent">
+                                    <h5>Early Prototype</h5>
+                                    <p class="prototypeDescription">
+                                        + Tests Ideas Fast <br>
+                                        + Rapid Iterations <br>
+                                        - Lacks Details
+                                    </p>
+                                </div>
+                            </div>
+                            <img src="./media/pharmaily/buildkiosk/build1-F.webp" alt="Building Kiosk">    
+                        </div>
+                        
+                        <div class="buildSteps">
+                            <div class="imgContainer">
+                                <div class="overlay">
+                                    <div class="overlayContent">
+                                        <p>Designing <br>Digital File</p>                                        
+                                    </div>
+                                </div>
+                                <img src="./media/pharmaily/buildkiosk/build1-1.webp" alt="Building Kiosk">    
+                            </div>
+                            
+                            <div class="imgContainer">
+                                <div class="overlay">
+                                    <div class="overlayContent">
+                                        <p>Laser Cutting </p>                                        
+                                    </div>
+                                </div>
+                                <img src="./media/pharmaily/buildkiosk/build1-3.webp" alt="Building Kiosk">    
+                            </div>
+                            <div class="imgContainer">
+                                <div class="overlay">
+                                    <div class="overlayContent">
+                                        <p>Assembling <br> Low-Fi Prototype</p>                                        
+                                    </div>
+                                </div>
+                                <img src="./media/pharmaily/buildkiosk/build1-4.webp" alt="Building Kiosk">    
+                            </div>  
+                            <div class="imgContainer">
+                                <p><strong>Early Lo-Fi Prototype</strong><br>
+                                    <span class="steps">
+                                    1. Importing Files <br>
+                                    2. Laser Cutting <br>
+                                    3. Assembling
+                                    </span>
+                                </p>   
+                            </div>
+                        </div>                        
+                    </div>
+
+                    
+
+                    <div id="sprayPaint" class="gridDisplay">
+                        <div class="imgContainer">
+                            <div class="overlay">
+                                <div class="overlayContent">
+                                    <p>Use Inkscape To Plan<br> Out Where Will Be Painted</p>                                        
+                                </div>
+                            </div>
+                            <img src="./media/pharmaily/buildkiosk/sprayPaint1.webp" alt="Spray Paint">    
+                        </div>
+                        <div class="imgContainer">
+                            <div class="overlay">
+                                <div class="overlayContent">
+                                    <p>Laser Cut Out <br> Stencils To Prevent Paint Spilling</p>                                        
+                                </div>
+                            </div>
+                            <img src="./media/pharmaily/buildkiosk/sprayPaint2.webp" alt="Spray Paint">    
+                        </div>
+                        <div class="imgContainer">
+                            <div class="overlay">
+                                <div class="overlayContent">
+                                    <p>Apply Spray Paint <br> To Achieve The Desired Design</p>                                        
+                                </div>
+                            </div>
+                            <img src="./media/pharmaily/buildkiosk/sprayPaint3.webp" alt="Spray Paint">    
+                        </div>
+                        
+                        <div>
+                            <h5>Spray Painting</h5>
+                            <p id="paintDescription">Use Inkscape to digitally plan out where will be painted. 
+                                Laser cut out stencils to prevent paint from spilling. 
+                                Apply spray paint to achieve the desired design. <br><br>
+
+                                Reasons for choosing spray paint: efficient to paint large surface areas, easy to achieve 
+                                gradient colors, and it creates protective layers.
+                            </p>
+                        </div>
+                    </div>
+
+                
+                    <div class="prototypeGrid gridDisplay">
+                        <div class="imgContainer bigDisplay">
+                            <div class="overlay">
+                                <div class="overlayContent">
+                                    <h5>HI-FI Prototype</h5>
+                                    <p class="prototypeDescription">
+                                        + Detailed Visualization <br>
+                                        + Usability Testing <br>
+                                        + Realistic Representation <br>
+                                        - Time-Consuming <br>
+                                        - Costly
+                                    </p>
+                                </div>
+                            </div>
+                            <img src="./media/pharmaily/buildkiosk/build2-F.webp" alt="Building Kiosk">    
+                        </div>
+                        
+                        <div class="buildSteps">
+                            <div class="imgContainer">
+                                <div class="overlay">
+                                    <div class="overlayContent">
+                                        <p>Text Stencil</p>                                        
+                                    </div>
+                                </div>
+                                <img src="./media/pharmaily/buildkiosk/build2-1.webp" alt="Building Kiosk">    
+                            </div>
+                            <div class="imgContainer">
+                                <div class="overlay">
+                                    <div class="overlayContent">
+                                        <p>Pharmaily Logo</p>                                        
+                                    </div>
+                                </div>
+                                <img src="./media/pharmaily/buildkiosk/build2-2.webp" alt="Building Kiosk">    
+                            </div>
+                            <div class="imgContainer">
+                                <div class="overlay">
+                                    <div class="overlayContent">
+                                        <p>Spray Painting</p>                                        
+                                    </div>
+                                </div>
+                                <img src="./media/pharmaily/buildkiosk/build2-3.webp" alt="Building Kiosk">    
+                            </div>
+                            <div class="imgContainer">
+                                <div class="overlay">
+                                    <div class="overlayContent">
+                                        <p>Assembling The<br> HI-FI Prototype</p>                                        
+                                    </div>
+                                </div>
+                                <img src="./media/pharmaily/buildkiosk/build2-5.webp" alt="Building Kiosk">    
+                            </div>  
+                            <div class="imgContainer">
+                                <div class="overlay">
+                                    <div class="overlayContent">
+                                        <p>Drying The Glue</p>                                        
+                                    </div>
+                                </div>
+                                <img src="./media/pharmaily/buildkiosk/build2-6.webp" alt="Building Kiosk">    
+                            </div>
+                            <div class="imgContainer">
+                                <p><strong>Hi-Fi Prototype</strong><br>
+                                    <span class="steps">
+                                    1. Making Stencils <br>
+                                    2. Design Logos <br>
+                                    3. Spray Painting <br>
+                                    4. Assembling <br>
+                                    5. Final Touches
+                                    </span>
+                                </p>   
+                            </div>
+                        </div>                        
+                    </div>
+                </section>
+
+                <!-- Deliver -->
+                <section id="deliver" class="majorSections">
+                    <div class="secHead">
+                        <svg width="53" height="39" viewBox="0 0 53 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.0909 38.4573H13.25C9.58818 38.4573 6.46439 37.1994 3.87864 34.6837C1.29288 32.1519 0 29.0673 0 25.4299C0 22.3052 0.939546 19.5171 2.81864 17.0654C4.71379 14.6138 7.18712 13.0514 10.2386 12.3784C11.2505 8.69295 13.258 5.71251 16.2614 3.43712C19.2808 1.14571 22.6936 0 26.5 0C31.2058 0 35.1888 1.63444 38.4491 4.90331C41.7255 8.15616 43.3636 12.1301 43.3636 16.8251C46.1421 17.1456 48.4388 18.3473 50.2536 20.4304C52.0845 22.4815 53 24.8851 53 27.6412C53 30.6537 51.948 33.2095 49.8441 35.3086C47.7402 37.4078 45.1785 38.4573 42.1591 38.4573H28.9091V21.2717L32.7636 24.9973L36.1364 21.6322L26.5 12.0179L16.8636 21.6322L20.2364 24.9973L24.0909 21.2717V38.4573Z" fill="#9371F4"/>
+                        </svg>  
+                        <h2>Deliver</h2>
+                    </div>
+                    <div class="prototypeGrid gridDisplay">
+                        <div class="imgContainer">
+                            <div class="overlay">
+                                <div class="overlayContent">
+                                    <h5>Kiosk Supports</h5>
+                                    <p class="prototypeDescription">
+                                        1. Identity Verification <br>
+                                        2. Medical Instructions <br>
+                                        3. 3 Payment Methods <br>
+                                        4. Medicine Pickup <br>
+                                        5. Remote Consultation
+                                    </p> 
+                                </div>
+                            </div>
+                            <img src="./media/pharmaily/kioskDetails/kioskDetailsF.webp" alt="Building Kiosk">    
+                        </div>
+                        
+                        <div class="buildSteps">
+                            <div class="imgContainer">
+                                <div class="overlay">
+                                    <div class="overlayContent">
+                                        <p>Main Panel</p>                                        
+                                    </div>
+                                </div>
+                                <img src="./media/pharmaily/kioskDetails/kioskDetails1.webp" alt="Building Kiosk">    
+                            </div>
+                            
+                            <div class="imgContainer">
+                                <div class="overlay">
+                                    <div class="overlayContent">
+                                        <p>Left Side</p>                                        
+                                    </div>
+                                </div>
+                                <img src="./media/pharmaily/kioskDetails/kioskDetails2.webp" alt="Building Kiosk">    
+                            </div>
+                            <div class="imgContainer">
+                                <div class="overlay">
+                                    <div class="overlayContent">
+                                        <p>Right Side<br> Headphone Hook</p>                                        
+                                    </div>
+                                </div>
+                                <img src="./media/pharmaily/kioskDetails/kioskDetails3.webp" alt="Building Kiosk">    
+                            </div>  
+                            <div class="imgContainer">
+                                <div class="overlay">
+                                    <div class="overlayContent">
+                                        <p>Back Side</p>                                        
+                                    </div>
+                                </div>
+                                <img src="./media/pharmaily/kioskDetails/kioskDetails4.webp" alt="Building Kiosk">
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <h3>User Testing</h3>
+                    <div id="userTesting" class="gridDisplay">
+                        <img src="./media/pharmaily/userTesting.webp" alt="user testing">
+                        <div>
+                            <h4><strong>
+                                Feedback <br>
+                                What to Improve
+                            </strong></h4>
+                            <p>
+                                User Interface <br>
+                                1 · Refine payment instructions <br>
+                                2 · Make the font size larger for instructions <br><br>
+
+                                Physical Kiosk<br>
+                                1 · Unify ID and Credit Card tapping area<br>
+                                2 · Add a lid for pick up box
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+
+                    <h3>Try It Out</h3>
+                    <div>
+                        <div class="tryItOutTitles">
+                            <div>
+                                <h4>Prototype</h4>
+                                <p>Click the screen below to interact</p>
+                            </div>
+                            <a class="linkBtn" target="_blank" href="https://www.figma.com/proto/AzEdwd1VnbOXzexeNNR7vs/DSGN-100-A4-Mooodboard-%26-Style-guide?type=design&node-id=108-305&t=BebxOPhG0OSH9Mpr-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=108%3A305">
+                                Try Prototype 
+                            </a>    
+                        </div>                                                               
+                        <iframe loading="lazy" style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FAzEdwd1VnbOXzexeNNR7vs%2FDSGN-100-A4-Mooodboard-%2526-Style-guide%3Ftype%3Ddesign%26node-id%3D108-305%26t%3DLP5OGSzTsjeshAwh-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D108%253A305%26mode%3Ddesign" allowfullscreen></iframe>                    
+                    </div>
+                    
+                </section>   
+                
+                <section>
+                    <hr>
+                    <h2>More Projects</h2>
+                    <div id="moreProjects">
+                        <a href="./project1Baeometer.html">
+                            <div class="project" id="baeometerProject">
+                                <div class="projectImage" id="baeometerImg"></div>
+                                <div class="projectInfo">                                    
+                                    <h3>UI/UX Design & Dev.</h3>
+                                    <h2>Baeometer</h2>
+                                    <p>A fortune telling responsive web app that predicts the relationship between a couple</p>                                                    
+                                </div>                                
+                            </div>    
+                        </a>
+                        <a href="./project3Triton2Go.html">
+                            <div class="project" id="tritonProject">
+                                <div class="projectImage" id="tritonImg"></div>
+                                <div class="projectInfo">                                    
+                                    <h3>UI Redesign</h3>
+                                    <h2>Triton2Go</h2>
+                                    <p>A redesign of the map feature of the UCSD cafeteria food ordering mobile app Triton2Go</p>                                                    
+                                </div>                                
+                            </div>    
+                        </a>
+                        <a href="./otherProjects.html">
+                            <div class="project" id="otherProjects">
+                                <div class="projectImage" id="otherProjectsImg"></div>
+                                <div class="projectInfo">                                    
+                                    <h3>UI/UX Design & Dev.</h3>
+                                    <h2>Others</h2>
+                                    <p>From class projects to professional works, I have created a wide variety of designs</p>                                                    
+                                </div>                                
+                            </div>    
+                        </a>
+                    </div>
+                </section> 
+            </section>
+        </main>
+    </body>
+    <script src="./scripts/navigation.js"></script>
+    <script src="./scripts/highlightOnScroll.js"></script>
+</html>
