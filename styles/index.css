@@ -110,6 +110,8 @@ h1 span{
     flex-wrap: wrap;
 
     gap: 20px;
+    min-width: 362px;
+    width: calc(50% - 10px);
     max-width: 500px;
     border-radius: 20px;
 
@@ -410,6 +412,15 @@ screen and (max-height: 480px) {
         z-index: -1;
         opacity: 0.25;
     }
+
+    /* Project Title */
+    /* Recent Projects */
+    .projectTitle{
+        min-width: none;
+        flex-wrap: nowrap;
+        width: auto;
+    }
+
 
     /* New Project */
     .projectTitle{
