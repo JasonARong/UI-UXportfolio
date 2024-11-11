@@ -98,12 +98,14 @@ main img{
 
 /* //Develop// */
 /* UI */
-#develop h4{
-    /* color: var(--developColor); */
+#uiSketchContainer {
+    margin-bottom: var(--secBottom);
 }
 #uiSketches{
-    margin-bottom: var(--secBottom);
     border-radius: 10px;
+}
+#uiSketchContainer p{
+    margin-top: 8px;
 }
 
 #moodboard{
