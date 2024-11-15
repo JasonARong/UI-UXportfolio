@@ -58,7 +58,7 @@
 /* Cards Display */
 .cardsDisplay div{
     background-color: var(--lightBack);
-    border: var(--border);
+    /* border: var(--border); */
     border-radius: 10px;
 }
 .cardsDisplay img{
@@ -87,8 +87,13 @@
     -webkit-text-fill-color: transparent;
 }
 
-/* My efforts and Team */
-#effortTeam{
+/* Project background */
+#background{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-bottom: var(--secBottom);
+}
+/* #effortTeam{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
@@ -100,10 +105,7 @@
     padding: 20px;
     border: var(--border);
     border-radius: 10px;
-}
-#visitTeamBtn{
-    margin-bottom: var(--secBottom);
-}
+} */
 
 /* Design Process
  => project.css */
@@ -140,36 +142,62 @@
 /* Persona */
 #persona{
     padding: 40px;
-    border: var(--border);
+    padding-bottom: 20px;
+    /* border: var(--border); */
+    background-color: var(--lightBack);
     border-radius: 10px;
 
     display: flex;
+    align-items: flex-end;
     gap: 40px;
     margin-bottom: var(--secBottom);
-}
-#personaBack{
-    min-width: 200px;
-}
-#personaBack p{
     font-size: 14px;
+}
+
+#personaPicContainer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(167, 215, 210);
+    border-radius: 4px;
 }
 #personaPic{
     min-width: 0;
     width: 100%;
-    max-width: 260px;
-    aspect-ratio: 1/1;
-    border-radius: 20rem;
+    max-width: 100px;
+    padding: 10px;
+    border-radius: 4px;
+
 }
 #persona h4{
-    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+#personaBack{
+    min-width: 220px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+#personaBack>p{
+    margin: 0;
+}
+#backgroundInfo{
+    display: flex;
+    gap: 10px;
+}
+#backgroundInfo p:nth-child(1){
+    font-weight: bold;
 }
 #persona h5{
     color: var(--defineColor);
 }
 #cassieQoute{
     font-family: serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 800;
+
+    margin-top: 0;
 }
 #personaInfo{
     display: flex;
@@ -177,15 +205,13 @@
 }
 #personaInfo div{
     width: 50%;
-    border: var(--border);
+    /* border: var(--border);
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px; */
 }
 
 #personaInfo h5{
-    margin-left: 10px;
-    margin-top: 0;
-    
+    margin-top: 0;    
 }
 #personaInfo ul{
     margin-top: 4px;
@@ -358,6 +384,9 @@
 
 /* //Deliver// 
  => project.css */
+#results{
+    margin-bottom: var(--secBottom);
+}
 #results svg{
     margin-top: 10px;
     border-radius: 10px;
@@ -367,7 +396,6 @@
 }
 #results ul{
     margin-top: 0;
-    padding-inline-start: 20px;
 }
 
 

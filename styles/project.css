@@ -24,6 +24,9 @@ h5{
     font-size: 18px;
     margin-bottom: 5px;
 }
+ul{
+    padding-inline-start: 20px;
+}
 
 p,li{
     color: var(--paragraph); 
@@ -266,7 +269,7 @@ h1{
     flex: 1;
 
     background-color: var(--lightBack);
-    border: var(--border);
+    /* border: var(--border); */
     padding: 20px;
     border-radius: 10px;
 
