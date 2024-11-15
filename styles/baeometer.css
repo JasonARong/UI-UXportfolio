@@ -90,7 +90,7 @@
 /* Project background */
 #background{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(176px, 1fr));
     margin-bottom: var(--secBottom);
 }
 /* #effortTeam{
@@ -428,12 +428,20 @@ screen and (max-height: 480px){
 
     /* Discover 
      => project.css */
+    #interviewSection{
+        display: block;
+    }
+    #interviewSection p,
+    #interviewSection ol{
+        width: 100%;
+    }
 
     /* Define */
     /* Persona*/
     #persona{
         flex-direction: column;
         gap: 0;
+        align-items: normal;
 
         padding: 10px;
     }
