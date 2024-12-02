@@ -24,6 +24,9 @@ h5{
     font-size: 18px;
     margin-bottom: 5px;
 }
+ul,ol{
+    padding-inline-start: 20px;
+}
 
 p,li{
     color: var(--paragraph); 
@@ -102,6 +105,7 @@ a[data-item="deliver"].active{
 
 .visitLinks{
     display: flex;
+    flex-wrap: wrap;
     gap:10px;
 
     margin: 20px 0 50px 0;
@@ -266,7 +270,7 @@ h1{
     flex: 1;
 
     background-color: var(--lightBack);
-    border: var(--border);
+    /* border: var(--border); */
     padding: 20px;
     border-radius: 10px;
 
