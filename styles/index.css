@@ -233,26 +233,48 @@ spline-viewer{
 
 .projectImage{
     width: 63%;
+    position: relative;
+    overflow: hidden;
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+.projectImage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; /* Base size */
+    /*transform: scale(1.2);  Increase the size by 120% */
+    /*transform-origin: center;  Keep the zoom centered */
+    transition: 0.5s;
 }
-#baeometerImg{
+.project:hover .projectImage::before{
+    transform: scale(1.04);  /*Increase the size by 120% */
+    transform-origin: center;  /*Keep the zoom centered */
+}
+
+#baeometerImg::before{
     background-image: url("../media/BaeometerMockup.webp");
 }
-#artPlaceImg{
+#artPlaceImg::before{
     background-image: url("../media/artPlaceMockup.webp");
 }
-#pharmailyImg{
+#pharmailyImg::before{
     background-image: url("../media/PharmailyMockUp.webp");
 }
-#tritonImg{
+#tritonImg::before{
     background-image: url("../media/triton2goMockupClean.webp");
     opacity: 0.9;
 }
-#otherProjectsImg{
+#otherProjectsImg::before{
     background-image: url("../media/otherProjectsMockup.webp");
 }
+
 .projectInfo{
     width: 37%;
     min-width: 284px;
