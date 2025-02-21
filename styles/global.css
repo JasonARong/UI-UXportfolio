@@ -12,6 +12,15 @@
     --defineColor: #6EE9F0;
     --developColor: #DB82F0;
     --deliverColor: #A07EFF;
+
+
+    --largeText: 1.25rem;
+    --regularText: 1rem;
+    --smallText: 0.875rem;
+
+    --smallGap: 20px;
+    --mediumGap: 40px;
+    --largeGap: 60px;
 }
 
 @font-face {

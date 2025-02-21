@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Jiecheng's UI/UX portfolio site" />
+	    <meta name="author" content="Jiecheng Chen" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="color-scheme" content="dark light" />
+        <title>Jiecheng's UI/UX portfolio</title>
+        <link href="styles/accordion.css" rel="stylesheet"  type="text/css"/>
+        <link href="media/favicon.ico" rel="icon">
+        <link href="media/icon.svg" rel="icon" type="image/svg+xml">
+    </head>
+    <body>
+        <input type="checkbox" name="" id="check">
+        <div id="hamMenu">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.69/build/spline-viewer.js" async></script>
+        <spline-viewer loading-anim-type="spinner-small-dark" url="https://prod.spline.design/s39Xx0LpCR1ukjhU/scene.splinecode">
+            <img src="data:image/png;base64,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" 
+            alt="Spline preview" />
+        </spline-viewer>
+        
+        <div id="darkCover"></div>
+        
+        <main>
+            
+            <section id="mainContent">
+                <!-- ═══════════════════════════════════ [ Introduction ] ═══════════════════════════════════ -->
+                <section id="introduction" class="majorSections">
+                    <h1>Accordion</h1>
+                    <h2 id="accessibleComponent">Accessible Component</h2>
+
+                    <div class="gridDisplay">
+                        <div class="spanTwoCols">
+                            <h4>Context</h4>
+                            <p>
+                                This project focuses on designing an accessible nested accordion UI component that 
+                                enables users to navigate two layers of information efficiently. In this project, 
+                                I will analysis the interactions supported by three existing accordion examples. 
+                                Then used the insights I gained from the analysis to design the state models as 
+                                well as the high-fidelity prototype of my accordion component.
+                            </p>
+                        </div>
+                        <div>
+                            <h4>My Role</h4>
+                            <p>
+                                User Interface Design <br>
+                                User Experience Design <br>
+                                UX Research
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ═══════════════════════════════════ [ Interaction Analysis ] ═══════════════════════════════════ -->
+
+                <section id="InteractionAnalysis">
+                    <!-- ========================= BROWN ========================= -->
+                    <h4 class="sectionHeader">01-1 Interaction Analysis</h4>
+                    <hr>
+                    <section id="brown">
+                        <div class="gridDisplay exampleIntro">
+                            <div>
+                                <p class="largeText">Informational Accordion</p>
+                                <h3>Brown Graduate School</h3>
+                                <a href="https://graduateschool.brown.edu/admitted-students-orientation/guide-admitted-phd-mfa-students">
+                                    Visit Brown Graduate School
+                                </a>
+                            </div>
+                            <img class="gridContent spanTwoCols" src="./media/Accordion/Brown/BrownAccordion.webp" alt="Brown Accordion">
+                        </div>
+
+                        <h4>Mouse - Hover</h4>
+                        <div id="brownHover" class="gridDisplay">
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Brown/Hover.webp" alt="Brown accordion hover example">
+                                <p class="largeText">User Inputs</p>
+                                <p>Mouse hover on an accordion item.</p>
+                                <p class="largeText">System Outputs</p>
+                                <p>The cursor icon will change to a pointer. When mouse leave, it will change back to normal cursor.</p>
+                            </div>
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Brown/toolTip.webp" alt="Brown accordion tool tip example">
+                                <p class="largeText">User Inputs</p>
+                                <p>Mouse hover on an accordion item for a couple seconds.</p>
+                                <p class="largeText">System Outputs</p>
+                                <p>It will show a tool tip revealing title attribute content associated with this accordion item.</p>
+                            </div>
+                            <div>
+                                <h3>+ Positives</h3>
+                                <ul>
+                                    <li>On hover, the cursor icon changes to a pointer, suggesting that this UI element could be clicked.</li>
+                                    <li>After the cursor is hovered for a while, a tooltip will tell users how to interact with it. Great for learnability.</li>
+                                </ul>
+                                <h3>- Negative</h3>
+                                <ul>
+                                    <li>
+                                        The cursor icon changes might be a bit too subtle, so there will be a small chance of user not noticing it.
+                                    </li>
+                                    <li>
+                                        The cursor icon is the only change on hover, what if the user uses a customized cursor, then there is no other way to show the on-hover state. Bad discoverability.
+                                    </li>
+                                    <li>
+                                        The tooltip will only show up after it is hovered for a while, it is a feature that is not easy to be discovered.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <h4>Mouse - Click</h4>
+                        <div id="brownClick" class="gridDisplay">
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Brown/clickOnHeader.webp" alt="Brown accordion click on header example">
+                                <p class="largeText">User Inputs</p>
+                                <p>Click on the entire accordion item. (Plus icon and the text cannot be clicked separately)</p>
+                                <p class="largeText">System Outputs</p>
+                                <p>If the accordion body is collapsed, then its text color will change to red, the plus icon will turn into a minus icon and reveal the accordion body content with a smooth expanding animation. If it is expanded, then it will revert back to its collapsed default state.</p>
+                            </div>
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Brown/clickOnContent.webp" alt="Brown accordion click on content example">
+                                <p class="largeText">User Inputs</p>
+                                <p>Click on the accordion body content </p>
+                                <p class="largeText">System Outputs</p>
+                                <p>No output.</p>
+                            </div>
+                            <div>
+                                <h3>+ Positives</h3>
+                                <ul>
+                                    <li>On click, the header text color changes to red, which indicates this accordion item is currently activated.</li>
+                                    <li>Also on click, the plus icon turns into a minus icon which suggests that clicking it again will instead collapse the content.</li>
+                                    <li>Animation makes the expanding and collapsing feel smooth and not jumpy like most of the other accordions.</li>
+                                    <li>Unlike some of the other accordions, clicking the content of the accordion will not collapse it, which sacrifices some efficiency to prevent mis-inputs.</li>
+                                </ul>
+                                <h3>- Negative</h3>
+                                <ul>
+                                    <li>Clicking the content part of the accordion does nothing that could sacrifice some efficiency.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h4>Keyboard - Tab</h4>
+                        <div id="brownFocus" class="gridDisplay">
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Brown/focusOnHeader.webp" alt="Brown accordion focus on header example">
+                                <p class="largeText">User Inputs</p>
+                                <p>Tab key on press.</p>
+                                <p class="largeText">System Outputs</p>
+                                <p>
+                                    Visual - Focus on the first accordion item.  The focused item will have a thin blue border. If the focused item is outside of the screen, the screen will scroll up or down accordingly.
+                                </p>
+                                <p>                                
+                                    Auditory - “Submit required health-related documentation, button, group.”
+                                    “Expand accordion for Submit required health-related documentation, You are currently on a button, group. To click this button, press Control Option Space” Clicking the content part of the accordion does nothing that could sacrifice some efficiency.
+                                </p>
+                            </div>
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Brown/focusOnContent.webp" alt="Brown accordion focus on content example">
+                                <p class="largeText">User Inputs</p>
+                                <p>When a accordion item is expanded, tab key on press.</p>
+                                <p class="largeText">System Outputs</p>
+                                <p>
+                                    Visual - The body content will be the focus, showing the thin blue boarder.
+                                </p>
+                                <p>
+                                    Auditory - “By July 1 for programs that start in the summer or fall. By January 2 for programs that start in the spring. Read about health requirements for new graduate students and learn more about your health and wellness resources while at Brown.”
+                                    “You are currently in a group ”
+                                </p>
+                            </div>
+                            <div>
+                                <h3>+ Positives</h3>
+                                <ul>
+                                    <li>On press, it will focus on the first accordion item and visualize it with a blue border box, which meets the expected behavior making it more familiar to the users.</li>
+                                    <li>When a focused item is outside of the screen, the screen will scroll up or down accordingly. A great usability addition that saves the user’s effort to manually scroll the page.</li>
+                                    <li>The Auditory announcements are a bit lengthy, but very descriptive and clear.</li>
+                                    <li>The focus order goes from top to bottom, intuitive to use.</li>
+                                </ul>
+                                <h3>- Negative</h3>
+                                <ul>
+                                    <li>The body content of the accordion can be focused, but not interacted with. It is a bit deceptive and could cause users to be confused.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="brownFocusOrder" class="gridDisplay2Cols">
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Brown/focusOrder.webp" alt="Brown focus order">
+                                <p class="largeText">Focus order on collapsed accordion</p>
+                            </div>
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Brown/focusOrderExpanded.webp" alt="Brown focus expanded order">
+                                <p class="largeText">Focus order on expanded accordion</p>
+                            </div>
+                        </div>
+
+
+                        <div id="brownKeyboard" class="gridDisplay">
+                            <div>
+                                <h4>Keyboard - Enter/Space</h4>
+                                <img class="gridContent" src="./media/Accordion/Brown/focusExpanded.webp" alt="Brown accordion press enter on focused accordion example">
+                                <p class="largeText">User Inputs</p>
+                                <p>When an accordion element is focused, enter or space key on press.</p>
+                                <p class="largeText">System Outputs</p>
+                                <p>
+                                    Visual - If the accordion body is currently collapsed, then its text color will change from black to red, and the plus icon will turn into a minus icon and reveal the accordion body content. If it is already expanded, then its text color will change back to black, and the minus icon will revert to the plus icon and collapse the body content.
+                                </p>                    
+                                <p>Auditory - No Outputs</p>
+                            </div>
+                            <div>
+                                <h4>Keyboard - Arrow Key</h4>
+                                <img class="gridContent" src="./media/Accordion/Brown/accordion.webp" alt="Brown accordion example">
+                                <p class="largeText">User Inputs</p>
+                                <p>Pressing up or down arrow key.</p>
+                                <p class="largeText">System Outputs</p>
+                                <p>
+                                    Visual - The entire page scrolls up and down.                                    
+                                </p>
+                                <p>Auditory - No Outputs</p>
+                            </div>
+                            <div>
+                                <h3>+ Positives</h3>
+                                <ul>
+                                    <li>The accordion is triggered by the tab key on press (not on release). This makes the controls more responsive and more efficient, which is usually what a user is looking for when they choose to use the keyboard to navigate the page.</li>
+                                    <li>The up and down arrow keys correspond to scroll up and down, which is a familiar control mapping to many of the keyboard users.</li>
+                                </ul>
+                                <h3>- Negative</h3>
+                                <ul>
+                                    <li>When an accordion item is focused and the enter/space key is held, the content will expand and collapse repeatedly (possibly a technical bug).</li>
+                                    <li>Some people might be more familiar with navigating an accordion with up and down arrows. So they might expect the up arrow will focus on the previous item and the down arrow will focus on the next item.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h4>Touch - Tap</h4>
+                        <div id="brownMobile" class="gridDisplay2Cols">
+                            <div class="gridContent gridDisplay2ColsSmall">
+                                <img class="gridContent" src="./media/Accordion/Brown/phone.webp" alt="Brown accordion mobile version example">
+                                <img class="gridContent" src="./media/Accordion/Brown/phoneExpanded.webp" alt="Brown expanded accordion mobile version example">
+                            </div>
+                            <div class="gridContent">
+                                <p class="largeText">User Inputs</p>
+                                <p>Tap on release the accordion item will expand the body content.</p>
+                                <p class="largeText">System Outputs</p>                            
+                                <p>
+                                    If the accordion body is currently collapsed, then its text color will change from black to red, and the plus icon will turn into a minus icon and reveal the accordion body content. If it is already expanded, then its text color will change back to black, and the minus icon will revert to the plus icon and collapse the body content.
+                                </p>
+                                <h3>+ Positives</h3>
+                                <ul>
+                                    <li>The accordion is only triggered on release, which prevents mis-inputs.</li>
+                                    <li>The touch area is big, so it is easy to tap open the accordion item that the user wishes to expand.</li>
+                                </ul>
+                            </div>
+
+                        </div>    
+                    
+                    </section>
+
+                    <!-- ========================= MDN ========================= -->
+                    <h4 class="sectionHeader">01-2 Interaction Analysis</h4>
+                    <hr>
+                    <section id="mdn">
+                        <div class="gridDisplay exampleIntro">
+                            <div>
+                                <p class="largeText">Accordion Menu</p>
+                                <h3>mdn web docs_</h3>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web">
+                                    Visit Mdn Web Docs
+                                </a>
+                            </div>
+                            <img class="gridContent spanTwoCols" src="./media/Accordion/Mdn/mdn.webp" alt="Mdn Accordion">
+                        </div>
+
+                        <h4>Mouse - Hover</h4>
+                        <div id="mdnHover" class="gridDisplay">
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Mdn/hoverOnIcon.webp" alt="Mdn accordion hover on icon example">
+                                <p class="largeText">User Inputs</p>
+                                <p>Mouse hover on an accordion item.</p>
+                                <p class="largeText">System Outputs</p>
+                                <p>The cursor icon will change to a pointer. When mouse leave, it will change back to normal cursor.</p>
+                            </div>
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Mdn/hoverOnText.webp" alt="Mdn accordion hover on text example">
+                                <p class="largeText">User Inputs</p>
+                                <p>Mouse hover on the menu item’s hyperlink text.</p>
+                                <p class="largeText">System Outputs</p>
+                                <p>The cursor icon will change to a pointer, and the accordion’s text will be underlined.</p>
+                            </div>
+                            <div>
+                                <h3>+ Positives</h3>
+                                <ul>
+                                    <li>On hover, the cursor icon changes to a pointer, suggesting that this UI element could be clicked.</li>
+                                    <li>When the text of the accordion is hovered, it will be underlined, which tells users that this is a hyperlink that will lead them to another page.</li>
+                                </ul>
+                                <h3>- Negative</h3>
+                                <ul>
+                                    <li>
+                                        The cursor icon changes might be a bit too subtle to suggest that the chevron icon and the text can be clicked separately.
+                                    </li>
+                                    <li>
+                                        The cursor icon is the only change on hover, if the user uses a customized cursor, then there is no other way to show the on-hover state. Bad discoverability.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <h4>Mouse - Click</h4>
+                        <div id="mdnClick" class="gridDisplay">
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Mdn/clickOnIcon.webp" alt="Mdn accordion click on header example">
+                                <p class="largeText">User Inputs</p>
+                                <p>Click on menu item’s chevron icon.</p>
+                                <p class="largeText">System Outputs</p>
+                                <p>If the sub-menu collapses, the chevron icon will turn 90 degrees to point downwards and reveal the sub-menu. If it is expanded, then it will revert back to its collapsed default state.</p>
+                            </div>
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Mdn/clickOnText.webp" alt="Mdn accordion click on content example">
+                                <p class="largeText">User Inputs</p>
+                                <p>Click on the accordion's header text.</p>
+                                <p class="largeText">System Outputs</p>
+                                <p>Navigate to the corresponding page. The clicked menu item will have a transparent colored background and a colored left border.</p>
+                            </div>
+                            <div>
+                                <h3>+ Positives</h3>
+                                <ul>
+                                    <li>Separating one accordion header into 2 parts supports usability. If the user only wants to browse the menu content they can just click on the icon to avoid navigating to another page.</li>
+                                    <li>When the chevron icon is clicked, the icon will turn to point down, indicating this accordion’s content is expanded.</li>
+                                    <li>When the text is clicked, the colored background and a thickened left border tell users that this is the topic they are currently looking at.</li>
+                                    
+                                </ul>
+                                <h3>- Negative</h3>
+                                <ul>
+                                    <li>The nested content of an accordion lacks indentation or other visual distinctions, making the nested content appear to be on the same hierarchy level as the outer layer accordion items. This could be confusing to the users.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h4>Keyboard - Tab</h4>
+                        <div id="mdnFocus" class="gridDisplay">
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Mdn/focusOuterLayer.webp" alt="Mdn accordion focus on outer content example">
+                                <p class="largeText">User Inputs</p>
+                                <p>Tab key on press.</p>
+                                <p class="largeText">System Outputs</p>
+                                <p>
+                                    Visual - Focus on the first accordion item.  The focused item will have a thin blue border. If the focused item is outside of the screen, the screen will scroll up or down accordingly.
+                                    <br><br>
+                                    Auditory - “Submit required health-related documentation, button, group.”
+                                    “Expand accordion for Submit required health-related documentation, You are currently on a button, group. To click this button, press Control Option Space” Clicking the content part of the accordion does nothing that could sacrifice some efficiency.</p>
+                            </div>
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Mdn/focusInnerLayer.webp" alt="Mdn accordion focus on inner content example">
+                                <p class="largeText">User Inputs</p>
+                                <p>When the outer element is focused, hit the tab key again.</p>
+                                <p class="largeText">System Outputs</p>
+                                <p>
+                                    Visual - The inner text of the accordion will be focused, it will have a blue outline border-box, and the text itself will be underlined.
+                                    <br><br>
+                                    Auditory - “Visited, link, JavaScript frameworks and libraries”
+                                    “You are currently on a disclosure triangle, group. To click this button, press Control Option Space”</p>
+                            </div>
+                            <div>
+                                <h3>+ Positives</h3>
+                                <ul>
+                                    <li>On press, it will focus on the first accordion item and visualize it with a blue border box, which meets the expected behavior making it more familiar to the users.</li>
+                                    <li>The Auditory announcements are clear and informative of what the focused element can do.</li>
+                                    <li>The focus order goes from the outer layer to the nested inner layer, from top to bottom, intuitive to use.</li>                                    
+                                </ul>
+                                <h3>- Negative</h3>
+                                <ul>
+                                    <li>When a longer accordion item is focused, the left and right sides of the blue box will be cut off, creating visual inconsistency.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="mdnFocusOrder" class="gridDisplay2Cols">
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Mdn/focusOrder.webp" alt="Mdn focus order">
+                                <p class="largeText">Focus order on collapsed accordion</p>
+                            </div>
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Mdn/focusOrderExpanded.webp" alt="Mdn focus expanded order">
+                                <p class="largeText">Focus order on expanded accordion</p>
+                            </div>
+                        </div>
+
+
+                        <h4>Keyboard - Enter/Space</h4>
+                        <div id="mdnEnter" class="gridDisplay">
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Mdn/focusOnOuterLayerExpanded.webp" alt="Mdn accordion press enter on focused accordion example">
+                                <p class="largeText">User Inputs</p>
+                                <p>When an accordion element is focused, enter or space key on press.</p>
+                                <p class="largeText">System Outputs</p>
+                                <p>
+                                    Visual - If the sub-menu collapses, the chevron icon will turn 90 degrees to point downwards and reveal the sub-menu. If it is expanded, then it will revert back to its collapsed default state. When the outer element is focused, hit the enter key.
+                                    <br><br>
+                                    Auditory - No Outputs
+                                </p>                    
+                            </div>
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Mdn/onJavascript.webp" alt="Mdn accordion example">
+                                <p class="largeText">User Inputs</p>
+                                <p>Pressing up or down arrow key.</p>
+                                <p class="largeText">System Outputs</p>
+                                <p>
+                                    Visual - Navigate to a new page. The clicked menu item will have a transparent colored background and a colored left border. It indicates this is the page you are on.
+                                    <br><br>
+                                    Auditory - No Outputs
+                                </p>
+                            </div>
+                            <div>
+                                <h3>+ Positives</h3>
+                                <ul>
+                                    <li>The accordion is triggered on tab key pressed (not on release). This makes the controls more responsive and more efficient which is usually what a user is looking for when they choose to use the keyboard to navigate the page.</li>                                    
+                                </ul>
+                                <h3>- Negative</h3>
+                                <ul>
+                                    <li>After the user hits enter and navigates to another page there is no auditory output for that action. This may lead to users being confused about their current location on the website.</li>                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h4>Keyboard - Arrow Key</h4>
+                        <div id="mdnArrow" class="gridDisplay">
+                            <img class="gridContent" src="./media/Accordion/Mdn/focusOnOuterLayerExpanded.webp" alt="Mdn accordion press enter on focused accordion example">
+                            <div>                                
+                                <p class="largeText">User Inputs</p>
+                                <p>When an item in the menu list is focused, press the up or down arrow key.</p>
+                                <p class="largeText">System Outputs</p>
+                                <p>
+                                    Visual - The sidebar menu list will scroll up and down.
+                                    <br><br>
+                                    Auditory - No Outputs
+                                </p>
+                            </div>
+                            <div>
+                                <h3>+ Positives</h3>
+                                <ul>
+                                    <li>Allows easy scrolling for users who use both keyboard and mouse to navigate.</li>                                    
+                                </ul>
+                                <h3>- Negative</h3>
+                                <ul>
+                                    <li>Does not help the keyboard only users to navigate the menu with the arrow keys.</li>                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h4>Touch - Tap</h4>
+                        <div id="mdnMobile" class="gridDisplay2Cols">
+                            <div class="gridContent gridDisplay2ColsSmall">
+                                <img class="gridContent" src="./media/Accordion/Mdn/phoneExpanded.webp" alt="Mdn expanded accordion mobile version example">
+                                <img class="gridContent" src="./media/Accordion/Mdn/phoneActive.webp" alt="Mdn activated accordion mobile version example">
+                            </div>
+                            <div class="gridContent">
+                                <p class="largeText">User Inputs</p>
+                                <p>Tap on the menu item’s chevron icon, and tap on the menu item’s text.</p>
+                                <p class="largeText">System Outputs</p>                            
+                                <p>
+                                    When tapping on the chevron icon, If the sub-menu is collapsed, the chevron icon will turn 90 degrees to point downwards and reveal the sub-menu. If it is expanded, then it will revert back to its collapsed default state.                                    
+                                </p>
+                                <p>
+                                    When tapping on the text, it will bring the user to a new page. The clicked item will have a transparent colored background and a colored left border. 
+                                </p>
+                                <h3>- Negative</h3>
+                                <ul>
+                                    <li>The touch area for the chevron icon is too small, making it easy to mis-click.</li>                                   
+                                </ul>
+                            </div>
+                        </div>    
+                    </section>
+                    
+                    <!-- ========================= GITHUB ========================= -->
+                    <h4 class="sectionHeader">01-3 Interaction Analysis</h4>
+                    <hr>                    
+                    <section id="github">
+                        <div class="gridDisplay exampleIntro">
+                            <div>
+                                <p class="largeText">Accordion File Tree</p>
+                                <h3>Github</h3>
+                                <a href="https://github.com/">
+                                    Visit Github
+                                </a>
+                            </div>
+                            <img class="gridContent spanTwoCols" src="./media/Accordion/Github/github.webp" alt="Github Accordion">
+                        </div>
+
+                        <h4>Mouse - Hover</h4>
+                        <div id="githubHover" class="gridDisplay">
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Github/hover.webp" alt="Github accordion hover example">
+                                <p class="largeText">User Inputs</p>
+                                <p>Mouse hover on the file item.</p>
+                                <p class="largeText">System Outputs</p>
+                                <p>The cursor icon will change to a pointer. The file item’s background changes to a brighter gray color.</p>
+                            </div>
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Github/hoverOnIcon.webp" alt="Github accordion tool tip example">
+                                <p class="largeText">User Inputs</p>
+                                <p>Mouse hover on menu item’s Mouse hover on menu item’s chevron icon text.</p>
+                                <p class="largeText">System Outputs</p>
+                                <p>The cursor icon will change to a pointer. The file item’s background changes to a brighter gray color. The chevron icon background changes to an even brighter gray color.</p>
+                            </div>
+                            <div>
+                                <h3>+ Positives</h3>
+                                <ul>
+                                    <li>On hover, both the cursor and the background color will be changed. By using 2 visual indicators at the same time, this design makes it very clear that this accordion menu item has been hovered.</li>
+                                    <li>The on-hover background colors for the chevron icon and the text are different. It effectively tells users that these two elements can be interacted separately.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <h4>Mouse - Click</h4>
+                        <div id="githubClick" class="gridDisplay">
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Github/clickOnFolder.webp" alt="Github accordion click on header example">
+                                <p class="largeText">User Inputs</p>
+                                <p>Click on a folder item.</p>
+                                <p class="largeText">System Outputs</p>
+                                <p>Navigate to the clicked folder page. The chevron icon will turn 90 degrees to point downwards and reveal the sub-menu. The clicked file item will have a transparent gray background and a colored left border. </p>
+                            </div>
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Github/clickOnIcon.webp" alt="Github accordion click on content example">
+                                <p class="largeText">User Inputs</p>
+                                <p>Click on menu item’s chevron icon.</p>
+                                <p class="largeText">System Outputs</p>
+                                <p>If the submenu is collapsed, the chevron icon will turn 90 degrees to point downwards and reveal the subfile tree will be shown. If the subfile tree is shown, then clicking on it will turn the chevron icon to point toward the right and collapse the sub-file tree.</p>
+                            </div>
+                            <div>
+                                <h3>+ Positives</h3>
+                                <ul>
+                                    <li>Separating one accordion header into 2 parts supports usability. If the user only wants to browse the menu content they can just click on the icon to avoid navigating to another page.</li>
+                                    <li>When the chevron icon is clicked, the icon will turn to point down, indicating this accordion’s content is expanded.</li>
+                                    <li>When the text is clicked, the colored background and a thickened left border tell users that this is the topic they are currently looking at.</li>
+                                    <li>The nest content is indented indicating it belongs to a lower level. The vertical guiding line on the left emphasizes that the from this accordion item to the next are on the same hierarchical level. With these 2 visual cues, the hierarchy of this accordion is clearly conveyed.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h4>Keyboard - Tab</h4>
+                        <div id="githubFocus" class="gridDisplay">
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Github/focusOnFolder.webp" alt="Github accordion focus on header example">
+                                <p class="largeText">User Inputs</p>
+                                <p>Pressing tab on the keyboard.</p>
+                                <p class="largeText">System Outputs</p>
+                                <p>
+                                    Visual - The first file item will be focused. The focused file item has a blue outline border.
+                                    <br><br>
+                                    Auditory - “Entering Files table. .github/workflows, File Tree Navigation, navigation”
+                                    “You are currently on table, press Control Option Shift Down Arrow.”
+                                </p>
+                            </div>
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Github/focusOnSlider.webp" alt="Github accordion focus on content example">
+                                <p class="largeText">User Inputs</p>
+                                <p>When a file item is focused, press the tab key again.</p>
+                                <p class="largeText">System Outputs</p>
+                                <p>
+                                    Visual - The next file in the file tree is not selected, but instead the draggable pane slider element is focused.
+                                    <br><br>
+                                    Auditory - “Leaving Files. Pane width 320 pixels, Draggable pane splitter, slider, Collapse file tree Files main branch Add file Search this repository Go to file File Tree Navigation Pane”
+                                    “You are currently on a slider. To start interacting with the slider, press Control Option Shift Down Arrow”
+                                </p>
+                            </div>
+                            <div>
+                                <h3>+ Positives</h3>
+                                <ul>
+                                    <li>On press, it will focus on the first accordion item and visualize it with a blue border box, which meets the expected behavior making it more familiar to the users.</li>
+                                    <li>The Auditory announcements are clear and informative of what the focused element can do.</li>                                    
+                                </ul>
+                                <h3>- Negative</h3>
+                                <ul>
+                                    <li>The focusing order is unconventional. Pressing tab when the first accordion item is focused, people will usually expect the next item in the accordion to be focused. However, it instead focuses on the draggable pane slider.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="githubFocusOrder" class="gridDisplay2Cols">
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Github/foucsOrder.webp" alt="Github focus order">
+                                <p class="largeText">Focus order on collapsed accordion</p>
+                            </div>
+                            <div>
+                                <img class="gridContent" src="./media/Accordion/Github/focusOrderArrowKey.webp" alt="Github focus expanded order">
+                                <p class="largeText">Focus order using arrow key</p>
+                            </div>
+                        </div>
+
+
+                        <div id="githubKeyboard" class="gridDisplay">
+                            <div>
+                                <h4>Keyboard - Enter/Space</h4>
+                                <img class="gridContent" src="./media/Accordion/Github/focusAfterArrowKey.webp" alt="Github accordion press enter on focused accordion example">
+                                <p class="largeText">User Inputs</p>
+                                <p>When a file item is focused, hitting the up or down arrow key.</p>
+                                <p class="largeText">System Outputs</p>
+                                <p>
+                                    Visual - If the up key is pressed, the previous file item will be focused. If the down key is pressed, the next file item will be focused.
+                                    <br><br>
+                                    Auditory - “accui-test-folder, File Tree Navigation, navigation”
+                                    “You are currently on table, press Control Option Shift Down Arrow.”
+                                </p>                    
+                            </div>
+                            <div>
+                                <h4>Keyboard - Arrow Key</h4>
+                                <img class="gridContent" src="./media/Accordion/Github/focusAfterEnter.webp" alt="Github accordion example">
+                                <p class="largeText">User Inputs</p>
+                                <p>When a folder item is focused, hit the enter or space key.</p>
+                                <p class="largeText">System Outputs</p>
+                                <p>
+                                    Visual - Navigate to the clicked folder page. The chevron icon will turn 90 degrees to point downwards and reveal the sub-menu. The clicked file item will have a transparent gray background and a colored left border. 
+                                    <br><br>
+                                    Auditory - “Visited, link, Parent direcotry, Folder and files, table, 3 columns, 9 rows.”
+                                </p>
+                            </div>
+                            <div>
+                                <h3>+ Positives</h3>
+                                <ul>
+                                    <li>The accordion is triggered on tab key pressed (not on release). This makes the controls more responsive and more efficient which is usually what a user is looking for when they choose to use the keyboard to navigate the page.</li>
+                                    
+                                </ul>
+                                <h3>- Negative</h3>
+                                <ul>
+                                    <li>Only allowing users to use the arrow key to navigate the accordion menu is not intuitive, and could cause some learnability issues in the beginning.</li>
+                                    <li>Cannot focus on the chevron icon. So keyboard-only users cannot expand an accordion item without navigating to it.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h4>Touch - Tap</h4>
+                        <div id="githubMobile" class="gridDisplay2Cols">
+                            <div class="gridContent gridDisplay2ColsSmall">
+                                <img class="gridContent" src="./media/Accordion/Github/phoneTapOnIcon.webp" alt="Github accordion mobile version example">
+                                <img class="gridContent" src="./media/Accordion/Github/phoneTapOnFolder.webp" alt="Github expanded accordion mobile version example">
+                            </div>
+                            <div class="gridContent">
+                                <p class="largeText">User Inputs</p>
+                                <p>Tap on the menu item’s chevron icon, and tap on a folder item.</p>
+                                <p class="largeText">System Outputs</p>                            
+                                <p>
+                                    If the sub menu is collapsed, the chevron icon will turn 90 degrees to point downwards and reveal the sub file tree will be shown. If the sub-file tree is shown, then clicking on it will turn the chevron icon to point toward the right and collapse the sub-file tree.
+                                    Navigate to the clicked folder page. Collapse the file tree side menu.
+                                </p>
+                                <h3>- Negative</h3>
+                                <ul>
+                                    <li>The touch area for the chevron icon is too small, making it easy to mis-click.</li>                                   
+                                </ul>
+                            </div>
+
+                        </div>    
+                    
+                    </section>                    
+                </section>
+
+                <!-- ═══════════════════════════════════ [ Accordion Redesign ] ═══════════════════════════════════ -->
+                <section id="AccordionRedesign">
+                    <h4 class="sectionHeader">02 Accordion Redesign</h4>
+                    <hr>
+
+                    <!-- ========================= Result Showcase ========================= -->
+                    <h3>Result Showcase</h3>
+                    <div class="gridDisplay2Cols">
+                        <img class="gridContent roundedImg" src="./media/Accordion/DefaultState.webp" alt="Default state">
+                        <img class="gridContent roundedImg" src="./media/Accordion/HoverState.webp" alt="Hover state">
+                        <img class="gridContent roundedImg" src="./media/Accordion/Active-topLevel.webp" alt="Active state top level">
+                        <img class="gridContent roundedImg" src="./media/Accordion/Active-subLevel.webp" alt="Active state sub level">
+                    </div>
+                    
+                    <!-- ========================= Details Deep Dives ========================= -->
+                    <h3>Details Deep Dives</h3>
+
+                    <h4>Default State</h4>
+                    <div class="gridDisplay">
+                        <img class="gridContent spanTwoCols roundedImg" src="./media/Accordion/DefaultState.webp" alt="Default state">
+                        <div>
+                            <div class="detailDescriptions">
+                                <img class="gridContent" src="./media/Accordion/default.webp" alt="default accordion">
+                                <p>Each Accordion item has a large clickable button to ensure a large touch space for mobile users.</p>
+                                <a href="AccordionDesign.html#brownMobile">Inspired by Brown’s design</a>    
+                            </div>
+                            
+                            
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="-0.5" width="39" height="39" rx="19.5" transform="matrix(1 0 0 -1 0 39)" fill="white"/>
+                                <rect x="0.5" y="-0.5" width="39" height="39" rx="19.5" transform="matrix(1 0 0 -1 0 39)" stroke="#D9D9D9"/>
+                                <path d="M12.5 24L20 16L27.5 24" stroke="#0A314A" stroke-width="3"/>
+                            </svg>
+                            <p>Uses a chevron icon, because it is the most universally used icon to suggest content expansion, dropdown menus, or revealing hidden options.</p>
+                            <a href="AccordionDesign.html#mdnClick">Inspired by Mdn’s design</a>
+                        </div>                            
+                    </div>
+
+                    <h4>Hover/Focus State</h4>
+                    <div class="gridDisplay">
+                        <img class="gridContent roundedImg" src="./media/Accordion/HoverState.webp" alt="Hover state">
+                        <div>
+                            <div class="detailDescriptions">
+                                <img class="gridContent upperImg" src="./media/Accordion/default.webp" alt="default accordion">
+                                <img class="gridContent" src="./media/Accordion/hoverVisuals.webp" alt="hovered accordion">
+                                <p class="largeText">On Hover</p>
+                                <p>The cursor, the background color, and the border will be changed. I intentionally use 3 visual changes to better convey the current state to people with color blindness.</p>
+                                <a href="AccordionDesign.html#githubHover">Inspired by Github’s design</a>
+                            </div>
+
+                            <div class="detailDescriptions">
+                                <img class="gridContent" src="./media/Accordion/tooltip.webp" alt="tool tip">
+                                <p>On hover tool tip to ensure users know how to interact with this element further improves its learnability.</p>
+                                <a href="AccordionDesign.html#brownHover">Inspired by Brown’s design</a>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="gridContent upperImg" src="./media/Accordion/default.webp" alt="default accordion">
+                            <img class="gridContent" src="./media/Accordion/focused.webp" alt="focused accordion">
+                            <p class="largeText">On Focus</p>
+                            <p>I use a yellow border as opposed to a conventional blue border to make the focus more apparent to users since the primary color of my design is also blue.</p>
+
+                            <p class="largeText">Auditory</p>
+                            <p>
+                                “The Origins of the Universe, button, group.”
+                                “Expand accordion for The Origins of the Universe, You are currently on a button, group. To click this button, press Control Option Space”
+                            </p>
+                            <a href="AccordionDesign.html#brownFocus">Inspired by Brown’s design</a>
+                        </div>
+                    </div>
+
+                    <h4>Active State</h4>
+                    <div class="gridDisplay">
+                        <img class="gridContent roundedImg" src="./media/Accordion/Active-subLevel.webp" alt="active sub level accordion">
+                        <div>
+                            <img class="gridContent" src="./media/Accordion/expanded.webp" alt="expanded accordion">
+                            <p class="largeText">Hierarchy</p>
+                            <p>Through grouping by background color and left blue border, it clearly conveys that the content and sub-accordion are nested within its parent accordion.</p>
+                            <a href="AccordionDesign.html#mdnClick">Avoided issues of the Mdn’s design</a>
+                        </div>
+                        <div>
+                            <img class="gridContent" src="./media/Accordion/innerExpanded.webp" alt="expanded inner accordion">
+                            <p id="onActive" class="largeText">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="29" height="29" rx="14.5" fill="#0098FD"/>
+                                    <rect x="0.5" y="0.5" width="29" height="29" rx="14.5" stroke="#D9D9D9"/>
+                                    <path d="M7.5 11L15 19L22.5 11" stroke="white" stroke-width="3"/>
+                                </svg>                                    
+                                On Active
+                            </p>
+                            <p>The chevron icon will point downwards, which implies clicking it could collapse content or hiding details. It will also get filled with blue to indicate that it is currently activated.</p>
+                            <a href="AccordionDesign.html#githubClick">Inspired by Github’s design</a>
+                        </div>
+                    </div>
+
+                    <h4>Focus Order</h4>
+                    <div class="gridDisplay2Cols">
+                        <img class="gridContent roundedImg" src="./media/Accordion/FocusOrder.webp" alt="Focus Order">
+                        <img class="gridContent roundedImg" src="./media/Accordion/FocusOrder-expanded.webp" alt="Focus Order Expanded">
+                    
+                        <p id="focusOrderDescriptions" class="spanTwoCols">
+                            My design follows the conventional focus order which goes from top to bottom and outer layer to inner layers. 
+                            Keyboard users can use tab/shift+tab or arrow keys to navigate the menu. I choose to support two ways 
+                            of navigation because websites like 
+                            <a href="AccordionDesign.html#brownFocus">Brown</a>  
+                            and <a href="AccordionDesign.html#mdnFocus">Mdn</a> uses tab but websites 
+                            like <a href="AccordionDesign.html#githubKeyboard">Github</a> uses arrow key to navigate.
+                        </p>
+                    </div>
+
+                    <!-- ========================= State Models ========================= -->
+                    <h3>State Models</h3>
+                    <div id="stateModelElements" class="gridDisplay">
+                        <div>
+                            <p>Default</p>
+                            <img class="gridContent upperImg" src="./media/Accordion/default.webp" alt="Default Accordion">
+                            <p>Hover</p>
+                            <img class="gridContent upperImg" src="./media/Accordion/hovered.webp" alt="Hovered Accordion">
+                            <p>Focus</p>
+                            <img class="gridContent upperImg" src="./media/Accordion/focused.webp" alt="Focused Accordion">
+                            <p>Disabled</p>
+                            <img class="gridContent" src="./media/Accordion/disabled.webp" alt="Disabled Accordion">
+                        </div>
+                        <div>
+                            <p>Active</p>
+                            <img class="gridContent" src="./media/Accordion/expanded.webp" alt="expanded accordion">
+                        </div>
+                        <div>
+                            <p>Active</p>
+                            <img class="gridContent" src="./media/Accordion/allExpanded.webp" alt="all expanded accordion">
+                        </div>
+                    </div>
+
+                    <h4>Mouse Interaction</h4>
+                    <img class="gridContent" src="./media/Accordion/mouseVersion1.webp" alt="Mouse interactions state model 1">
+                    <img class="gridContent stateModelVersion2" src="./media/Accordion/mouseVersion2.webp" alt="Mouse interactions state model 2">
+                    <p>
+                        In version 1, users need to manually click on each accordion header to collapse its content, 
+                        meaning it allows multiple accordion content to be expanded at the same time. 
+                        It is more intuitive to learn the interaction, but it could hinder the efficiency, 
+                        because multiple expanded accordion items will take a lot of the screen property, 
+                        making it harder to navigate or read, so users might need to go back and manually collapse the content.
+                    </p>
+                    <p class="stateModelVersion2Descriptions">
+                        In version 2, on the contrary, if the user expands an accordion item’s content, 
+                        the previously expanded content will be automatically collapsed. 
+                        Version 2 prompts efficiency in this way, but it also challenges learnability, 
+                        as there is no apparent signifier that conveys the affordance of clicking on the 
+                        accordion item that will collapse another.
+                    </p>
+
+
+                    <h4>Keyboard Interaction</h4>
+                    <img class="gridContent" src="./media/Accordion/keyboardVersion1.webp" alt="keyboard interactions state model 1">
+                    <img class="gridContent stateModelVersion2" src="./media/Accordion/keyboardVersion2.webp" alt="keyboard interactions state model 2">
+                    <p>
+                        Version 1 follows the conventional accordion keyboard interaction scheme which is similar to Brown’s 
+                        website’s accordion, due to it being a more familiar interaction scheme it will be more learnable. 
+                    </p>
+                    <p class="stateModelVersion2Descriptions">
+                        Most people will move on to the next accordion after the collapsing the previous one. 
+                        Version 2 saves that one click by automatically focusing on the next accordion item 
+                        when the user collapses the previous content. However, this could cause the opposite effect, 
+                        because in some cases, after collapsing content, a user may want to check the previous content instead.
+                    </p>
+
+                </section>
+
+                <!-- ═══════════════════════════════════ [ Reflections ] ═══════════════════════════════════ -->
+                <section id="Reflections">
+                    <h4 class="sectionHeader">03 Reflections</h4>
+                    <hr>
+
+                    <h3>Learn From Good Accessibility Designs</h3>
+                    <div class="gridDisplay">
+                        <div>
+                            <p>
+                                For the accordion on the Brown website, the icon and the text header are grouped 
+                                into a large button, making it more accessible to mobile or other touchscreen users. 
+                                It provides a big touch area to ensure seamless interaction even on smaller screens 
+                                and with less precise touch inputs. 
+                            </p>
+                            <p>
+                                So I adopted the same design mentality by making my accordion into a list of big buttons, 
+                                and to further make it clear that each accordion item has expandable content 
+                                I chose to use the chevron icon instead of the plus icon. 
+                            </p>
+                        </div>
+                        <div>
+                            <img class="gridContent roundedImg" src="./media/Accordion/Brown/Hover.webp" alt="Brown accordion on hover">
+                            <p>The plus icon and header text are grouped into a large button.</p>
+                        </div>
+                        <div>
+                            <img class="gridContent roundedImg" src="./media/Accordion/DefaultState.webp" alt="Redesign Accoridon default">
+                            <p>Chevron icon and header text are grouped into a large button.</p>
+                        </div>    
+                    </div>
+                    
+                    <h3>Account for Missed Accessibility Opportunity</h3>
+                    <div class="gridDisplay">
+                        <div>
+                            <p>
+                                The different website uses different ways to navigate the accordion with a keyboard: 
+                                GitHub uses the arrow key, while Mdn uses tab and shift + tab. 
+                                People who got used to one type of control might find it frustrating when their 
+                                familiar controls are not supported on some other websites.
+                                So to account for that, my accordion supports both tab and arrow key navigation.
+                            </p>
+                            <p>
+                                To decrease this mismatch between the features of a user and the features of the product, 
+                                in my design, I convey the on-hover (focus) state with three visual changes.
+                            </p>
+                        </div>
+                        <div>
+                            <p>Default State</p>
+                            <img class="gridContent" src="./media/Accordion/default.webp" alt="default state">
+                            <p>Subtle Background Color</p>
+                            <img class="gridContent" src="./media/Accordion/onlyBackground.webp" alt="background color change">
+                            <p>Cursor Change</p>
+                            <img class="gridContent" src="./media/Accordion/onlyCursor.webp" alt="cursor change">
+                        </div>
+                        <div>
+                            <p>Colored Left Board</p>
+                            <img class="gridContent" src="./media/Accordion/onlyBorder.webp" alt="Colored Left Board">
+                            <p>Subtle Background Color</p>
+                            <img class="gridContent" src="./media/Accordion/hovered.webp" alt="on hover state">
+                        </div>
+                    </div>
+
+                    <h3>More Accessibility Reflections</h3>
+                    <div class="gridDisplay">
+                        <p>
+                            The Brown’s website’s has good screen reader support, 
+                            the auditory output is informative about its content 
+                            and tells user how to interact with it.
+                        </p>
+                        <img class="gridContent spanTwoCols roundedImg" src="./media/Accordion/Brown/focusFullScreen.webp" alt="Full Screen Focus on first accordion">
+                    </div>
+
+                    <div class="gridDisplay">
+                        <img class="gridContent roundedImg" src="./media/Accordion/focusOrderSquareBrown.webp" alt="Brown Focus Order">
+                        <img class="gridContent roundedImg" src="./media/Accordion/focusOrderSquareMdn.webp" alt="Mdn Focus Order">
+                        <img class="gridContent roundedImg" src="./media/Accordion/focusOrderSquareGithub.webp" alt="Github Focus Order">
+                        <p class="spanThreeCols">
+                            All three websites follow the most intuitive focus order of an accordion which goes from up and down, 
+                            and outer to inner layer. They do not introduce any unexpectedness in terms of focus order, 
+                            which helps screenreader users to navigate more easily.
+                        </p>
+                    </div>
+
+                    <h3>What’s Next?</h3>
+                    <p>
+                        According to recent statistics, mobile devices account for approximately 50.48% of web traffic 
+                        (desktop devices account for 46.51%), and mobile user numbers are still growing. As a result, 
+                        many of the designers are prioritizing touch screen/mobile users in interface designs through 
+                        mobile-first designs. If this trend keeps going, it may eventually lead to mobile-only design, 
+                        which is great for small vertical screen users but not horizontal large screen users. 
+                        Such a phenomenon has already happened in China, where there are many services are only 
+                        supported on mobile devices.
+                    </p>
+                    <p id="lastParagraph">
+                        To keep my future designs accessible I will no doubt optimize them for mobile users, 
+                        but at the same time as long as people are still using laptops or desktops, 
+                        I will respect their preferred mode of browsing by continuously supporting 
+                        accessible mouse and keyboard interactions.
+                    </p>
+                </section>
+
+                <section id="moreProjectsSection">
+                    <hr>
+                    <h2>More Projects</h2>
+                    <div id="moreProjects">
+                        <a href="./project1Baeometer.html">
+                            <div class="project" id="baeometerProject">
+                                <div class="projectImage" id="baeometerImg"></div>
+                                <div class="projectInfo">                                    
+                                    <h3>UI/UX Design & Dev.</h3>
+                                    <h2>Baeometer</h2>
+                                    <p>A fortune telling responsive web app that predicts the relationship between a couple</p>                                                    
+                                </div>                                
+                            </div>    
+                        </a>
+                        <a href="./project2Pharmaily.html">
+                            <div class="project" id="pharmailyProject">
+                                <div class="projectImage" id="pharmailyImg"></div>
+                                <div class="projectInfo">
+                                    <h3>Design & Prototype</h3>
+                                    <h2>Pharmaily</h2>
+                                    <p>A pharmaceutical Kiosk that aims to create an efficient and safe medicine pickup experience</p>                                       
+                                </div>                                
+                            </div>    
+                        </a> 
+                        <a href="./otherProjects.html">
+                            <div class="project" id="otherProjects">
+                                <div class="projectImage" id="otherProjectsImg"></div>
+                                <div class="projectInfo">                                    
+                                    <h3>UI/UX Design & Dev.</h3>
+                                    <h2>Others</h2>
+                                    <p>From class projects to professional works, I have created a wide variety of designs</p>                                                    
+                                </div>                                
+                            </div>    
+                        </a>
+                    </div>
+                </section> 
+            </section>
+        </main>
+    </body>
+    <script src="./scripts/navigation.js"></script>
+    <script src="./scripts/highlightOnScroll.js"></script>
+</html>
