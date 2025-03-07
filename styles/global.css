@@ -101,13 +101,15 @@ h2,h3,h4,h5{
     font-family: 'Montserrat',sans-serif;
 }
 
-
-
 hr{
     border: none;
     border-top: var(--border);
 }
 
+img, picture, video, canvas, svg { 
+    display: block;
+    max-width: 100%;
+}
 /* ///Side bar/// */
 aside{
     border-right: var(--border);

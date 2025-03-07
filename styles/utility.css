@@ -1,0 +1,41 @@
+.largeText{
+    /* font-weight: 800; */
+    font-size: var(--largeText);
+    margin-bottom: 4px;
+}
+.roundedImg{
+    border-radius: 20px;
+}
+.spaceBelow{
+    margin-bottom: 220px;
+}
+
+/* grid content */
+.gridDisplay{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+
+    margin-bottom: 220px;
+}
+.gridDisplay2Cols{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+
+    margin-bottom: 220px;
+}
+.gridDisplay2ColsSmall{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.gridContent{
+    width: 100%;
+}
+.spanTwoCols{
+    grid-column: span 2;
+}
+.spanThreeCols{
+    grid-column: span 3;
+}
