@@ -7,7 +7,7 @@ aside#sideMenu{
     padding-left: 40px;
     position: fixed;
     height: 100vh;
-    height: 100svh;
+    height: 100dvh;
     width: 100%;
     max-width: 280px;
 
