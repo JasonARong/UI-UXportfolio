@@ -1,0 +1,87 @@
+/* Imports */
+@import url(global.css);
+/* @import url(project.css); */
+/* @import url(utility.css); */
+
+
+
+/* ----- Utility Class ----- */
+.centerContent{
+    display: block;
+    width: 100%;
+    max-width: 980px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.centerContentWide{
+    display: block;
+    width: 100%;
+    max-width: 1068px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.marginBottomBig{
+    margin-bottom: 300px;
+}
+.marginBottomMedium{
+    margin-bottom: 170px;
+}
+.marginBottomSmall{
+    margin-bottom: 50px;
+}
+
+
+/* ----- Global ----- */
+main{
+    padding: 0;
+}
+#mainContent{
+    max-width: none;
+}
+
+
+/* ----- 3d render hero ----- */
+spline-viewer{
+    position: relative;
+    min-height: 600px;
+    max-height: 90vh;
+    max-height: 90svh;
+    margin-top: -60px;
+    margin-bottom: -100px;
+    width: 100%;
+    z-index: 0;
+}
+
+.darkCovers{
+    z-index: 0;
+    background-color: var(--background);
+    /* background-color: red; */
+}
+#darkCover1{
+    height: 20px;
+    position: relative;
+}
+#darkCover2{
+    position:absolute;
+    height: 140px;
+    width: 100%;
+}
+
+
+
+.sectionHeader{
+    padding-top: 50px;
+    margin-bottom: 10px;
+}
+
+
+/* top nav bar */
+#topNav{
+    margin-top: 25px;
+}
+
+/* Project background */
+#Background{
+    margin-top: 25px;
+}

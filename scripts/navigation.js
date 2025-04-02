@@ -30,10 +30,6 @@ for(let i=0; i<projectBtn.length; i++){
             dropDown[i].style.maxHeight = dropDown[i].scrollHeight + 'px';
             currOpenIndex = i;
 
-            /*console.log('click another button');
-            console.log(projectBtn[currOpenIndex]);
-            console.log(selectedOption);*/
-
             // the currently opended menu will be highlighted when closed
             if(projectBtn[currOpenIndex] != selectedOption){                
                 selectedOption.classList.add('selected');
@@ -68,11 +64,11 @@ for(let i=0; i<projectBtn.length; i++){
 // Prevent scrolling when menu is clicked
 let checkBox = document.getElementById('check');
 checkBox.addEventListener('change', (event) => {
-    if (event.target.checked) {
-        document.body.style.overflow = 'hidden';
-    } else {
-        document.body.style.overflow = 'auto';
-    }
+    // if (event.target.checked) {
+    //     document.body.style.overflow = 'hidden';
+    // } else {
+    //     document.body.style.overflow = 'auto';
+    // }
 });
 
 // Close side menu on click

@@ -2,6 +2,15 @@
 @import url(global.css);
 
 
+/* old navigation menu */
+aside{
+    display: none;
+}
+main {
+    margin-left: 0px;
+}
+
+
 /* Content */
 #mainContent{
     max-width: 940px;
@@ -39,7 +48,8 @@ spline-viewer{
     position: relative;
     max-height: 100vh;
     max-height: 100svh;
-    margin-bottom: -90px;
+    margin-top: -36px;
+    margin-bottom: -114px;
     z-index: 0;
 }
 #introduction{
@@ -48,10 +58,9 @@ spline-viewer{
     gap: 20px;
     justify-content: space-between;
     background-color: var(--background);
-    background-color: var(--background);
     z-index: 0;
     
-
+    padding-bottom: 20px;
 }
 #introText{
     display: flex;
@@ -140,7 +149,7 @@ spline-viewer{
     /* font-style: italic; */
 }
 #newProjects hr{
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 
@@ -203,11 +212,14 @@ spline-viewer{
 /* Projects */
 #projects{
     margin-top: 30px;
+    margin-bottom: 140px;
     width: 100%;
 }
 #projects a{
     color: #FFF;
     text-decoration: none;
+
+    position: relative;
 }
 
 .project{
@@ -251,13 +263,16 @@ spline-viewer{
     background-size: cover; /* Base size */
     /*transform: scale(1.2);  Increase the size by 120% */
     /*transform-origin: center;  Keep the zoom centered */
-    transition: 0.5s;
+    transition: 0.5s ease;
 }
 .project:hover .projectImage::before{
     transform: scale(1.04);  /*Increase the size by 120% */
     transform-origin: center;  /*Keep the zoom centered */
 }
 
+#haiTouImg::before{
+    background-image: url("../media/haitouMockUp.webp");
+}
 #baeometerImg::before{
     background-image: url("../media/BaeometerMockup.webp");
 }
@@ -297,17 +312,19 @@ spline-viewer{
 #otherProjects h2{
     font-size: 33px;
 }
+#haiTouProject .projectInfo h2{
+    color: #2e85ef;
+}
 #baeometerProject .projectInfo h2{
     background: linear-gradient(90deg, #F9B1B1 0%, #DB8FFF 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-#artPlaceProject .projectInfo h2{
+/* #artPlaceProject .projectInfo h2{
     color: #FFCA2A;
     text-shadow: 0px 0px 13px rgba(255, 255, 255, 0.40);
-
-}
+} */
 #pharmailyProject .projectInfo h2{
     background: linear-gradient(90deg, #66C3D4 2.56%, #6ACBB7 100%);
     background-clip: text;
@@ -325,21 +342,48 @@ spline-viewer{
     color: #C2C2C2;
 }
 
+
+/* New hover alien appear effect */
+#projects .alien2,
+#projects .sparks{
+    max-width: 200px;
+    max-height: 200px;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    opacity: 0;
+    transform: translate(-88px, -50%);
+
+    transition: 0.5s ease;
+}
+#projects .sparks{
+    transition: 0.42s ease;
+}
+#projects a:hover .alien2,
+#projects a:hover .sparks{
+    opacity: 100;
+    transform: translate(-110px, -50%);
+}
+
+
 /* ///Contact/// */
 hr{
     margin-top: 80px;
-    margin-bottom: 30px;
 }
 #contact{
-    color: #EEE;
+    position: relative;
 
     display: flex;
+    justify-content: space-between;
     width: 100%;
     max-width: 960px;
-
-    justify-content: space-between;
-
-    margin-bottom: 30px;
+    
+    border-top: var(--border);
+    background-color: var(--background);
+    color: #EEE;
+    padding: 36px 0;
 }
 
 #emailInfo{
@@ -378,7 +422,7 @@ hr{
 
     margin: 20px 0 50px 0;
 }
-.linkBtn{
+/* .linkBtn{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -394,7 +438,7 @@ hr{
     height: 46px;
     padding: 0 8px;
 
-    transition: 0.2s ease;
+    transition: var(--fastTransition);
     cursor: pointer;
 }
 
@@ -413,7 +457,7 @@ hr{
     color: #fff;
     background-color: var(--borderColor);
     border: 1.5px solid var(--borderColor);
-}
+} */
 
 
 
@@ -451,6 +495,14 @@ hr{
 
 #contactWays a:hover{
     box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.25);
+}
+
+#contact img{
+    position:absolute;
+    max-width: 200px;
+    right: 30px;
+    top:-65px;
+    z-index: -1;
 }
 
 /* Small Screen */
