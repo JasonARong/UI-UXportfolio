@@ -46,6 +46,7 @@ window.addEventListener("scroll", () => {
                     if(!topNavBar.classList.contains('shrink')){ // shrink
                         topNavBar.classList.add('shrink');
                     }
+                    fallbackToStaticImage();
                 }
 
                 // Allow Hiding                
@@ -63,6 +64,7 @@ window.addEventListener("scroll", () => {
                     if(topNavBar.classList.contains('shrink')){ // shrink
                         topNavBar.classList.remove('shrink');
                     }
+                    use3Danimation();
                 }
                 // Disallow Hiding                
                 if(sectionName == allowHideSectionName){
