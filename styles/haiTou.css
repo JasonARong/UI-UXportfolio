@@ -52,6 +52,9 @@ spline-viewer{
     width: 100%;
     z-index: 0;
 }
+spline-viewer.disable{
+    display: none;
+}
 
 .darkCovers{
     z-index: 0;
@@ -68,7 +71,18 @@ spline-viewer{
     width: 100%;
 }
 
-
+/* Fall Back Img */
+#fallbackImg{
+    margin-top: -60px;
+    margin-bottom: -100px;
+    display: none;
+}
+#fallbackImg img{
+    width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+    object-position: top;
+}
 
 .sectionHeader{
     padding-top: 50px;
@@ -84,4 +98,16 @@ spline-viewer{
 /* Project background */
 #Background{
     margin-top: 25px;
+}
+
+@media only screen and (max-width: 767px), 
+screen and (max-height: 480px){
+    #fallbackImg{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        display: none;
+    }
+    #fallbackImg img{
+        object-fit: contain;
+    }
 }

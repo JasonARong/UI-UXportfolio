@@ -14,7 +14,7 @@ let prevScrollpos = window.pageYOffset;
 window.addEventListener("scroll", () => {
     let currentScrollPos = window.pageYOffset
     // Highlight Nav items
-    console.log(allowHide)
+    // console.log(allowHide)
     if(allowHide){
         if (prevScrollpos < currentScrollPos) {
             
