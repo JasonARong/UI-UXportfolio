@@ -28,20 +28,6 @@
 
 const spline3dContent = document.querySelector('spline-viewer');
 const fallbackImg = document.querySelector('#fallbackImg');
-
-// function detectOS() {
-//     const userAgent = navigator.userAgent;  
-//     if (userAgent.indexOf("Win") !== -1) {
-//         fallbackToStaticImage();
-//         console.log("windows");
-//     }
-//     else if (userAgent.indexOf("Linux") !== -1) {
-//         fallbackToStaticImage();
-//         console.log("linux");
-//     }
-//     console.log("finish detect");
-// }
-
 function fallbackToStaticImage() {
     spline3dContent.style.display = "none";
     fallbackImg.style.display = "block";
@@ -56,7 +42,7 @@ function getOS() {
     let os = null;
   
     if (macosPlatforms.indexOf(platform) !== -1) {
-      os = 'Mac OS';
+      os = 'Mac';
     } else if (iosPlatforms.indexOf(platform) !== -1) {
       os = 'iOS';
     } else if (windowsPlatforms.indexOf(platform) !== -1) {
@@ -72,7 +58,7 @@ function getOS() {
 
 let os = getOS();
 
-if (os == 'Mac OS' || os == 'Windows' || os == 'Android' || os == 'iOS'){
+if (os == 'Android' || os == 'iOS'){
     fallbackToStaticImage();
 }
 
