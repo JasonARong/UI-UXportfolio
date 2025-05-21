@@ -1,6 +1,11 @@
 /* Global */
 @import url(global.css);
 
+/* Get rid of spacing for old aside menu */
+main {
+    margin-left: 0px;
+}
+
 strong{
     color: #eee;
 }

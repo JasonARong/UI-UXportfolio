@@ -33,7 +33,8 @@ sideMenuCheckBox.addEventListener('click', () => {
 
 //Highlight menu items on scroll
 const majorSections = document.querySelectorAll('.majorSections');
-const contentListItems = document.querySelectorAll('.innerContentList li');
+const contentListItems = document.querySelectorAll('#outerContentList li');
+console.log(contentListItems.length);
 
 window.addEventListener("scroll", () => {
     // Loop over each major section

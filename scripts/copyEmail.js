@@ -20,7 +20,7 @@ for(let i=0; i<copyEmailBtn.length; i++){
     // console.log(copyEmailBtn[i]);
     copyEmailBtn[i].addEventListener('click', () => {
         //console.log('clicked');
-        copyToClipboard('jiecheng_chen@brown.edu');
+        copyToClipboard('jasonarong96@gmail.com');
         alert("Copied Email to Clipboard!");
     });
 }

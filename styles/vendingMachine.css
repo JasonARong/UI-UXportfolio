@@ -20,12 +20,12 @@ h4{
 hr{
     margin-bottom: 120px;
 }
-p{
+#mainContent p{
     margin: 0;
     font-size: var(--smallText);
     margin-bottom: 16px;
 }
-li{
+#mainContent li{
     font-size: var(--smallText);
     margin-bottom: 8px;
 }

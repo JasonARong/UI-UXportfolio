@@ -17,96 +17,6 @@
         <script src="./scripts/topNav.js" defer></script>
     </head>
     <body>
-        <input type="checkbox" name="" id="check">
-        <div id="hamMenu">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-        </div>
-        <aside>
-            <h2><a href="./index.html">Jiecheng <br>
-                UI/UX Portfolio</a>
-            </h2>
-            <nav>
-                <ul>
-                    <li class="options selected" id="selectedOption"><a href="./index.html">Home</a></li>
-                    <li class="projectOptions">
-                        <noscript>
-                            <a class="options" href="./project1Baeometer.html">
-                                Project 1 <span class="projectNames">| Beaometer</span>    
-                            </a> 
-                        </noscript>
-                        <button class="options">                            
-                            <span>
-                                Project 1 <span class="projectNames">| Beaometer</span>    
-                            </span>                        
-                            <svg class="arrowIcon" xmlns="http://www.w3.org/2000/svg" width="8" height="18" viewBox="0 0 10 18" fill="none">
-                            <path d="M2 2L8 8.85106L2 16" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
-                            </svg>
-                        </button>
-                        <div class="dropDown">
-                            <a class="options" href="./project1Baeometer.html">Overview</a>
-                            <a class="options" href="project1Baeometer.html#discover" >Discover</a>
-                            <a class="options" href="project1Baeometer.html#define" >Define</a>
-                            <a class="options" href="project1Baeometer.html#develop" >Develope</a>
-                            <a class="options" href="project1Baeometer.html#deliver" >Deliver</a>
-                        </div>
-                    </li>                    
-                    <li class="projectOptions">
-                        <noscript>
-                            <a class="options " href="./project2Pharmaily.html">
-                                Project 2 <span class="projectNames">| Pharmaily</span>    
-                            </a> 
-                        </noscript>
-                        <button class="options" >                            
-                            <span>
-                                Project 2 <span class="projectNames">| Pharmaily</span>    
-                            </span>                        
-                            <svg class="arrowIcon" xmlns="http://www.w3.org/2000/svg" width="8" height="18" viewBox="0 0 10 18" fill="none">
-                            <path d="M2 2L8 8.85106L2 16" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
-                            </svg>
-                        </button>
-                        <div class="dropDown" id="currentMenu">
-                            <a class="options active" href="./project2Pharmaily.html" >Overview</a>
-                            <a class="options" href="project2Pharmaily.html#discover" >Discover</a>
-                            <a class="options" href="project2Pharmaily.html#define" >Define</a>
-                            <a class="options" href="project2Pharmaily.html#develop" >Develope</a>
-                            <a class="options" href="project2Pharmaily.html#deliver" >Deliver</a>
-                        </div>
-                    </li>
-                    <li class="projectOptions">
-                        <noscript>
-                            <a class="options" href="./project3Triton2Go.html">
-                                Project 3 <span class="projectNames">| Triton 2 Go</span>    
-                            </a> 
-                        </noscript>
-                        <button class="options">                            
-                            <span>
-                                Project 3 <span class="projectNames">| Triton 2 Go</span>    
-                            </span>                        
-                            <svg class="arrowIcon" xmlns="http://www.w3.org/2000/svg" width="8" height="18" viewBox="0 0 10 18" fill="none">
-                            <path d="M2 2L8 8.85106L2 16" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
-                            </svg>
-                        </button>
-                        <div class="dropDown">
-                            <a class="options" href="./project3Triton2Go.html">Overview</a>
-                            <a class="options" href="project3Triton2Go.html#discover" >Discover</a>
-                            <a class="options" href="project3Triton2Go.html#define" >Define</a>
-                            <a class="options" href="project3Triton2Go.html#develop" >Develope</a>
-                            <a class="options" href="project3Triton2Go.html#deliver" >Deliver</a>
-                        </div>
-                    </li>
-                    <li class="options"><a href="./otherProjects.html">Other Projects</a></li>
-                    <li class="options"><a href="./about.html">About</a></li>
-                    <li class="options"><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <footer>
-                <p id="copyright">&copy; Jiecheng Chen UI/UX Portfolio 2023<br>
-                    <span>Designed and Coded by Jiecheng</span>
-                </p>
-            </footer>
-        </aside>
         <main>            
             <section id="mainContent">
                 <nav id="topNav" class="">
@@ -128,7 +38,7 @@
                         </svg>
                     </a>
                     <ul>
-                        <li class="topNavItems" data-item="introduction" id="projectsNav"><a href="./index.html#introduction">
+                        <li class="topNavItems chosen" data-item="introduction" id="projectsNav"><a href="./index.html#introduction">
                             <div class="dot"></div>
                             <p>Projects</p>
                         </a></li>
@@ -138,14 +48,13 @@
                         </a></li>
                         <li class="topNavItems" data-item="" id="JasonNav"><a href="./about.html">
                             <div class="dot"></div>
-                            <p>Jason</p>
+                            <p>About</p>
                         </a></li>
                     </ul>
-                    <a href="#"><div id="CV">
+                    <a href="./media/JasonChen_UXDesigner_Resume.pdf" target="_blank"><div id="CV">
                         <p>CV</p>
                     </div></a>                  
                 </nav>
-
 
                 <img id="UIalienMobile" src="./media/UIalienS.webp" alt="UI Alien Image" />
                 <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.78/build/spline-viewer.js" async></script>
@@ -154,8 +63,6 @@
                         <img src="./media/JasonLogoLoopSmall.gif" alt="loading animation" style="width: 200px; margin-top: -80px;"/>                        
                     </div>
                 </spline-viewer>
-                
-                
                 
                 <section id="introduction" class="topNavSections shrinkSection allowHideSection">                                        
                     <div id="socialIcons">
@@ -169,7 +76,7 @@
                                 <path d="M15.5 0C13.4645 0 11.449 0.410873 9.56841 1.20916C7.68786 2.00745 5.97915 3.17751 4.53984 4.65256C1.63303 7.63154 0 11.6719 0 15.8848C0 22.9059 4.4485 28.8627 10.602 30.9754C11.377 31.1025 11.625 30.61 11.625 30.1812C11.625 29.8158 11.625 28.8151 11.625 27.4966C7.3315 28.4497 6.417 25.3681 6.417 25.3681C5.704 23.5254 4.6965 23.033 4.6965 23.033C3.286 22.0481 4.805 22.0799 4.805 22.0799C6.355 22.1911 7.1765 23.716 7.1765 23.716C8.525 26.1305 10.8035 25.4157 11.687 25.0345C11.8265 24.002 12.2295 23.303 12.6635 22.9059C9.2225 22.5088 5.611 21.1427 5.611 15.0906C5.611 13.3274 6.2 11.9136 7.2075 10.7858C7.0525 10.3887 6.51 8.73665 7.3625 6.5922C7.3625 6.5922 8.6645 6.16331 11.625 8.21245C12.8495 7.86298 14.1825 7.68825 15.5 7.68825C16.8175 7.68825 18.1505 7.86298 19.375 8.21245C22.3355 6.16331 23.6375 6.5922 23.6375 6.5922C24.49 8.73665 23.9475 10.3887 23.7925 10.7858C24.8 11.9136 25.389 13.3274 25.389 15.0906C25.389 21.1586 21.762 22.4929 18.3055 22.89C18.8635 23.3825 19.375 24.3514 19.375 25.8287C19.375 27.9573 19.375 29.6728 19.375 30.1812C19.375 30.61 19.623 31.1184 20.4135 30.9754C26.567 28.8468 31 22.9059 31 15.8848C31 13.7988 30.5991 11.7332 29.8201 9.80596C29.0412 7.87873 27.8995 6.1276 26.4602 4.65256C25.0208 3.17751 23.3121 2.00745 21.4316 1.20916C19.551 0.410873 17.5355 0 15.5 0Z" />
                             </svg>     
                         </a>                             
-                        <a href="mailto: jic045@ucsd.edu">
+                        <a href="mailto: jasonarong96@gmail.com">
                             <svg width="26" height="25" viewBox="0 0 31 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M27.9 6.25L15.5 14.0625L3.1 6.25V3.125L15.5 10.9375L27.9 3.125M27.9 0H3.1C1.3795 0 0 1.39062 0 3.125V21.875C0 22.7038 0.326606 23.4987 0.907969 24.0847C1.48933 24.6708 2.27783 25 3.1 25H27.9C28.7222 25 29.5107 24.6708 30.092 24.0847C30.6734 23.4987 31 22.7038 31 21.875V3.125C31 1.39062 29.605 0 27.9 0Z"/>
                             </svg>
@@ -223,12 +130,33 @@
                     </div>
 
                     
-                    <h2>Case Study Projects</h2>
+                    <h2>Case Studies</h2>
                     
 
 
                 </section>
-                <section id="projects">
+                <section id="projects">                    
+
+                    <!-- <a href="https://cs1300-iterative-design-iota.vercel.app/" target="_blank">
+                        <div class="project" id="allaraProject">
+                            <div class="projectImage" id="allaraImg"></div>
+                            <div class="projectInfo">
+                                <div class="projectInfoContainer">
+                                    <div>
+                                        <h3>UIUX Design</h3>
+                                        <h2>Allara</h2>
+                                        <p>A virtual care platform specializing in women's hormonal and metabolic health</p>                                            
+                                    </div>
+                                    <p class="taskList">
+                                        Client Project <br>
+                                        Data Visualization
+                                    </p>    
+                                </div>
+                            </div>
+                        </div> 
+                        <img class="alien2" src="./media/Alien2.webp" alt="alien 2">
+                        <img class="sparks" src="./media/sparks.webp" alt="sparks">
+                    </a> -->
                     <a href="./HaiTou.html">
                         <div class="project" id="haiTouProject">
                             <div class="projectImage" id="haiTouImg"></div>
@@ -250,6 +178,74 @@
                         <img class="alien2" src="./media/Alien2.webp" alt="alien 2">
                         <img class="sparks" src="./media/sparks.webp" alt="sparks">
                     </a>
+
+                    <a href="./ProvidencePlace.html">
+                        <div class="project" id="providencePlaceProject">
+                            <div class="projectImage" id="providencePlaceImg"></div>
+                            <div class="projectInfo">
+                                <div class="projectInfoContainer">
+                                    <div>
+                                        <h3>Web Design</h3>
+                                        <h2>Providence Place</h2>
+                                        <p>Website for a shopping mall in Providence, the go-to place for local shoppers</p>                                            
+                                    </div>
+                                    <p class="taskList">
+                                        Responsive Design <br>
+                                        Web Development <br>
+                                        Branding
+                                    </p>    
+                                </div>
+                            </div>
+                        </div> 
+                        <img class="alien2" src="./media/Alien2.webp" alt="alien 2">
+                        <img class="sparks" src="./media/sparks.webp" alt="sparks">
+                    </a>
+
+                    <!-- <a href="./VendingMachine.html">
+                        <div class="project" id="vendingMachineProject">
+                            <div class="projectImage" id="vendingMachineImg"></div>
+                            <div class="projectInfo">
+                                <div class="projectInfoContainer">
+                                    <div>
+                                        <h3>User Research</h3>
+                                        <h2>Vending Machine</h2>
+                                        <p>Explore common issues a vending machine user may encounter</p>                                            
+                                    </div>
+                                    <p class="taskList">
+                                        User Research <br>
+                                        Storyboarding <br>
+                                        Persona
+                                    </p>    
+                                </div>
+                            </div>
+                        </div> 
+                        <img class="alien2" src="./media/Alien2.webp" alt="alien 2">
+                        <img class="sparks" src="./media/sparks.webp" alt="sparks">
+                    </a> -->
+
+                    <!-- <a href="./AccordionDesign.html">
+                        <div class="project" id="accordionProject">
+                            <div class="projectImage" id="accordionImg"></div>
+                            <div class="projectInfo">
+                                <div class="projectInfoContainer">
+                                    <div>
+                                        <h3>Accessibility Design</h3>
+                                        <h2>Accordion</h2>
+                                        <p>Accessible component that organizes two layers of information</p>                                            
+                                    </div>
+                                    <p class="taskList">
+                                        User Research <br>
+                                        Storyboarding <br>
+                                        Persona
+                                    </p>    
+                                </div>
+                            </div>
+                        </div> 
+                        <img class="alien2" src="./media/Alien2.webp" alt="alien 2">
+                        <img class="sparks" src="./media/sparks.webp" alt="sparks">
+                    </a> -->
+
+                    
 
                     <a href="./project1Baeometer.html">
                         <div class="project" id="baeometerProject">
@@ -295,7 +291,7 @@
                         </div>    
                     </a>  
 
-                    <a href="./project3Triton2Go.html">
+                    <!-- <a href="./project3Triton2Go.html">
                         <div class="project" id="tritonProject">
                             <div class="projectImage" id="tritonImg"></div>
                             <div class="projectInfo">
@@ -313,9 +309,9 @@
                                 </div>    
                             </div>                            
                         </div>    
-                    </a>
+                    </a> -->
                     
-                    <a href="./otherProjects.html">
+                    <!-- <a href="./otherProjects.html">
                         <div class="project" id="otherProjects">
                             <div class="projectImage" id="otherProjectsImg"></div>
                             <div class="projectInfo">
@@ -335,6 +331,22 @@
                             </div>
                             
                         </div>    
+                    </a> -->
+
+                    <a href="./otherProjects.html">
+                        <div id="projectArchive">
+                            <!-- <img src="./media/otherProjectsMockup.webp" alt="other projects" id="projectArchiveImage"> -->
+                            <div id="projectArchiveImage"></div>
+                            <div id="projectArchiveContent">
+                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.16663 40.3334C8.15829 40.3334 7.2951 39.9744 6.57704 39.2563C5.85899 38.5383 5.49996 37.6751 5.49996 36.6667V15.9959C4.94996 15.6598 4.5069 15.2244 4.17079 14.6897C3.83468 14.1549 3.66663 13.5362 3.66663 12.8334V7.33341C3.66663 6.32508 4.02565 5.46189 4.74371 4.74383C5.46176 4.02578 6.32496 3.66675 7.33329 3.66675H36.6666C37.675 3.66675 38.5382 4.02578 39.2562 4.74383C39.9743 5.46189 40.3333 6.32508 40.3333 7.33341V12.8334C40.3333 13.5362 40.1652 14.1549 39.8291 14.6897C39.493 15.2244 39.05 15.6598 38.5 15.9959V36.6667C38.5 37.6751 38.1409 38.5383 37.4229 39.2563C36.7048 39.9744 35.8416 40.3334 34.8333 40.3334H9.16663ZM9.16663 16.5001V36.6667H34.8333V16.5001H9.16663ZM7.33329 12.8334H36.6666V7.33341H7.33329V12.8334ZM16.5 25.6667H27.5V22.0001H16.5V25.6667Z" fill="#E3E3E3"/>
+                                </svg>
+                                <div>
+                                    <h3>PROJECT ARCHIVE</h3>
+                                    <p>View all my design related projects here</p>
+                                </div>
+                            </div>
+                        </div>
                     </a>
                 </section>
 
@@ -351,10 +363,10 @@
                                 Email
                             </h3>
                             <div id="myEmail" class="copyEmail">
-                                jiecheng_chen@brown.edu
+                                jasonarong96@gmail.com
                             </div>
                             <div class="visitLinks">
-                                <a class="linkBtn fill" href="mailto: jiecheng_chen@brown.edu" >Email Me</a>
+                                <a class="linkBtn fill" href="mailto: jasonarong96@gmail.com" >Email Me</a>
                                 <button class="linkBtn copyEmail" target="_blank" href="">
                                     Copy Email
                                 </button>

@@ -86,12 +86,27 @@ spline-viewer{
 #scrollDownBtn{
     height: 40px;
     width: 40px;
+    -moz-animation: bounce 2s infinite ease;
+    -webkit-animation: bounce 2s infinite ease;
+    animation: bounce 2s infinite ;
 }
 #downArrow path{
     fill: var(--paragraph);
 }
 #scrollDownBtn:hover #downArrow path{
     fill: var(--background);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(6px);
+    }
+    60% {
+        transform: translateY(3px);
+    }
 }
 
 
@@ -168,7 +183,6 @@ spline-viewer{
     flex-wrap: wrap;
 
     gap: 20px;
-    min-width: 362px;
     width: calc(50% - 10px);
     max-width: 500px;
     border-radius: 20px;
@@ -212,7 +226,7 @@ spline-viewer{
 /* Projects */
 #projects{
     margin-top: 30px;
-    margin-bottom: 140px;
+    margin-bottom: 180px;
     width: 100%;
 }
 #projects a{
@@ -235,7 +249,7 @@ spline-viewer{
     overflow: hidden;
 
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.5s ease;
 }
 
 .project:hover{
@@ -272,6 +286,18 @@ spline-viewer{
 
 #haiTouImg::before{
     background-image: url("../media/haitouMockUp.webp");
+}
+#allaraImg::before{
+    background-image: url("../media/AllaraMockup.webp");
+}
+#providencePlaceImg::before{
+    background-image: url("../media/ProvidencePlaceMockup.webp");
+}
+#vendingMachineImg::before{
+    background-image: url("../media/VendingMachineMockup.webp");
+}
+#accordionImg::before{
+    background-image: url("../media/AccordionMockup.webp");
 }
 #baeometerImg::before{
     background-image: url("../media/BaeometerMockup.webp");
@@ -314,6 +340,21 @@ spline-viewer{
 }
 #haiTouProject .projectInfo h2{
     color: #2e85ef;
+}
+#allaraProject .projectInfo h2{
+    color: #9AB8FF;
+}
+#providencePlaceProject .projectInfo h2{
+    background: linear-gradient(175deg, #613931 -12.09%, #F9F7EE 102.1%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#vendingMachineProject h2{
+    font-size: 28px;
+}
+#accordionProject h2{
+    color: #0098FD;
 }
 #baeometerProject .projectInfo h2{
     background: linear-gradient(90deg, #F9B1B1 0%, #DB8FFF 100%);
@@ -359,12 +400,86 @@ spline-viewer{
     transition: 0.5s ease;
 }
 #projects .sparks{
-    transition: 0.42s ease;
+    transition: 0.4s ease;
 }
 #projects a:hover .alien2,
 #projects a:hover .sparks{
     opacity: 100;
     transform: translate(-110px, -50%);
+}
+
+
+/* Other Projects */
+#projectArchive{
+    display: flex;
+    max-width: 640px;
+    margin: 0 auto;
+
+    background-color: #222222;
+    border: var(--border);
+    border-radius: 20px;
+
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
+#projectArchive:hover{
+    box-shadow: 0px 0px 18px 0px rgba(255, 255, 255, 0.35);
+}
+/* #projectArchiveImage{
+    max-width: 160px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+
+    border-radius: 20px 0 0 20px;
+} */
+#projectArchiveImage{
+    width: 100%;
+    max-width: 160px;
+    aspect-ratio: 1/1;
+
+    position: relative;
+    overflow: hidden;
+}
+#projectArchiveImage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: 100%;
+    background-image: url("../media/otherProjectsMockup.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    
+    transition: 0.5s ease;
+}
+
+#projectArchive:hover #projectArchiveImage::before{
+    transform: scale(1.04);
+    transform-origin: center;
+}
+
+#projectArchiveContent{
+    max-width: 455px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+#projectArchiveContent h3{
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 4px;
+}
+#projectArchiveContent p{
+    font-size: 14px;
+    color: #D9D9D9;
+    margin: 0;
 }
 
 
@@ -515,7 +630,7 @@ screen and (max-height: 480px) {
     }
     #introduction{
         flex-direction: column;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
     }
     #introText{
         flex-direction: column;
@@ -612,6 +727,20 @@ screen and (max-height: 480px) {
 
     .taskList{
         margin-top: 0;
+    }
+
+    /* Project Archive */
+    #projectArchiveImage{
+        width: 120px;
+    }
+    #projectArchiveContent{
+        justify-content: flex-start;
+    }
+    #projectArchiveContent svg{
+        width: 30px;
+    }
+    #projectArchiveContent h3{
+        font-size: 16px;
     }
 
     /* Contact */

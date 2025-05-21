@@ -7,21 +7,109 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="color-scheme" content="dark light" />
         <title>Jiecheng's UI/UX portfolio</title>
-        <link href="styles/providencePlace.css" rel="stylesheet"  type="text/css"/>
+        <link href="styles/providencePlace.css" rel="stylesheet" type="text/css"/>
+        <link href="styles/sideMenu.css" rel="stylesheet" type="text/css">
         <link href="media/favicon.ico" rel="icon">
         <link href="media/icon.svg" rel="icon" type="image/svg+xml">
+
+        <script src="./scripts/sideMenu.js" defer></script>
+        <script src="./scripts/topNav.js" defer></script>
     </head>
     <body>
-        <input type="checkbox" name="" id="check">
-        <div id="hamMenu">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-        </div>
+        <aside id="sideMenu" class="collapse">
+            <h2><a href="#">Providence Place</a></h2>                    
+            <ul id="outerContentList">
+                <li class="contentCategory"><a href="#">
+                
+                    <ul class="innerContentList">
+                        <li data-item="introduction" class="contentCategory current"><a href="#">
+                            <div class="dot"></div>
+                            <p>Introduction</p>
+                        </a></li>
+                        <li data-item="originalWebsite" class="contentCategory"><a href="#originalWebsite">
+                            <div class="dot"></div>
+                            <p>Original Website</p>
+                        </a></li>
+                        <li data-item="prototyping" class="contentCategory"><a href="#prototyping">
+                            <div class="dot"></div>
+                            <p>Prototyping</p>
+                        </a></li>
+                        <li data-item="designSystem" class="contentCategory"><a href="#designSystem">
+                            <div class="dot"></div>
+                            <p>Design System</p>
+                        </a></li>
+                        <li data-item="redesignBreakdown" class="contentCategory"><a href="#redesignBreakdown">
+                            <div class="dot"></div>
+                            <p>Redesign Breakdown</p>
+                        </a></li>
+                        <li data-item="responsiveShowcase" class="contentCategory"><a href="#responsiveShowcase">
+                            <div class="dot"></div>
+                            <p>Responsive Showcase</p>
+                        </a></li>
+                        <li data-item="finalDeliverables" class="contentCategory"><a href="#finalDeliverables">
+                            <div class="dot"></div>
+                            <p>Final Deliverables</p>
+                        </a></li>
+                    </ul>              
+                </a></li>
+
+                
+            </ul>            
+            <img src="./media/3aliens.webp" alt="3 aliens">
+
+            <svg id="toggleButton" xmlns="http://www.w3.org/2000/svg" width="53" height="86" viewBox="0 0 53 86" fill="none">
+                <g id="tab">
+                    <path id="Rectangle 103" d="M1.11538 0C1.47326 0 1.6522 0 1.7975 0.0452793C2.11126 0.14305 2.35695 0.38874 2.45472 0.702496C2.5 0.847802 2.5 1.02674 2.5 1.38462C2.5 5.67912 2.5 7.82637 3.04336 9.57005C4.2166 13.3351 7.16489 16.2834 10.93 17.4566C12.6736 18 14.8209 18 19.1154 18H33.3C40.0206 18 43.3809 18 45.9479 19.3079C48.2058 20.4584 50.0416 22.2942 51.1921 24.5521C52.5 27.1191 52.5 30.4794 52.5 37.2V48.8C52.5 55.5206 52.5 58.8809 51.1921 61.4479C50.0416 63.7058 48.2058 65.5416 45.9479 66.6921C43.3809 68 40.0206 68 33.3 68H19.1154C14.8209 68 12.6736 68 10.93 68.5434C7.16489 69.7166 4.2166 72.6649 3.04336 76.43C2.50001 78.1736 2.50001 80.3209 2.50001 84.6154C2.50001 84.9733 2.50001 85.1522 2.45473 85.2975C2.35696 85.6113 2.11127 85.8569 1.79751 85.9547C1.6522 86 1.47327 86 1.11539 86H0V0H1.11538Z" fill="#2D2D2D"/>
+                </g>
+                <g id="icon">
+                    <path id="iconBody" d="M20.5 52C19.95 52 19.4792 51.8042 19.0875 51.4125C18.6958 51.0208 18.5 50.55 18.5 50V36C18.5 35.45 18.6958 34.9792 19.0875 34.5875C19.4792 34.1958 19.95 34 20.5 34H34.5C35.05 34 35.5208 34.1958 35.9125 34.5875C36.3042 34.9792 36.5 35.45 36.5 36V50C36.5 50.55 36.3042 51.0208 35.9125 51.4125C35.5208 51.8042 35.05 52 34.5 52H20.5ZM23.5 50V36H20.5V50H23.5ZM25.5 50H34.5V36H25.5V50Z" fill="#E3E3E3"/>
+                    <path id="iconArrow" class="pointRight" d="M32 39V47L28 43L32 39Z" fill="#E3E3E3"/>
+                </g>
+            </svg>
+            <input id="sideMenuCheckBox" type="checkbox" name="" checked>
+                
+        </aside> 
         
-        <main>
+        <main class="center">
+            <nav id="topNav" class="">
+                <a href="./index.html">
+                    <svg width="35" height="43" viewBox="0 0 35 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.2207 17.1836C10.705 17.1836 8.66626 19.2052 8.66626 21.6996C8.66626 24.194 10.705 26.2156 13.2207 26.2156C15.7363 26.2156 17.7751 24.194 17.7751 21.6996C17.7751 19.2052 15.7363 17.1836 13.2207 17.1836ZM11.6028 22.0205C10.8753 22.0205 10.2866 21.4367 10.2866 20.7153C10.2866 19.994 10.8753 19.4102 11.6028 19.4102C12.3302 19.4102 12.919 19.994 12.919 20.7153C12.919 21.4367 12.3302 22.0205 11.6028 22.0205Z" fill="#F1F3F4"/>
+                        <path d="M14.4349 28.324C17.9002 28.324 20.7094 25.5385 20.7094 22.1025C20.7094 18.6664 17.9002 15.8809 14.4349 15.8809C10.9696 15.8809 8.1604 18.6664 8.1604 22.1025C8.1604 25.5385 10.9696 28.324 14.4349 28.324Z" stroke="#F1F3F4" stroke-width="2" stroke-miterlimit="10"/>
+                        <path d="M10.2721 37.3802C9.9485 37.9013 9.5568 38.157 9.14077 38.2197C8.74177 38.2848 8.31601 38.1642 7.93161 37.9302C7.62749 37.7445 7.32581 37.414 7.19444 37.0328C7.15794 36.917 7.15794 36.8012 7.22363 36.6951C7.32581 36.5334 7.53018 36.4876 7.69075 36.5841C7.7759 36.6348 7.82699 36.7047 7.85376 36.7988C7.93891 37.0762 8.09462 37.2644 8.26979 37.3705C8.50091 37.5129 8.74664 37.5684 8.98993 37.5177C9.23809 37.4694 9.46191 37.2716 9.66871 36.9411L10.9947 34.8062C11.0993 34.6373 11.3231 34.589 11.4983 34.6976C11.6734 34.8037 11.7318 35.0257 11.6272 35.1946L10.2696 37.3802H10.2721Z" fill="#F1F3F4"/>
+                        <path d="M11.7733 38.0098C12.1747 37.9785 12.6565 38.0846 13.0579 38.1787L13.0822 38.1039C13.1479 37.9037 13.1503 37.7662 13.1017 37.6383C13.0384 37.4863 12.9022 37.3947 12.7319 37.3392C12.5178 37.2716 12.3207 37.2716 12.1553 37.2861C11.9898 37.303 11.9022 37.3151 11.8122 37.2861C11.6784 37.2427 11.6103 37.11 11.6541 36.9797C11.7076 36.8181 11.8877 36.7771 12.0945 36.7602C12.3596 36.7409 12.6638 36.7699 12.9606 36.8639C13.2452 36.9556 13.581 37.1245 13.7367 37.4646C13.834 37.6817 13.8462 37.9423 13.7294 38.3066L13.2185 39.8794C13.1625 40.0555 12.9654 40.1448 12.7951 40.0893C12.6613 40.0459 12.5713 39.9422 12.5543 39.8191C12.2502 39.8746 11.985 39.8312 11.6955 39.7395C11.1845 39.5755 10.8001 39.122 10.9826 38.5647C11.1067 38.1835 11.4108 38.0364 11.7757 38.0098H11.7733ZM12.6759 39.3584L12.9143 38.625C12.2185 38.4441 11.7101 38.4199 11.603 38.7529C11.513 39.0279 11.7514 39.2426 12.0482 39.3367C12.238 39.397 12.4594 39.4042 12.6759 39.356V39.3584Z" fill="#F1F3F4"/>
+                        <path d="M16.7095 38.2173C16.4979 38.198 16.3178 38.0508 16.0064 38.0243C15.7218 38.0002 15.5296 38.0677 15.5125 38.2655C15.4979 38.4368 15.622 38.5381 15.7923 38.6346C15.9894 38.7384 16.2424 38.8325 16.437 38.9483C16.8117 39.1726 16.9431 39.4163 16.9115 39.7564C16.8628 40.3016 16.3738 40.6345 15.6536 40.5718C15.2182 40.5332 14.5369 40.3764 14.5734 39.9759C14.5856 39.8312 14.7145 39.7251 14.8605 39.7371C15.1062 39.7588 15.1914 40.0025 15.6536 40.0435C15.9578 40.07 16.1719 39.9832 16.1938 39.754C16.2108 39.5562 16.0745 39.4524 15.8823 39.3439C15.7047 39.2426 15.4395 39.1533 15.223 39.0279C14.9116 38.8494 14.7608 38.5912 14.7948 38.2173C14.8411 37.6938 15.279 37.4067 16.0137 37.4695C16.5417 37.5153 17.0234 37.6624 16.9966 37.9712C16.9844 38.1208 16.8531 38.2294 16.7071 38.2173H16.7095Z" fill="#F1F3F4"/>
+                        <path d="M18.2471 37.9592C18.4953 37.648 18.8699 37.4236 19.3151 37.3561C19.7555 37.2885 20.1861 37.3899 20.517 37.6118C20.8479 37.841 21.079 38.198 21.1496 38.654C21.2225 39.1171 21.1179 39.5321 20.8649 39.8433C20.6241 40.1545 20.2348 40.374 19.7944 40.4391C19.3492 40.5067 18.9161 40.4126 18.5926 40.1907C18.2568 39.9687 18.0233 39.6044 17.9527 39.1437C17.8822 38.6877 17.9989 38.2776 18.2447 37.9592H18.2471ZM18.9891 39.6985C19.1813 39.8481 19.4344 39.9229 19.7093 39.8819C19.9793 39.8409 20.1983 39.6937 20.3345 39.4935C20.4708 39.286 20.5316 39.0375 20.4878 38.7577C20.444 38.4779 20.3102 38.2583 20.1156 38.1015C19.9234 37.9519 19.6703 37.8772 19.4027 37.9182C19.1278 37.9592 18.9088 38.1063 18.7702 38.309C18.6339 38.5165 18.578 38.7649 18.6218 39.0448C18.6656 39.3246 18.7945 39.5441 18.9867 39.7009L18.9891 39.6985Z" fill="#F1F3F4"/>
+                        <path d="M21.8599 37.1389C21.782 36.9725 21.8599 36.7771 22.0278 36.6999C22.2029 36.6203 22.3951 36.6902 22.4754 36.8567L22.5314 36.9773C22.6019 36.6106 22.8477 36.3235 23.2272 36.1474C23.541 36.0027 23.8598 35.9496 24.142 36.0389C24.4315 36.1233 24.6821 36.3646 24.8743 36.7747L25.5263 38.1666C25.6042 38.3331 25.5214 38.5309 25.3584 38.6081C25.1833 38.6877 24.9838 38.6202 24.9059 38.4537L24.3244 37.2113C24.2101 36.9677 24.069 36.7626 23.8646 36.683C23.7235 36.6323 23.5581 36.6372 23.3513 36.7312C23.0739 36.8591 22.9158 37.0835 22.8939 37.3778C22.8793 37.6094 22.9426 37.8554 23.0472 38.0774L23.524 39.093C23.6019 39.2594 23.5192 39.4573 23.3561 39.532C23.1883 39.6092 22.9863 39.5417 22.9085 39.3752L21.8623 37.1413L21.8599 37.1389Z" fill="#F1F3F4"/>
+                        <path d="M28.3413 31.0935C28.1661 31.2985 27.8571 31.2648 27.4265 31.7666C26.8645 32.4251 26.9448 33.4408 27.643 34.0294C28.3924 34.659 29.3582 34.5384 29.9324 33.8653C30.3436 33.3829 30.3095 33.0258 30.4676 32.8401C30.5917 32.6953 30.8034 32.6736 30.9542 32.7991C31.324 33.1103 30.689 34.0342 30.4579 34.3068C29.5918 35.3224 28.2221 35.5275 27.1394 34.618C26.1322 33.7713 26.0714 32.3142 26.9156 31.3251C27.2635 30.9174 27.9496 30.3384 28.2902 30.6231C28.441 30.7509 28.4605 30.956 28.3388 31.0959L28.3413 31.0935Z" fill="#F1F3F4"/>
+                        <path d="M28.2926 30.0079C28.1222 29.9355 28.0468 29.7401 28.1198 29.5713C28.1952 29.3952 28.3874 29.318 28.5577 29.3903L30.054 30.02C29.8594 29.7015 29.8472 29.3252 30.0102 28.944C30.144 28.628 30.3459 28.3771 30.616 28.2541C30.8885 28.1262 31.2364 28.1359 31.6573 28.3144L33.0805 28.9151C33.2508 28.9875 33.3238 29.1901 33.2533 29.3517C33.1779 29.5278 32.9832 29.6099 32.8129 29.5375L31.5429 29.0019C31.2923 28.8958 31.0515 28.8379 30.8447 28.9151C30.706 28.9706 30.5844 29.084 30.4968 29.2914C30.3776 29.5713 30.4116 29.8414 30.5941 30.0754C30.7401 30.2588 30.9542 30.3987 31.1804 30.4928L32.2193 30.9294C32.3896 31.0018 32.4626 31.2045 32.392 31.3661C32.319 31.5349 32.1244 31.6194 31.9541 31.547L28.295 30.0055L28.2926 30.0079Z" fill="#F1F3F4"/>
+                        <path d="M33.6766 24.6017C33.8202 24.621 33.9053 24.7368 33.971 24.9515C34.0489 25.2217 34.0732 25.5426 34.0318 25.8682C33.9661 26.3652 33.7472 26.7487 33.4163 26.9828C33.1049 27.2071 32.6913 27.306 32.2217 27.2457C31.7863 27.1902 31.4237 26.99 31.1829 26.6933C30.9518 26.411 30.8374 26.0178 30.8982 25.5474C30.9591 25.0842 31.178 24.7537 31.4456 24.5486C31.7644 24.3171 32.1244 24.2712 32.4553 24.3146C32.667 24.3412 32.8154 24.4883 32.7862 24.703L32.5405 26.5702C32.7594 26.5799 32.9614 26.5244 33.1171 26.4183C33.3287 26.2807 33.4674 26.0516 33.5063 25.7524C33.538 25.5184 33.5063 25.3085 33.4528 25.1421C33.4066 24.9901 33.3555 24.9105 33.3701 24.8116C33.3895 24.6668 33.5355 24.58 33.6791 24.5993L33.6766 24.6017ZM32.2826 24.9587C32.0709 24.937 31.8909 24.9805 31.7376 25.0794C31.5892 25.1855 31.4724 25.3713 31.4383 25.6125C31.4043 25.873 31.4675 26.1022 31.5965 26.2494C31.7133 26.3772 31.8957 26.4737 32.0782 26.5099L32.2826 24.9563V24.9587Z" fill="#F1F3F4"/>
+                        <path d="M31.4019 23.2677C31.217 23.2918 31.0516 23.1615 31.0273 22.9806C31.0005 22.7924 31.127 22.6284 31.3095 22.6018L31.4409 22.585C31.1075 22.4113 30.9032 22.0928 30.8472 21.6827C30.801 21.3426 30.8424 21.0241 31.0102 20.7829C31.1757 20.5344 31.4822 20.3655 31.9347 20.3052L33.4675 20.0954C33.6524 20.0712 33.8178 20.2063 33.8421 20.3824C33.8689 20.5706 33.7448 20.7419 33.5599 20.766L32.1926 20.9518C31.9226 20.9879 31.6842 21.0603 31.5479 21.2316C31.4579 21.3498 31.4117 21.509 31.4433 21.731C31.4847 22.0301 31.655 22.2472 31.9323 22.3558C32.1513 22.4378 32.4092 22.4499 32.6525 22.4161L33.7716 22.2641C33.9565 22.24 34.1219 22.3751 34.1463 22.5512C34.1706 22.7345 34.0489 22.9034 33.864 22.9299L31.4044 23.2652L31.4019 23.2677Z" fill="#F1F3F4"/>
+                        <path d="M28.6359 12.5011C25.1762 9.09479 20.2666 7.3458 15.2889 7.93925C14.7658 8.00197 14.233 7.79933 13.9216 7.37957C13.9216 7.37716 13.9167 7.37475 13.9143 7.36992C12.9727 5.99968 13.8316 3.9226 13.3888 2.97694C13.0506 2.25564 12.7003 1.78522 11.9485 1.5295C10.9413 1.18694 10.1919 1.7032 9.37689 2.37867C8.46698 3.13616 8.02419 4.02875 7.92444 5.14087C7.85145 5.98279 8.25775 7.32891 9.12387 8.34936C9.2893 8.54476 9.58369 8.81013 9.82455 9.02724C10.0192 9.20335 9.97295 9.51214 9.73939 9.63276C2.68637 13.261 -0.814595 21.591 1.9419 29.2818C2.55013 30.9825 3.43084 32.5168 4.51106 33.8629" stroke="#F1F3F4" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M30.9275 16.1004C31.465 16.1004 31.9007 15.6684 31.9007 15.1354C31.9007 14.6025 31.465 14.1705 30.9275 14.1705C30.39 14.1705 29.9543 14.6025 29.9543 15.1354C29.9543 15.6684 30.39 16.1004 30.9275 16.1004Z" fill="#F1F3F4"/>
+                    </svg>
+                </a>
+                <ul>
+                    <li class="topNavItems" data-item="introduction" id="projectsNav"><a href="./index.html#introduction">
+                        <div class="dot"></div>
+                        <p>Projects</p>
+                    </a></li>
+                    <li class="topNavItems" data-item="contact" id="contactNav"><a href="./index.html#contact">
+                        <div class="dot"></div>
+                        <p>Contact</p>
+                    </a></li>
+                    <li class="topNavItems" data-item="" id="JasonNav"><a href="./about.html">
+                        <div class="dot"></div>
+                        <p>About</p>
+                    </a></li>
+                </ul>
+                <a href="./media/JasonChen_UXDesigner_Resume.pdf" target="_blank"><div id="CV">
+                    <p>CV</p>
+                </div></a>                  
+            </nav>
             
             <section id="mainContent">
+                <img src="./media/ProvidencePlace/ProvidencePlaceHero.webp" alt="providence place mock up" id="heroImage">
                 <!-- ═══════════════════════════════════ [ Introduction ] ═══════════════════════════════════ -->
                 <section id="introduction" class="majorSections">
                     <h1>Providence Place</h1>
@@ -56,7 +144,7 @@
 
                 <!-- ═══════════════════════════════════ [ Original Website ] ═══════════════════════════════════ -->
 
-                <section id="originalWebsite">                    
+                <section id="originalWebsite" class="majorSections topNavSections shrinkSection allowHideSection">                    
                     <h4 class="sectionHeader">Original Website</h4>
                     <hr>
                     <h3>Overall Issues</h3>
@@ -72,7 +160,7 @@
                 </section>
 
                 <!-- ═══════════════════════════════════ [ Prototyping ] ═══════════════════════════════════ -->
-                <section id="Prototyping" class="spaceBelow">                    
+                <section id="prototyping" class="spaceBelow majorSections">                    
                     <h4 class="sectionHeader">Prototyping</h4>
                     <hr>
                     <div class="gridDisplay2Cols prototype">
@@ -86,8 +174,8 @@
                     </div>  
 
                     <iframe loading="lazy" style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://embed.figma.com/proto/Vd71mzxnkiQSNREOg9nqwY/ProvidencePlace?page-id=154%3A981&node-id=154-982&p=f&viewport=407%2C60%2C0.09&scaling=scale-down&content-scaling=fixed&embed-host=share" allowfullscreen></iframe>                    
-                    <iframe loading="lazy" style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://embed.figma.com/proto/Vd71mzxnkiQSNREOg9nqwY/ProvidencePlace?page-id=154%3A1167&node-id=154-1168&p=f&viewport=440%2C60%2C0.09&scaling=scale-down&content-scaling=fixed&embed-host=share" allowfullscreen></iframe>
-                    <iframe style="margin-bottom: 120px;" loading="lazy" style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://embed.figma.com/proto/Vd71mzxnkiQSNREOg9nqwY/ProvidencePlace?page-id=154%3A1333&node-id=154-1334&viewport=459%2C60%2C0.1&scaling=min-zoom&content-scaling=fixed&embed-host=share" allowfullscreen></iframe>
+                    <!-- <iframe loading="lazy" style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://embed.figma.com/proto/Vd71mzxnkiQSNREOg9nqwY/ProvidencePlace?page-id=154%3A1167&node-id=154-1168&p=f&viewport=440%2C60%2C0.09&scaling=scale-down&content-scaling=fixed&embed-host=share" allowfullscreen></iframe> -->
+                    <!-- <iframe style="margin-bottom: 120px;" loading="lazy" style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://embed.figma.com/proto/Vd71mzxnkiQSNREOg9nqwY/ProvidencePlace?page-id=154%3A1333&node-id=154-1334&viewport=459%2C60%2C0.1&scaling=min-zoom&content-scaling=fixed&embed-host=share" allowfullscreen></iframe> -->
                     
                     <div class="gridDisplay2Cols prototype">
                         <p>After designing the low-fidelity prototype and the design system, I proceed to add color and images to my prototype to make it as close to the final live website as possible.</p>
@@ -102,7 +190,7 @@
                 </section>
 
                 <!-- ═══════════════════════════════════ [ Design System ] ═══════════════════════════════════ -->
-                <section id="designSystem">                    
+                <section id="designSystem" class="majorSections">                    
                     <h4 class="sectionHeader">Design System</h4>
                     <hr>
 
@@ -137,7 +225,7 @@
                     </div>
                 </section>
                 <!-- ═══════════════════════════════════ [ Redesign Breakdown] ═══════════════════════════════════ -->
-                <section id="redesignBreakdown">                    
+                <section id="redesignBreakdown" class="majorSections">                    
                     <h4 class="sectionHeader">Redesign Breakdown</h4>
                     <hr>
                     <div class="gridDisplay2Cols">
@@ -148,7 +236,7 @@
                 </section>
 
                 <!-- ═══════════════════════════════════ [ Responsive Showcase] ═══════════════════════════════════ -->
-                <section id="responsiveShowcase">                    
+                <section id="responsiveShowcase" class="majorSections">                    
                     <h4 class="sectionHeader">Responsive Showcase</h4>
                     <hr>
                     <h2>NAVIGATION</h2>
@@ -162,7 +250,7 @@
                 </section>
 
                 <!-- ═══════════════════════════════════ [ Final Deliverables ] ═══════════════════════════════════ -->
-                <section id="finalDeliverables ">                    
+                <section id="finalDeliverables" class="majorSections spaceBelow">                    
                     <h4 class="sectionHeader">Final Deliverables</h4>
                     <hr>
                     <p>After finalizing my prototypes, I have implemented my design into a website demo with HTML and CSS, please click the buttons below to view the website and my Figma design file.</p>
@@ -174,6 +262,42 @@
                     
                 </section>
 
+                <section id="moreProjectsSection">
+                    <hr>
+                    <h2>More Projects</h2>
+                    <div id="moreProjects">
+                        <a href="./VendingMachine.html">
+                            <div class="project" id="vendingMachineProject">
+                                <div class="projectImage" id="vendingMachineImg"></div>
+                                <div class="projectInfo">                                    
+                                    <h3>User Research</h3>
+                                    <h2>Vending Machine</h2>
+                                    <p>Explore common issues a user may encountered when using the vending machine</p>                                                    
+                                </div>                                
+                            </div>    
+                        </a>
+                        <a href="./AccordionDesign.html">
+                            <div class="project" id="accordionProject">
+                                <div class="projectImage" id="accordionImg"></div>
+                                <div class="projectInfo">
+                                    <h3>Accessibility</h3>
+                                    <h2>Accordion</h2>
+                                    <p>An accessible nested accordion UI component that enables users to navigate two layers of information</p>                                       
+                                </div>                                
+                            </div>    
+                        </a> 
+                        <a href="./index.html#newProjects">
+                            <div class="project" id="otherProjects">
+                                <div class="projectImage" id="otherProjectsImg"></div>
+                                <div class="projectInfo">                                    
+                                    <h3>UI/UX Design & Dev.</h3>
+                                    <h2>Others</h2>
+                                    <p>From class projects to professional works, I have created a wide variety of designs</p>                                                    
+                                </div>                                
+                            </div>    
+                        </a>
+                    </div>
+                </section> 
             </section>
         </main>
     </body>

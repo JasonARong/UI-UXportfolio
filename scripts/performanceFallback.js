@@ -1,6 +1,9 @@
 const spline3dContent = document.querySelector('spline-viewer');
 const fallbackImg = document.querySelector('#fallbackImg');
 
+let displayMode = window.getComputedStyle(spline3dContent).display;
+console.log(displayMode);
+
 function getOS() {
     const userAgent = window.navigator.userAgent,
         platform = window.navigator?.userAgentData?.platform || window.navigator.platform,

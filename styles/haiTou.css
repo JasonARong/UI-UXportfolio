@@ -20,6 +20,12 @@
     padding: 0 20px;
     margin: 0 auto;
 }
+.disregardParentPadding{
+    position: relative;
+    left: calc(-1 * var(--smallGap));
+    width: calc(100% + 2*var(--smallGap));
+    max-width: calc(100% + 2*var(--smallGap));
+}
 
 .marginBottomBig{
     margin-bottom: 300px;
@@ -34,7 +40,7 @@
 
 /* ----- Global ----- */
 main{
-    padding: 0;
+    padding: 0 var(--smallGap);
 }
 #mainContent{
     max-width: none;
@@ -44,12 +50,13 @@ main{
 /* ----- 3d render hero ----- */
 spline-viewer{
     position: relative;
+    height: 100vh;
     min-height: 600px;
     max-height: 90vh;
     max-height: 90svh;
-    margin-top: -80px;
+    margin-top: -84px;
     margin-bottom: -120px;
-    width: 100%;
+    width: calc(100% + 2*var(--smallGap));
     z-index: 0;
 }
 spline-viewer.disable{
@@ -62,13 +69,9 @@ spline-viewer.disable{
     /* background-color: red; */
 }
 #darkCover1{
-    height: 20px;
-    position: relative;
-}
-#darkCover2{
-    position:absolute;
     height: 140px;
-    width: 100%;
+    position: relative;
+    margin-bottom: -120px;
 }
 
 /* Fall Back Img */
@@ -91,13 +94,23 @@ spline-viewer.disable{
 
 
 /* top nav bar */
-#topNav{
-    margin-top: 25px;
-}
+
 
 /* Project background */
+h1{
+    font-size: 70px;
+    margin: 0;
+}
+h2{
+    margin-bottom: 140px;
+}
 #Background{
-    margin-top: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+#moreProjectsSection > h2{
+    margin-bottom: 60px;
 }
 
 @media only screen and (max-width: 767px), 
@@ -110,4 +123,13 @@ screen and (max-height: 480px){
     #fallbackImg img{
         object-fit: contain;
     }
+
+    #Background h1{
+        font-size: 30px;
+    }
+    #Background h2{
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
 }

@@ -414,6 +414,15 @@ iframe{
     background-position: center;
     background-size: cover;
 }
+#providencePlaceImg{
+    background-image: url("../media/ProvidencePlaceMockup.webp");
+}
+#vendingMachineImg{
+    background-image: url("../media/VendingMachineMockup.webp");
+}
+#accordionImg{
+    background-image: url("../media/AccordionMockup.webp");
+}
 #baeometerImg{
     background-image: url("../media/BaeometerMockup.webp");
 }
@@ -444,7 +453,7 @@ iframe{
 .projectInfo h3{
     font-size: 16px;
     color: #C2C2C2;
-    margin-bottom: 0;
+    margin-bottom: 6px;
     margin-top: 0;
 }
 .projectInfo h2{
@@ -457,6 +466,12 @@ iframe{
     margin-top: 0;
 }
 
+#providencePlaceProject .projectInfo h2{
+    font-size: 24px;
+}
+#vendingMachineProject .projectInfo h2{
+    font-size: 24px;
+}
 #baeometerProject .projectInfo h2{
     background: linear-gradient(90deg, #F9B1B1 0%, #DB8FFF 100%);
     background-clip: text;

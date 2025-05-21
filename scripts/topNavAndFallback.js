@@ -7,7 +7,7 @@ const topNavItems = document.querySelectorAll('.topNavItems');
 const shrinkSectionName = document.querySelector('.shrinkSection').getAttribute('id');
 // allow Nav to hide when reach a specific section
 const allowHideSectionName = document.querySelector('.allowHideSection').getAttribute('id');
-const offset = 80;
+const offset = 50;
 
 let allowHide = false;
 let prevScrollpos = window.pageYOffset;
@@ -32,21 +32,23 @@ window.addEventListener("scroll", () => {
         topNavItems.forEach((topNavItem) => {
             let ItemName = topNavItem.getAttribute('data-item');
             
-            // Scroll close to the bottom, hightlight contact nav
+            // Scroll close to bottom  highlight contact nav
             if(window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - offset*3){
-                //changeNavHightlight('contact', ItemName, topNavItem, 'chosen');
+                //changeNavHighlight('contact', ItemName, topNavItem, 'chosen');
             }
             // when Scroll distance > a sections distance to the page's top
             else if(currentScrollPos > sectionDistance - offset){
-                //changeNavHightlight(sectionName, ItemName, topNavItem, 'chosen');   
+                changeNavHighlight(sectionName, ItemName, topNavItem, 'chosen');   
                 
                 // Shrinking
                 if(sectionName == shrinkSectionName){
                     if(!topNavBar.classList.contains('shrink')){ // shrink
                         topNavBar.classList.add('shrink');
                     }
+                    fallbackToStaticImage();
                 }
 
+                // Allow Hiding                
                 if(sectionName == allowHideSectionName){
                     allowHide = true;
                 }
@@ -54,13 +56,14 @@ window.addEventListener("scroll", () => {
             }
             // when Scroll distance < a sections distance to the page's top
             else{ 
-                // if(sectionName == ItemName && topNavItem.classList.contains('chosen')){
-                //     topNavItem.classList.remove('chosen');
-                // }
+                if(sectionName == ItemName && topNavItem.classList.contains('chosen')){
+                    topNavItem.classList.remove('chosen');
+                }
                 if(sectionName == shrinkSectionName){
                     if(topNavBar.classList.contains('shrink')){ // shrink
                         topNavBar.classList.remove('shrink');
                     }
+                    use3Danimation();
                 }
                 // Disallow Hiding                
                 if(sectionName == allowHideSectionName){
@@ -71,7 +74,7 @@ window.addEventListener("scroll", () => {
     });
 });
 
-function changeNavHightlight(sectionName, ItemName, topNavItem, className){
+function changeNavHighlight(sectionName, ItemName, topNavItem, className){
     if(ItemName == sectionName){
         if(!topNavItem.classList.contains(className)){
             topNavItem.classList.add(className);

@@ -130,7 +130,6 @@ img, picture, video, canvas, svg {
     text-decoration: none;
     font-size: 16px;
 
-
     border: 1.5px solid var(--borderColor);
     border-radius: 50px;
 
@@ -138,6 +137,7 @@ img, picture, video, canvas, svg {
     height: 46px;
     padding: 0 8px;
 
+    cursor: pointer;
     transition: 0.2s ease;
 }
 
@@ -194,6 +194,8 @@ img, picture, video, canvas, svg {
 
     cursor:default;
     transition: 0.4s ease;
+
+    z-index: 2;
 }
 #topNav.shrink{
     max-width: 580px;

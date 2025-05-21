@@ -112,9 +112,11 @@ ul.innerContentList a:hover .dot{
 }
 
 /* when currently in this section */
+ul#outerContentList .current>a,
 ul.innerContentList .current p{
     color: var(--primaryColor);
 }
+
 ul.innerContentList .current .dot{
     background-color: var(--primaryColor);
 }
