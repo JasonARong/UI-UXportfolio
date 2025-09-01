@@ -168,7 +168,8 @@ h1{
 /* Design Process */
 #designProcess{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 #designProcess img{
     max-width: 800px;
